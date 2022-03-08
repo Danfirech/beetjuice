@@ -9,15 +9,22 @@ const Container = styled.div`
   background-image: url(${myImage});
 `;
 
+const Textbox = styled.div`
+  width: 40px;
+  height: 40px;
+  color: white;
+`;
+
 const Coverphoto = () => {
   return (
     <Container>
+      <h1>Hello Hello</h1>
       <Image
         className="home_img"
         src={myImage}
         objectFit={"cover"}
         width={1920}
-        height={2800}
+        height={1800}
       />
     </Container>
   );
