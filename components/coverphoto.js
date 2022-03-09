@@ -5,9 +5,16 @@ import Image from "next/image";
 
 const Container = styled.div`
   width: 100%;
-  height: 550px;
+  height: 1800px;
   background-image: url(${myImage});
   position: relative;
+  object-fit: contain;
+  @media (max-width: 768px) {
+    height: 1000px;
+  }
+  @media (max-width: 568px) {
+    height: 800px;
+  }
 `;
 
 const Coverphoto = () => {
@@ -16,10 +23,10 @@ const Coverphoto = () => {
       <Image
         className="home_img"
         src={myImage}
-        objectFit={"cover"}
-        width={1920}
-        height={2200}
-        maxH="2200px"
+        layout={"fill"}
+        // objectFit={"cover"}
+        width={1320}
+        height={1800}
         priority
       />
     </Container>
