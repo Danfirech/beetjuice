@@ -1,10 +1,14 @@
 import styles from "../styles/Home.module.css";
 import Coverphoto from "../components/coverphoto";
+import About from "../components/about";
+import Videosection from "../components/videosection";
 
 export default function Home() {
   return (
     <>
       <Coverphoto />
+      <About />
+      <Videosection />
     </>
   );
 }
