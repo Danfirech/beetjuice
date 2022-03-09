@@ -10,10 +10,10 @@ const Container = styled.div`
   position: relative;
   object-fit: contain;
   @media (max-width: 768px) {
-    height: 1000px;
+    height: 800px;
   }
   @media (max-width: 568px) {
-    height: 800px;
+    height: 600px;
   }
 `;
 

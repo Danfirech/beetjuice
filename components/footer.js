@@ -11,6 +11,11 @@ const Container = styled.div`
   padding-left: 40px;
   padding-right: 40px;
   @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
   }
 `;
 
