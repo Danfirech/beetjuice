@@ -17,11 +17,21 @@ const Container = styled.div`
   }
 `;
 
+const Header = styled.div`
+  height: 50px;
+  width: 100%;
+  background: none;
+  position: fixed;
+  z-index: 100;
+`;
+
 const Coverphoto = () => {
   return (
     <Container>
+      <Header>
+        <Image src={myImage} width={1320} height={1800} priority />
+      </Header>
       <Image
-        className="home_img"
         src={myImage}
         layout={"fill"}
         // objectFit={"cover"}
