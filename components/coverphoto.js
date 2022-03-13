@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import myImage from "../media/beetjuicetestpic2.jpeg";
+import logo1 from "../media/logo1.jpeg";
 import Image from "next/image";
 
 const Container = styled.div`
@@ -21,7 +22,7 @@ const Header = styled.div`
   height: 50px;
   width: 100%;
   background: none;
-  position: fixed;
+  position: relative;
   z-index: 100;
 `;
 
@@ -29,7 +30,8 @@ const Coverphoto = () => {
   return (
     <Container>
       <Header>
-        <Image src={myImage} width={1320} height={1800} priority />
+        <Image src={logo1} width={120} height={120} priority />
+        <h1>Beet Juice</h1>
       </Header>
       <Image
         src={myImage}

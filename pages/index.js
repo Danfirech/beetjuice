@@ -8,8 +8,8 @@ import Footer from "../components/footer";
 export default function Home() {
   return (
     <>
-      <Header />
-      {/* <Coverphoto /> */}
+      {/* <Header /> */}
+      <Coverphoto />
       <About />
       <Videosection />
       <Footer />
