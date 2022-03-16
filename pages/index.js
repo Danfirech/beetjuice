@@ -4,12 +4,14 @@ import Coverphoto from "../components/coverphoto";
 import About from "../components/about";
 import Videosection from "../components/videosection";
 import Footer from "../components/footer";
+import Pic2 from "../components/pic2";
 
 export default function Home() {
   return (
     <>
       {/* <Header /> */}
-      <Coverphoto />
+      {/* <Coverphoto /> */}
+      <Pic2 />
       <About />
       <Videosection />
       <Footer />

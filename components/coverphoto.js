@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   width: 50%;
-  height: 1000px;
+  height: 100vh;
   background: white;
 `;
 
@@ -52,8 +52,8 @@ const Coverphoto = () => {
           src={myImage}
           layout="responsive"
           objectFit={"cover"}
-          // width={100}
-          height={1700}
+          width={100}
+          height={104.2}
           priority
         />
       </Right>
