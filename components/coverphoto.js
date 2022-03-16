@@ -6,16 +6,29 @@ import Image from "next/image";
 
 const Container = styled.div`
   width: 100%;
-  height: 1800px;
-  background-image: url(${myImage});
+  height: 1000px;
   position: relative;
   object-fit: contain;
+  display: flex;
+  flex-direction: row;
   @media (max-width: 768px) {
     height: 800px;
   }
   @media (max-width: 568px) {
     height: 600px;
   }
+`;
+
+const Left = styled.div`
+  width: 50%;
+  height: 1000px;
+  background: white;
+`;
+
+const Right = styled.div`
+  width: 50%;
+  height: 1000px;
+  background: blue;
 `;
 
 const Header = styled.div`
@@ -29,18 +42,21 @@ const Header = styled.div`
 const Coverphoto = () => {
   return (
     <Container>
-      <Header>
+      {/* <Header>
         <Image src={logo1} width={120} height={120} priority />
         <h1>Beet Juice</h1>
-      </Header>
-      <Image
-        src={myImage}
-        layout={"fill"}
-        // objectFit={"cover"}
-        width={1320}
-        height={1800}
-        priority
-      />
+      </Header> */}
+      <Left></Left>
+      <Right>
+        <Image
+          src={myImage}
+          layout="responsive"
+          objectFit={"cover"}
+          // width={100}
+          height={1700}
+          priority
+        />
+      </Right>
     </Container>
   );
 };
