@@ -9,14 +9,10 @@ const Container = styled.div`
   display: flex;
   background-color: #e5e4e2;
   @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: none;
   }
   @media (max-width: 568px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: none;
   }
 `;
 
@@ -29,14 +25,10 @@ const ImageContainer = styled.div`
   align-items: center;
   padding-right: 50px;
   @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: none;
   }
   @media (max-width: 568px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: none;
   }
 `;
 
