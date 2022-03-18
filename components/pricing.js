@@ -9,8 +9,6 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 40px;
-  padding-left: 40px;
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
@@ -23,10 +21,10 @@ const Container = styled.div`
 
 const Left = styled.div`
   width: 35%;
-  height: 500px;
+  height: 800px;
   background-color: red;
   border-radius: 6px;
-  margin-left: 100px;
+
   @media (max-width: 768px) {
     width: 70%;
     padding-top: 20px;
@@ -39,7 +37,7 @@ const Left = styled.div`
 
 const Right = styled.div`
   width: 35%;
-  height: 500px;
+  height: 800px;
   background-color: red;
   border-radius: 6px;
   margin-left: 100px;
@@ -73,7 +71,7 @@ const Pricing = () => {
   return (
     <Container>
       <Left>
-        <h1>Live Ceremony and Cocktail band + Live Dance Band</h1>
+        <h1>Ceremony/Cocktail + Live Dance Band</h1>
         <h2>Ceremony</h2>
         <h5>
           - Live instrumental guitar for 30 minutes as guests arrive (or
@@ -85,10 +83,19 @@ const Pricing = () => {
           playlist)
         </h5>
         <h2>Cocktail</h2>
+        <h5>
+          Your guests will enjoy live music as they make their way into the
+          reception hall alon with quiet hits while enjoying their meal.
+        </h5>
+        <h5>-60 minutes of live guitar/vocals music (or custom playlist)</h5>
         <h2>Live Dance Band</h2>
+        <h5>
+          Our band will make your guests dance the night away and celebrate your
+          special night with a wide variety of hits spanning the past decades.
+        </h5>
       </Left>
       <Right>
-        <h1>Live Ceremony and Cocktail band + Live Dance Band</h1>
+        <h1>Ceremony/Cocktail + Live DJ</h1>
         <h2>Ceremony</h2>
         <h5>
           - Live instrumental guitar for 30 minutes as guests arrive (or
@@ -100,7 +107,7 @@ const Pricing = () => {
           playlist)
         </h5>
         <h2>Cocktail</h2>
-        <h2>Live Dance Band</h2>
+        <h2>Live DJ</h2>
       </Right>
     </Container>
   );

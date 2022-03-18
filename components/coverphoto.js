@@ -1,64 +1,69 @@
 import React from "react";
 import styled from "styled-components";
-import myImage from "../media/beetjuicetestpic2.jpeg";
-import logo1 from "../media/logo1.jpeg";
+import pic from "../media/beetjuicetestpic2.jpeg";
 import Image from "next/image";
 
 const Container = styled.div`
+  height: 100vh;
   width: 100%;
-  height: 1000px;
-  position: relative;
-  object-fit: contain;
   display: flex;
-  flex-direction: row;
+  background-color: #e5e4e2;
   @media (max-width: 768px) {
-    height: 800px;
+    display: none;
   }
   @media (max-width: 568px) {
-    height: 600px;
+    display: none;
   }
 `;
 
-const Left = styled.div`
-  width: 50%;
+const ImageContainer = styled.div`
   height: 100vh;
-  background: white;
-`;
-
-const Right = styled.div`
-  width: 50%;
-  height: 1000px;
-  background: blue;
-`;
-
-const Header = styled.div`
-  height: 50px;
   width: 100%;
-  background: none;
-  position: relative;
-  z-index: 100;
+  background-color: #e5e4e2;
+  padding-left: 600px;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 568px) {
+    display: none;
+  }
 `;
 
-const Coverphoto = () => {
+const TextContainer = styled.div`
+  height: 300px;
+  width: 750px;
+  background-color: none;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  z-index: 1;
+  padding-top: 450px;
+  padding-left: 400px;
+`;
+
+const Pic2 = () => {
   return (
     <Container>
-      {/* <Header>
-        <Image src={logo1} width={120} height={120} priority />
-        <h1>Beet Juice</h1>
-      </Header> */}
-      <Left></Left>
-      <Right>
+      <TextContainer>
+        <h1>Beet Juice Entertainment</h1>
+      </TextContainer>
+      <ImageContainer>
         <Image
-          src={myImage}
-          layout="responsive"
-          objectFit={"cover"}
-          width={100}
-          height={104.2}
+          src={pic}
+          layout="intrinsic"
+          // objectFit={"cover"}
+          width={1300}
+          height={800}
           priority
         />
-      </Right>
+      </ImageContainer>
     </Container>
   );
 };
 
-export default Coverphoto;
+export default Pic2;
