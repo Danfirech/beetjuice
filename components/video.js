@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import ReactPlayer from "react-player";
 
 const Container = styled.div`
   width: 100%;
   height: 400px;
-  background-color: pink;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,14 +24,27 @@ const Container = styled.div`
   }
 `;
 
+const VideoContainer = styled.div`
+  width: 35%;
+  height: 350px;
+  background-color: White;
+  border-radius: 6px;
+  @media (max-width: 768px) {
+    width: 70%;
+    margin-top: 20px;
+    height: 650px;
+  }
+`;
+
 const About = () => {
   return (
     <Container>
-      <p>
-        Get suggestions from Grammarly while you write in desktop applications
-        and sites across the web—as you move between apps, social media,
-        documents, messages, and emails.
-      </p>
+      <VideoContainer>
+        <ReactPlayer
+          width="100%"
+          url="https://www.youtube.com/watch?v=wWgIAphfn2U"
+        />
+      </VideoContainer>
     </Container>
   );
 };

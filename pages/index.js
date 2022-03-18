@@ -2,9 +2,10 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 import Coverphoto from "../components/coverphoto";
 import About from "../components/about";
-import Videosection from "../components/videosection";
+import Pricing from "../components/pricing";
 import Footer from "../components/footer";
 import Pic2 from "../components/pic2";
+import Video from "../components/video";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       {/* <Coverphoto /> */}
       <Pic2 />
       <About />
-      <Videosection />
+      <Video />
+      <Pricing />
       <Footer />
     </>
   );
