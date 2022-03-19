@@ -24,6 +24,8 @@ const Left = styled.div`
   height: 600px;
   background-color: white;
   border-radius: 6px;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 768px) {
     width: 70%;
@@ -41,6 +43,8 @@ const Right = styled.div`
   background-color: white;
   border-radius: 6px;
   margin-left: 100px;
+  display: flex;
+  flex-direction: column;
   @media (max-width: 768px) {
     width: 70%;
     padding-top: 20px;
