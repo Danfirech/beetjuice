@@ -39,21 +39,23 @@ const TextContainer = styled.div`
 
 const Pic2 = () => {
   return (
-    <Container>
-      <TextContainer>
-        <h1>Beet Juice Entertainment</h1>
-      </TextContainer>
-      <ImageContainer>
-        <Image
-          src={pic}
-          layout="intrinsic"
-          // objectFit={"cover"}
-          width={1000}
-          height={550}
-          priority
-        />
-      </ImageContainer>
-    </Container>
+    <>
+      <Container>
+        <TextContainer>
+          <h1>Beet Juice Entertainment</h1>
+        </TextContainer>
+        <ImageContainer>
+          <Image
+            src={pic}
+            layout="intrinsic"
+            // objectFit={"cover"}
+            width={1000}
+            height={550}
+            priority
+          />
+        </ImageContainer>
+      </Container>
+    </>
   );
 };
 

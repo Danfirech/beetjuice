@@ -29,9 +29,10 @@ const About = () => {
   return (
     <Container>
       <p>
-        Get suggestions from Grammarly while you write in desktop applications
-        and sites across the web—as you move between apps, social media,
-        documents, messages, and emails.
+        OVER 12 YEARS OF GROOVES, CLASSIC ELECTRIC GUITAR AND DANCE DRIVEN DRUMS
+        PERFORMED LIVE, ALONG WITH SOULFUL AND HARD-HITTING VOCALS, B33T JU1C3
+        WILL TAILOR THEIR WORLD CLASS LIVE PERFORMANCE/SET TO FIT THE NEEDS ANY
+        EVENT, VENUE OR AUDIENCE.
       </p>
     </Container>
   );

@@ -59,6 +59,7 @@ const TitleContainer = styled.div`
   height: 150px;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 10px;
@@ -94,6 +95,37 @@ const TextBox = styled.div`
   }
 `;
 
+const Button = styled.div`
+  width: 270px;
+  height: 40px;
+  border: 2px solid black;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e4e2;
+`;
+
+const BeetJuiceText = styled.div`
+  width: 30%;
+  height: 680px;
+  background-color: #e5e4e2;
+  border-radius: 6px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  @media (max-width: 768px) {
+    width: 70%;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 650px;
+  }
+`;
+
 const CorporateText = styled.div`
   width: 100%;
   height: 400px;
@@ -118,6 +150,7 @@ const Pricing = () => {
       {/* WEDDINGS */}
       <TitleContainer>
         <Title>Weddings</Title>
+        <Button>Contact For Booking</Button>
       </TitleContainer>
       <Container>
         <Left>
@@ -169,6 +202,7 @@ const Pricing = () => {
       {/* Corporate/Events */}
       <TitleContainer>
         <Title>Corporate/Events</Title>
+        <Button>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <Container>
         <TextBox>
@@ -189,10 +223,31 @@ const Pricing = () => {
       {/* B33T Ju1c3 Sindicate */}
       <TitleContainer>
         <Title>B33T Ju1c3 Sindicate</Title>
+        <Button>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <Container>
         <TextBox></TextBox>
-        <TextBox></TextBox>
+        <BeetJuiceText>
+          <h5>
+            Beet Juice (written as B33T JUIC3), is a two-man project founded by
+            former Mosaic Foundation keyboardist Ekewem Bogmis, A native of
+            Rochester and Daniel Possehl a Midwestener at heart who both moved
+            to LA to pursue their music careers.
+          </h5>
+          <h5>
+            Both on stage and in the studio, B33t Ju1c3 relies on live looping
+            to create their dense soundscapes. Stacking grooves through
+            beatboxing and percussion, laying down riffs on guitar, and singing
+            heartfelt lyrics over the sonic backdrop.
+          </h5>
+          <h5>
+            Bogmis started experimenting with looping during a studio project
+            five years ago. B33t Ju1c3 has evolved toward creating dub-style
+            music underlined with soulful dance rythems. The project is rooted
+            in building a safe space for people to feel and move to the rythems
+            created by Ezra and Daniel.
+          </h5>
+        </BeetJuiceText>
       </Container>
     </>
   );

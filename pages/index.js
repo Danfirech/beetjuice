@@ -11,7 +11,7 @@ import MobilePhoto from "../components/mobilePhoto";
 export default function Home() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       {/* <Coverphoto /> */}
       <Coverphoto />
       <MobilePhoto />
