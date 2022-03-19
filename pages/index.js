@@ -6,6 +6,7 @@ import Pricing from "../components/pricing";
 import Footer from "../components/footer";
 import Pic2 from "../components/coverPhoto";
 import Video from "../components/video";
+import MobilePhoto from "../components/mobilePhoto";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       {/* <Header /> */}
       {/* <Coverphoto /> */}
       <Coverphoto />
+      <MobilePhoto />
       <About />
       <Video />
       <Pricing />

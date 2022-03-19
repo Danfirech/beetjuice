@@ -8,10 +8,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   background-color: #e5e4e2;
-  @media (max-width: 768px) {
-    display: none;
-  }
-  @media (max-width: 568px) {
+  @media (max-width: 1168px) {
     display: none;
   }
 `;
@@ -24,12 +21,6 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   padding-right: 50px;
-  @media (max-width: 768px) {
-    display: none;
-  }
-  @media (max-width: 568px) {
-    display: none;
-  }
 `;
 
 const TextContainer = styled.div`
