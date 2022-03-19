@@ -48,8 +48,8 @@ const Pic2 = () => {
           src={pic}
           layout="intrinsic"
           // objectFit={"cover"}
-          width={1300}
-          height={800}
+          width={1000}
+          height={550}
           priority
         />
       </ImageContainer>

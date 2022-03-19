@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 const Container = styled.div`
   width: 100%;
   height: 700px;
-  background-color: #e5e4e2;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ const Container = styled.div`
 const Left = styled.div`
   width: 40%;
   height: 600px;
-  background-color: red;
+  background-color: white;
   border-radius: 6px;
 
   @media (max-width: 768px) {
@@ -38,7 +38,7 @@ const Left = styled.div`
 const Right = styled.div`
   width: 40%;
   height: 600px;
-  background-color: red;
+  background-color: white;
   border-radius: 6px;
   margin-left: 100px;
   @media (max-width: 768px) {
@@ -51,22 +51,35 @@ const Right = styled.div`
   }
 `;
 
-const Title = styled.div`
+const TitleContainer = styled.div`
   height: 150px;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  margin-top: 10px;
+`;
+
+const Title = styled.div`
+  height: 150px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: White;
   font-size: 30px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 `;
 
 const TextBox = styled.div`
-  width: 35%;
+  width: 65%;
   height: 400px;
-  background-color: red;
+  background-color: #e5e4e2;
   border-radius: 6px;
   margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
   @media (max-width: 768px) {
     width: 70%;
     padding-top: 20px;
@@ -77,27 +90,31 @@ const TextBox = styled.div`
   }
 `;
 
-// const TextBox = styled.div`
-//   width: 30%;
-//   height: 500px;
-//   background-color: pink;
-//   border-radius: 6px;
-//   margin-left: 100px;
-//   @media (max-width: 768px) {
-//     width: 70%;
-//     padding-top: 20px;
-//     margin-left: 0px;
-//     margin-top: 20px;
-//     margin-bottom: 20px;
-//     height: 650px;
-//   }
-// `;
+const CorporateText = styled.div`
+  width: 100%;
+  height: 400px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 768px) {
+    width: 70%;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 650px;
+  }
+`;
 
 const Pricing = () => {
   return (
     <>
       {/* WEDDINGS */}
-      <Title>Weddings</Title>
+      <TitleContainer>
+        <Title>Weddings</Title>
+      </TitleContainer>
       <Container>
         <Left>
           <h1>Ceremony/Cocktail + Live Band</h1>
@@ -146,12 +163,29 @@ const Pricing = () => {
         </Right>
       </Container>
       {/* Corporate/Events */}
-      <Title>Corporate/Events</Title>
+      <TitleContainer>
+        <Title>Corporate/Events</Title>
+      </TitleContainer>
       <Container>
-        <TextBox></TextBox>
+        <TextBox>
+          <CorporateText>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </CorporateText>
+        </TextBox>
       </Container>
       {/* B33T Ju1c3 Sindicate */}
-      <Title>B33T Ju1c3 Sindicate</Title>
+      <TitleContainer>
+        <Title>B33T Ju1c3 Sindicate</Title>
+      </TitleContainer>
       <Container>
         <TextBox></TextBox>
         <TextBox></TextBox>
