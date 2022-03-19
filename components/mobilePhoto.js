@@ -6,7 +6,7 @@ import Image from "next/image";
 const Container = styled.div`
   display: none;
   @media (max-width: 1168px) {
-    height: 100vh;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,13 @@ const Container = styled.div`
 `;
 
 const Title = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 20%;
   width: 100vw;
-  background-color: black;
+  background-color: pink;
+  font-size: 20px;
 `;
 
 const Header = styled.div`
@@ -28,7 +32,7 @@ const Header = styled.div`
 
 const ImageWrapper = styled.div`
   height: 65%;
-  width: 100vw;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +41,6 @@ const ImageWrapper = styled.div`
 const MobilePhoto = () => {
   return (
     <Container>
-      <Header></Header>
       <Title>Beet Juice Enterntainment</Title>
       <ImageWrapper>
         <Image src={pic} layout="intrinsic" width={450} height={450} />

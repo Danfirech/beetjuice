@@ -5,7 +5,7 @@ import Insta from "../media/Instagram.jpeg";
 import Facebook from "../media/Facebook.jpeg";
 
 const Container = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 150px;
   background-color: #e5e4e2;
   display: flex;
@@ -15,6 +15,7 @@ const Container = styled.div`
   padding-left: 40px;
   padding-right: 40px;
   @media (max-width: 768px) {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +25,7 @@ const Container = styled.div`
 `;
 
 const FooterTop = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 75px;
   background-color: #e5e4e2;
   display: flex;
@@ -38,11 +39,13 @@ const FooterTop = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 300px;
+    padding-left: none;
+    padding-right: none;
   }
 `;
 
 const FooterBottom = styled.div`
-  width: 100%;
+  width: 100vw;
   height: 75px;
   background-color: #e5e4e2;
   display: flex;
@@ -67,7 +70,6 @@ const Footer = () => {
           <Image
             src={Insta}
             layout="intrinsic"
-            // objectFit={"cover"}
             width={50}
             height={50}
             priority
@@ -78,7 +80,6 @@ const Footer = () => {
           <Image
             src={Facebook}
             layout="intrinsic"
-            // objectFit={"cover"}
             width={50}
             height={50}
             priority

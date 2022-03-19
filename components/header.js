@@ -24,6 +24,9 @@ const Right = styled.div`
   align-items: center;
   justify-content: right;
   padding-right: 50px;
+  @media (max-width: 768px) {
+    padding-right: 20px;
+  }
 `;
 
 const Header = () => {

@@ -15,7 +15,7 @@ const Container = styled.div`
     justify-content: space-around;
     padding-right: 0px;
     padding-left: 0px;
-    height: 1300px;
+    height: 1400px;
   }
 `;
 
@@ -26,9 +26,8 @@ const Left = styled.div`
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-
   @media (max-width: 768px) {
-    width: 70%;
+    width: 100%;
     padding-top: 20px;
     margin-left: 0px;
     margin-top: 20px;
@@ -46,7 +45,7 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   @media (max-width: 768px) {
-    width: 70%;
+    width: 100%;
     padding-top: 20px;
     margin-left: 0px;
     margin-top: 20px;
@@ -63,6 +62,17 @@ const TopOfWeddingBoxes = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
+`;
+
+const BottomOfWeddingBoxes = styled.div`
+  @media (max-width: 768px) {
+    display: flex:
+    align-items: center;
+    justify: content;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -177,24 +187,25 @@ const Pricing = () => {
             <h1>Ceremony/Cocktail + Live Band</h1>
             <h1>$6800</h1>
           </TopOfWeddingBoxes>
-
-          <h2>Ceremony</h2>
-          <h5>
-            Live instrumental guitar for 30 minutes as guests arrive (or
-            playlist)
-          </h5>
-          <h2>Cocktail</h2>
-          <h5>
-            Your guests will enjoy 60 minutes of live music as they make their
-            way into the reception hall with relaxing hits as they enjoy their
-            meals.
-          </h5>
-          <h2>Live Band</h2>
-          <h5>
-            Our band will make your guests dance the night away and celebrate
-            your special night with a wide variety of hits spanning the past
-            decades.
-          </h5>
+          <BottomOfWeddingBoxes>
+            <h2>Ceremony</h2>
+            <h5>
+              Live instrumental guitar for 30 minutes as guests arrive (or
+              playlist)
+            </h5>
+            <h2>Cocktail</h2>
+            <h5>
+              Your guests will enjoy 60 minutes of live music as they make their
+              way into the reception hall with relaxing hits as they enjoy their
+              meals.
+            </h5>
+            <h2>Live Band</h2>
+            <h5>
+              Our band will make your guests dance the night away and celebrate
+              your special night with a wide variety of hits spanning the past
+              decades.
+            </h5>
+          </BottomOfWeddingBoxes>
         </Left>
         <WeddingLine />
         <Right>
@@ -202,23 +213,24 @@ const Pricing = () => {
             <h1>Ceremony/Cocktail + Live DJ</h1>
             <h1>$4800</h1>
           </TopOfWeddingBoxes>
-
-          <h2>Ceremony</h2>
-          <h4>
-            Live instrumental guitar for 30 minutes as guests arrive (or
-            playlist)
-          </h4>
-          <h2>Cocktail</h2>
-          <h4>
-            Your guests will enjoy 60 minutes of live music as they make their
-            way into the reception hall with relaxing hits as they enjoy their
-            meals.
-          </h4>
-          <h2>Live DJ</h2>
-          <h4>
-            Our DJ will make your guests dance the night away and celebrate your
-            special night with a wide variety of hits.
-          </h4>
+          <BottomOfWeddingBoxes>
+            <h2>Ceremony</h2>
+            <h4>
+              Live instrumental guitar for 30 minutes as guests arrive (or
+              playlist)
+            </h4>
+            <h2>Cocktail</h2>
+            <h4>
+              Your guests will enjoy 60 minutes of live music as they make their
+              way into the reception hall with relaxing hits as they enjoy their
+              meals.
+            </h4>
+            <h2>Live DJ</h2>
+            <h4>
+              Our DJ will make your guests dance the night away and celebrate
+              your special night with a wide variety of hits.
+            </h4>
+          </BottomOfWeddingBoxes>
         </Right>
       </Container>
       {/* Corporate/Events */}
