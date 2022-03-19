@@ -55,6 +55,16 @@ const Right = styled.div`
   }
 `;
 
+const TopOfWeddingBoxes = styled.div`
+  width: 100%;
+  height: 200px;
+  background-color: #e5e4e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 const TitleContainer = styled.div`
   height: 150px;
   width: 100vw;
@@ -62,14 +72,13 @@ const TitleContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
 `;
 
 const Title = styled.div`
-  height: 150px;
+  height: 100px;
   width: 80%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   background-color: White;
   font-size: 30px;
@@ -109,7 +118,7 @@ const Button = styled.div`
 const BeetJuiceText = styled.div`
   width: 30%;
   height: 680px;
-  background-color: #e5e4e2;
+  background-color: white;
   border-radius: 6px;
   margin-left: 100px;
   margin-right: 100px;
@@ -144,6 +153,16 @@ const CorporateText = styled.div`
   }
 `;
 
+const WeddingLine = styled.div`
+  width: 2px;
+  height: 600px;
+  background-color: black;
+  margin-left: 90px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 const Pricing = () => {
   return (
     <>
@@ -154,13 +173,14 @@ const Pricing = () => {
       </TitleContainer>
       <Container>
         <Left>
-          <h1>Ceremony/Cocktail + Live Band</h1>
-          <br />
-          <h1>$6800</h1>
-          <br />
+          <TopOfWeddingBoxes>
+            <h1>Ceremony/Cocktail + Live Band</h1>
+            <h1>$6800</h1>
+          </TopOfWeddingBoxes>
+
           <h2>Ceremony</h2>
           <h5>
-            - Live instrumental guitar for 30 minutes as guests arrive (or
+            Live instrumental guitar for 30 minutes as guests arrive (or
             playlist)
           </h5>
           <h2>Cocktail</h2>
@@ -176,27 +196,29 @@ const Pricing = () => {
             decades.
           </h5>
         </Left>
+        <WeddingLine />
         <Right>
-          <h1>Ceremony/Cocktail + Live DJ</h1>
-          <br />
-          <h1>$4800</h1>
-          <br />
+          <TopOfWeddingBoxes>
+            <h1>Ceremony/Cocktail + Live DJ</h1>
+            <h1>$4800</h1>
+          </TopOfWeddingBoxes>
+
           <h2>Ceremony</h2>
-          <h5>
-            - Live instrumental guitar for 30 minutes as guests arrive (or
+          <h4>
+            Live instrumental guitar for 30 minutes as guests arrive (or
             playlist)
-          </h5>
+          </h4>
           <h2>Cocktail</h2>
-          <h5>
+          <h4>
             Your guests will enjoy 60 minutes of live music as they make their
             way into the reception hall with relaxing hits as they enjoy their
             meals.
-          </h5>
+          </h4>
           <h2>Live DJ</h2>
-          <h5>
+          <h4>
             Our DJ will make your guests dance the night away and celebrate your
             special night with a wide variety of hits.
-          </h5>
+          </h4>
         </Right>
       </Container>
       {/* Corporate/Events */}
