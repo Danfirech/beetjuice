@@ -8,11 +8,11 @@ const Container = styled.div`
   background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     padding-right: 0px;
     padding-left: 0px;
     height: 1400px;
@@ -54,6 +54,16 @@ const Right = styled.div`
   }
 `;
 
+const WeddingLine = styled.div`
+  width: 2px;
+  height: 600px;
+  background-color: black;
+  margin-left: 90px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 const TopOfWeddingBoxes = styled.div`
   width: 100%;
   height: 200px;
@@ -88,30 +98,12 @@ const Title = styled.div`
   height: 100px;
   width: 80%;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   background-color: White;
   font-size: 30px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-`;
+  padding: 5px;
 
-const TextBox = styled.div`
-  width: 65%;
-  height: 400px;
-  background-color: #e5e4e2;
-  border-radius: 6px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: flex;
-  @media (max-width: 768px) {
-    width: 70%;
-    padding-top: 20px;
-    margin-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 650px;
-  }
+  border-top: 2px solid black;
 `;
 
 const Button = styled.div`
@@ -123,6 +115,57 @@ const Button = styled.div`
   align-items: center;
   justify-content: center;
   background-color: #e5e4e2;
+`;
+
+const TextBox = styled.div`
+  width: 65%;
+  height: 400px;
+  background-color: #e5e4e2;
+  border-radius: 6px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: none;
+
+    height: 350px;
+  }
+`;
+
+const CorporateTextContainter = styled.div`
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 400px;
+  }
+`;
+
+const CorporateText = styled.div`
+  width: 100%;
+  height: 300px;
+  padding-left: 300px;
+  padding-right: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 `;
 
 const BeetJuiceText = styled.div`
@@ -142,34 +185,6 @@ const BeetJuiceText = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
     height: 650px;
-  }
-`;
-
-const CorporateText = styled.div`
-  width: 100%;
-  height: 400px;
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 768px) {
-    width: 70%;
-    padding-top: 20px;
-    margin-left: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 650px;
-  }
-`;
-
-const WeddingLine = styled.div`
-  width: 2px;
-  height: 600px;
-  background-color: black;
-  margin-left: 90px;
-  @media (max-width: 768px) {
-    display: none;
   }
 `;
 
@@ -238,22 +253,19 @@ const Pricing = () => {
         <Title>Corporate/Events</Title>
         <Button>Contact For Booking/Pricing</Button>
       </TitleContainer>
-      <Container>
-        <TextBox>
-          <CorporateText>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
-          </CorporateText>
-        </TextBox>
-      </Container>
+      <CorporateTextContainter>
+        <CorporateText>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </CorporateText>
+      </CorporateTextContainter>
       {/* B33T Ju1c3 Sindicate */}
       <TitleContainer>
         <Title>B33T Ju1c3 Sindicate</Title>
