@@ -4,8 +4,8 @@ import ReactPlayer from "react-player";
 
 const Container = styled.div`
   width: 100%;
-  height: 900px;
-  background-color: white;
+  height: 700px;
+  background-color: #e5e4e2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,13 +15,13 @@ const Container = styled.div`
     justify-content: space-around;
     padding-right: 0px;
     padding-left: 0px;
-    height: 1100px;
+    height: 1300px;
   }
 `;
 
 const Left = styled.div`
-  width: 35%;
-  height: 800px;
+  width: 40%;
+  height: 600px;
   background-color: red;
   border-radius: 6px;
 
@@ -36,8 +36,34 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
+  width: 40%;
+  height: 600px;
+  background-color: red;
+  border-radius: 6px;
+  margin-left: 100px;
+  @media (max-width: 768px) {
+    width: 70%;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 650px;
+  }
+`;
+
+const Title = styled.div`
+  height: 150px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  font-size: 30px;
+`;
+
+const TextBox = styled.div`
   width: 35%;
-  height: 800px;
+  height: 400px;
   background-color: red;
   border-radius: 6px;
   margin-left: 100px;
@@ -69,47 +95,68 @@ const Right = styled.div`
 
 const Pricing = () => {
   return (
-    <Container>
-      <Left>
-        <h1>Ceremony/Cocktail + Live Dance Band</h1>
-        <h2>Ceremony</h2>
-        <h5>
-          - Live instrumental guitar for 30 minutes as guests arrive (or
-          playlist)
-        </h5>
-        <h5>- Complete sound system & production for ceremony audio</h5>
-        <h5>
-          - Live instrumental guitar for 30 minutes as guests arrive (or
-          playlist)
-        </h5>
-        <h2>Cocktail</h2>
-        <h5>
-          Your guests will enjoy live music as they make their way into the
-          reception hall alon with quiet hits while enjoying their meal.
-        </h5>
-        <h5>-60 minutes of live guitar/vocals music (or custom playlist)</h5>
-        <h2>Live Dance Band</h2>
-        <h5>
-          Our band will make your guests dance the night away and celebrate your
-          special night with a wide variety of hits spanning the past decades.
-        </h5>
-      </Left>
-      <Right>
-        <h1>Ceremony/Cocktail + Live DJ</h1>
-        <h2>Ceremony</h2>
-        <h5>
-          - Live instrumental guitar for 30 minutes as guests arrive (or
-          playlist)
-        </h5>
-        <h5>- Complete sound system & production for ceremony audio</h5>
-        <h5>
-          - Live instrumental guitar for 30 minutes as guests arrive (or
-          playlist)
-        </h5>
-        <h2>Cocktail</h2>
-        <h2>Live DJ</h2>
-      </Right>
-    </Container>
+    <>
+      {/* WEDDINGS */}
+      <Title>Weddings</Title>
+      <Container>
+        <Left>
+          <h1>Ceremony/Cocktail + Live Band</h1>
+          <br />
+          <h1>$6800</h1>
+          <br />
+          <h2>Ceremony</h2>
+          <h5>
+            - Live instrumental guitar for 30 minutes as guests arrive (or
+            playlist)
+          </h5>
+          <h2>Cocktail</h2>
+          <h5>
+            Your guests will enjoy 60 minutes of live music as they make their
+            way into the reception hall with relaxing hits as they enjoy their
+            meals.
+          </h5>
+          <h2>Live Band</h2>
+          <h5>
+            Our band will make your guests dance the night away and celebrate
+            your special night with a wide variety of hits spanning the past
+            decades.
+          </h5>
+        </Left>
+        <Right>
+          <h1>Ceremony/Cocktail + Live DJ</h1>
+          <br />
+          <h1>$4800</h1>
+          <br />
+          <h2>Ceremony</h2>
+          <h5>
+            - Live instrumental guitar for 30 minutes as guests arrive (or
+            playlist)
+          </h5>
+          <h2>Cocktail</h2>
+          <h5>
+            Your guests will enjoy 60 minutes of live music as they make their
+            way into the reception hall with relaxing hits as they enjoy their
+            meals.
+          </h5>
+          <h2>Live DJ</h2>
+          <h5>
+            Our DJ will make your guests dance the night away and celebrate your
+            special night with a wide variety of hits.
+          </h5>
+        </Right>
+      </Container>
+      {/* Corporate/Events */}
+      <Title>Corporate/Events</Title>
+      <Container>
+        <TextBox></TextBox>
+      </Container>
+      {/* B33T Ju1c3 Sindicate */}
+      <Title>B33T Ju1c3 Sindicate</Title>
+      <Container>
+        <TextBox></TextBox>
+        <TextBox></TextBox>
+      </Container>
+    </>
   );
 };
 

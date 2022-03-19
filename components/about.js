@@ -12,11 +12,13 @@ const Container = styled.div`
   padding-left: 240px;
   padding-right: 240px;
   @media (max-width: 768px) {
+    height: 600px;
     font-size: 20px;
     padding-left: 140px;
     padding-right: 140px;
   }
   @media (max-width: 568px) {
+    height: 600px;
     font-size: 15px;
     padding-left: 40px;
     padding-right: 40px;

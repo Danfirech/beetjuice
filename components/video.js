@@ -12,7 +12,9 @@ const Container = styled.div`
   font-size: 40px;
   padding-left: 240px;
   padding-right: 240px;
+  display: none;
   @media (max-width: 768px) {
+    display: none;
     font-size: 20px;
     padding-left: 140px;
     padding-right: 140px;

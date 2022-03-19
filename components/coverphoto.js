@@ -4,7 +4,7 @@ import pic from "../media/beetjuicetestpic2.jpeg";
 import Image from "next/image";
 
 const Container = styled.div`
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   background-color: #e5e4e2;
@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-color: #e5e4e2;
   padding-left: 600px;
@@ -33,7 +33,7 @@ const TextContainer = styled.div`
   align-items: center;
   font-size: 40px;
   z-index: 1;
-  padding-top: 450px;
+  padding-top: 250px;
   padding-left: 400px;
 `;
 
