@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.danphoto {
+  padding-top: 100px;
+  padding-right: 50px;
+}
+.ezraphoto {
+  padding-top: 100px;
+}

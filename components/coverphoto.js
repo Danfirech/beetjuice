@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import pic from "../media/beetjuicetestpic2.jpeg";
+import pic from "../media/BeetJuiceTest.jpeg";
 import Image from "next/image";
 
 const Container = styled.div`
   height: 70vh;
   width: 100%;
   display: flex;
+  padding-right: 150px;
   background-color: #e5e4e2;
   @media (max-width: 1168px) {
     display: none;
@@ -17,10 +18,9 @@ const ImageContainer = styled.div`
   height: 70vh;
   width: 100%;
   background-color: #e5e4e2;
-  padding-left: 600px;
+  padding-left: 480px;
   display: flex;
   align-items: center;
-  padding-right: 50px;
 `;
 
 const TextContainer = styled.div`
@@ -48,8 +48,8 @@ const Pic2 = () => {
           <Image
             src={pic}
             layout="intrinsic"
-            width={1000}
-            height={550}
+            width={1300}
+            height={750}
             priority
           />
         </ImageContainer>

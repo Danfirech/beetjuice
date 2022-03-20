@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import pic from "../media/beetjuicetestpic2.jpeg";
+import pic from "../media/BeetJuiceTest.jpeg";
 import Image from "next/image";
 
 const Container = styled.div`

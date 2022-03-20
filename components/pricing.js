@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
+import Dan from "../media/Dan.jpeg";
+import Ezra from "../media/Ezra.jpeg";
+import Image from "next/image";
 
 const Container = styled.div`
   width: 100%;
@@ -107,14 +110,15 @@ const Title = styled.div`
 `;
 
 const Button = styled.div`
-  width: 270px;
+  width: 240px;
   height: 40px;
   border: 2px solid black;
   margin-top: -50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e5e4e2;
+  background-color: black;
+  color: white;
 `;
 
 const TextBox = styled.div`
@@ -153,8 +157,8 @@ const CorporateTextContainter = styled.div`
 const CorporateText = styled.div`
   width: 100%;
   height: 300px;
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 380px;
+  padding-right: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,7 +198,7 @@ const Pricing = () => {
       {/* WEDDINGS */}
       <TitleContainer>
         <Title>Weddings</Title>
-        <Button>Contact For Booking</Button>
+        <Button>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <Container>
         <Left>
@@ -272,10 +276,28 @@ const Pricing = () => {
         <Button>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <Container>
-        <TextBox></TextBox>
+        <div className="danphoto">
+          <Image
+            src={Ezra}
+            layout="intrinsic"
+            width={350}
+            height={350}
+            priority
+          />
+        </div>
+        <div className="ezraphoto">
+          <Image
+            padding-top={10}
+            src={Dan}
+            layout="intrinsic"
+            width={350}
+            height={350}
+            priority
+          />
+        </div>
         <BeetJuiceText>
           <h5>
-            Beet Juice (written as B33T JUIC3), is a two-man project founded by
+            Beet Juice (written as B33T JU1 C3), is a two-man project founded by
             former Mosaic Foundation keyboardist Ekewem Bogmis, A native of
             Rochester and Daniel Possehl a Midwestener at heart who both moved
             to LA to pursue their music careers.
