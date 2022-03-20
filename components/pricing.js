@@ -5,12 +5,17 @@ import Ezra from "../media/Ezra.jpeg";
 import Image from "next/image";
 import ReactPlayer from "react-player";
 
+const BasicContactForm = (e) => {
+  window.location = "https://form.jotform.com/220784862221152";
+};
+
 const Container = styled.div`
   width: 100%;
   height: 700px;
   background-color: white;
   display: flex;
   justify-content: center;
+
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
@@ -130,6 +135,7 @@ const Button = styled.div`
   background-color: black;
   color: white;
   font-family: raleway;
+  cursor: pointer;
   @media (max-width: 768px) {
     background-color: #66223d;
     border-radius: 6px;
@@ -178,6 +184,7 @@ const CorporateText = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 20px;
+  text-align: justify;
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
@@ -185,6 +192,7 @@ const CorporateText = styled.div`
     height: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    text-align: justify;
   }
 `;
 
@@ -202,11 +210,14 @@ const BeetJuiceText = styled.div`
   font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 20px;
     margin-left: 0px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    height: 650px;
+    margin-bottom: -180px;
+    height: 200px;
+    text-align: left;
   }
 `;
 
@@ -216,6 +227,7 @@ const BeetJuiceTextContainer = styled.div`
   background-color: white;
   display: flex;
   justify-content: center;
+  text-align: justify;
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
@@ -223,7 +235,7 @@ const BeetJuiceTextContainer = styled.div`
     justify-content: center;
     padding-right: 0px;
     padding-left: 0px;
-    height: 1700px;
+    height: 1500px;
   }
 `;
 
@@ -262,7 +274,7 @@ const Pricing = () => {
       <Offerings>What We Offer</Offerings>
       <TitleContainer>
         <Title>Weddings</Title>
-        <Button>CLICK TO INQUIRE</Button>
+        <Button onClick={BasicContactForm}>CLICK TO INQUIRE</Button>
       </TitleContainer>
       <Container>
         <Left>
@@ -319,7 +331,7 @@ const Pricing = () => {
       {/* Corporate/Events */}
       <TitleContainer>
         <Title>Corporate/Events</Title>
-        <Button>Contact For Booking/Pricing</Button>
+        <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
       {/* <VideoContainer>
         <Vid>
@@ -348,7 +360,7 @@ const Pricing = () => {
       {/* B33T Ju1c3 Sindicate */}
       <TitleContainer>
         <Title>B33T Ju1c3 Sindicate</Title>
-        <Button>Contact For Booking/Pricing</Button>
+        <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <BeetJuiceTextContainer>
         <div className="danphoto">

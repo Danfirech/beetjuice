@@ -5,13 +5,15 @@ import logo from "../media/Transparentlogo.jpeg";
 import "../pages/_document";
 
 const Container = styled.div`
-  height: 100px;
+  height: 150px;
   width: 100vw;
   display: flex;
   flex-direction: row;
+  padding-bottom: 150px;
 `;
+
 const Left = styled.div`
-  height: 100px;
+  height: 150px;
   width: 50%;
   background-color: #e5e4e2;
   padding-left: 58px;
@@ -21,7 +23,7 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-  height: 100px;
+  height: 150px;
   width: 50%;
   background-color: #e5e4e2;
   display: flex;

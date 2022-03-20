@@ -4,6 +4,14 @@ import Image from "next/image";
 import Insta from "../media/Instagram.jpeg";
 import Facebook from "../media/Facebook.jpeg";
 
+const InstgramLink = (e) => {
+  window.location = "https://www.instagram.com/b33tju1c3/?hl=en";
+};
+
+const FacebookLink = (e) => {
+  window.location = "https://form.jotform.com/220784862221152";
+};
+
 const Container = styled.div`
   width: 100vw;
   height: 150px;
@@ -61,7 +69,7 @@ const Footer = () => {
   return (
     <Container>
       <FooterTop>
-        <div>
+        <div onClick={InstgramLink}>
           <Image
             src={Insta}
             layout="intrinsic"
@@ -71,7 +79,6 @@ const Footer = () => {
           />
         </div>
         <div>
-          {" "}
           <Image
             src={Facebook}
             layout="intrinsic"

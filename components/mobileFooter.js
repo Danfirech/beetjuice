@@ -6,6 +6,9 @@ import Facebook from "../media/Facebook.jpeg";
 import "../pages/_document";
 
 const Container = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
   @media (max-width: 768px) {
     width: 100%;
     height: 100px;
@@ -20,24 +23,34 @@ const Container = styled.div`
 `;
 
 const FooterTop = styled.div`
-  width: 100vw;
-  height: 50px;
-  background-color: #e5e4e2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 140px;
-  padding-left: 140px;
-  padding-top: 15px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 50px;
+    background-color: #e5e4e2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 140px;
+    padding-left: 140px;
+    padding-top: 15px;
+  }
 `;
 
 const FooterBottom = styled.div`
-  width: 100vw;
-  height: 50px;
-  background-color: #e5e4e2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 50px;
+    background-color: #e5e4e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const MobileFooter = () => {
