@@ -21,8 +21,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 20px;
-    padding-left: 20px;
+    background-color: #e5e4e2;
     height: 1400px;
   }
 `;
@@ -41,7 +40,7 @@ const Left = styled.div`
     margin-left: 0px;
     margin-bottom: 20px;
     height: 700px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 `;
 
@@ -60,7 +59,7 @@ const Right = styled.div`
     margin-left: 0px;
     margin-bottom: 20px;
     height: 700px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 `;
 
