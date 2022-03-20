@@ -21,8 +21,6 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 20px;
-    padding-left: 20px;
     height: 1400px;
   }
 `;
@@ -41,7 +39,8 @@ const Left = styled.div`
     margin-left: 0px;
     margin-bottom: 20px;
     height: 700px;
-    border: 1px solid black;
+    border: none;
+    background-color: #e5e4e2;
   }
 `;
 
@@ -60,7 +59,31 @@ const Right = styled.div`
     margin-left: 0px;
     margin-bottom: 20px;
     height: 700px;
-    border: 1px solid black;
+    border: none;
+    background-color: #e5e4e2;
+  }
+`;
+
+const MobileWeddingTitle = styled.div`
+  height: 120px;
+  width: 83%;
+  display: flex;
+  justify-content: center;
+  background-color: White;
+  font-size: 62px;
+  padding: 25px;
+  font-family: raleway;
+  border-top: 2px solid black;
+  @media (max-width: 768px) {
+    height: 120px;
+    width: 100%
+    display: flex;
+    justify-content: center;
+    background-color: #e5e4e2;
+    font-size: 62px;
+    padding: 25px;
+    font-family: raleway;
+    border-top: 2px solid black;
   }
 `;
 
@@ -273,10 +296,10 @@ const Pricing = () => {
     <>
       {/* WEDDINGS */}
       <Offerings>What We Offer</Offerings>
-      <TitleContainer>
+      <MobileWeddingTitle>
         <Title>Weddings</Title>
         <Button onClick={BasicContactForm}>CLICK TO INQUIRE</Button>
-      </TitleContainer>
+      </MobileWeddingTitle>
       <Container>
         <Left>
           <TopOfWeddingBoxes>
