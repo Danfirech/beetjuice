@@ -48,9 +48,7 @@ const Header = () => {
           alt="Logo"
         />
       </Left>
-      <Right>
-        <h3>bookb33tju1c3@gmail.com</h3>
-      </Right>
+      <Right>{/* <h3>bookb33tju1c3@gmail.com</h3> */}</Right>
     </Container>
   );
 };
