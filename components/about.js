@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../pages/_document";
 
 const Container = styled.div`
   width: 100%;
@@ -8,9 +9,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 23px;
-  padding-left: 350px;
-  padding-right: 350px;
+  font-size: 18px;
+  padding-left: 340px;
+  padding-right: 340px;
+  font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
     height: 200px;
     font-size: 20px;

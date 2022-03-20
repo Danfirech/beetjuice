@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import ReactPlayer from "react-player";
 import Dan from "../media/Dan.jpeg";
 import Ezra from "../media/Ezra.jpeg";
 import Image from "next/image";
+import ReactPlayer from "react-player";
 
 const Container = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-  width: 35%;
+  width: 30%;
   height: 600px;
   background-color: white;
   border-radius: 6px;
@@ -41,7 +41,7 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-  width: 35%;
+  width: 30%;
   height: 600px;
   background-color: white;
   border-radius: 6px;
@@ -72,11 +72,13 @@ const WeddingLine = styled.div`
 const TopOfWeddingBoxes = styled.div`
   width: 100%;
   height: 200px;
-  background-color: #e5e4e2;
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: raleway;
   @media (max-width: 768px) {
     font-size: 13px;
   }
@@ -84,6 +86,7 @@ const TopOfWeddingBoxes = styled.div`
 
 const BottomOfWeddingBoxes = styled.div`
   padding: 42px;
+  font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
     display: flex:
     align-items: center;
@@ -92,7 +95,7 @@ const BottomOfWeddingBoxes = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  height: 150px;
+  height: 250px;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -102,26 +105,27 @@ const TitleContainer = styled.div`
 
 const Title = styled.div`
   height: 120px;
-  width: 80%;
+  width: 83%;
   display: flex;
   justify-content: center;
   background-color: White;
-  font-size: 42px;
-  padding: 5px;
-
+  font-size: 62px;
+  padding: 25px;
+  font-family: raleway;
   border-top: 2px solid black;
 `;
 
 const Button = styled.div`
-  width: 240px;
-  height: 40px;
+  width: 210px;
+  height: 60px;
   border: 2px solid black;
-  margin-top: -50px;
+  margin-top: -10px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
   color: white;
+  font-family: raleway;
   @media (max-width: 768px) {
     background-color: #66223d;
     border-radius: 6px;
@@ -150,6 +154,7 @@ const CorporateTextContainter = styled.div`
   background-color: white;
   display: flex;
   justify-content: center;
+  font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
@@ -169,6 +174,7 @@ const CorporateText = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 20px;
   @media (max-width: 768px) {
     display: flex;
     align-items: center;
@@ -184,11 +190,13 @@ const BeetJuiceText = styled.div`
   height: 680px;
   background-color: white;
   border-radius: 6px;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
-  font-size: 25px;
+  font-size: 20px;
+  font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
     width: 70%;
     padding-top: 20px;
@@ -199,13 +207,39 @@ const BeetJuiceText = styled.div`
   }
 `;
 
+const VideoContainer = styled.div`
+  height: 300px;
+  width: 100vw;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Vid = styled.div`
+  height: 300px;
+  width: 40%;
+`;
+
+const Offerings = styled.div`
+  height: 200px;
+  width: 100%;
+  background-color: White;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  font-family: raleway;
+`;
+
 const Pricing = () => {
   return (
     <>
       {/* WEDDINGS */}
+      <Offerings>What We Offer</Offerings>
       <TitleContainer>
         <Title>Weddings</Title>
-        <Button>Contact For Booking/Pricing</Button>
+        <Button>CLICK TO INQUIRE</Button>
       </TitleContainer>
       <Container>
         <Left>
@@ -215,22 +249,22 @@ const Pricing = () => {
           </TopOfWeddingBoxes>
           <BottomOfWeddingBoxes>
             <h2>Ceremony</h2>
-            <h5>
+            <h4>
               Live instrumental guitar for 30 minutes as guests arrive (or
               playlist)
-            </h5>
+            </h4>
             <h2>Cocktail</h2>
-            <h5>
+            <h4>
               Your guests will enjoy 60 minutes of live music as they make their
               way into the reception hall with relaxing hits as they enjoy their
               meals.
-            </h5>
+            </h4>
             <h2>Live Band</h2>
-            <h5>
+            <h4>
               Our band will make your guests dance the night away and celebrate
               your special night with a wide variety of hits spanning the past
               decades.
-            </h5>
+            </h4>
           </BottomOfWeddingBoxes>
         </Left>
         {/* <WeddingLine /> */}
@@ -264,17 +298,28 @@ const Pricing = () => {
         <Title>Corporate/Events</Title>
         <Button>Contact For Booking/Pricing</Button>
       </TitleContainer>
+      {/* <VideoContainer>
+        <Vid>
+          <ReactPlayer
+            width="100%"
+            url="https://www.youtube.com/watch?v=wWgIAphfn2U"
+          />
+        </Vid>
+      </VideoContainer> */}
       <CorporateTextContainter>
         <CorporateText>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
+          <h5>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </h5>
         </CorporateText>
       </CorporateTextContainter>
       {/* B33T Ju1c3 Sindicate */}
@@ -287,8 +332,8 @@ const Pricing = () => {
           <Image
             src={Ezra}
             layout="intrinsic"
-            width={350}
-            height={350}
+            width={400}
+            height={500}
             priority
           />
         </div>
@@ -297,8 +342,8 @@ const Pricing = () => {
             padding-top={10}
             src={Dan}
             layout="intrinsic"
-            width={350}
-            height={350}
+            width={400}
+            height={500}
             priority
           />
         </div>

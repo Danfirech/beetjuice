@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import pic from "../media/BeetJuiceTest.jpeg";
 import Image from "next/image";
+import "../pages/_document";
 
 const Container = styled.div`
   height: 70vh;
@@ -35,6 +36,7 @@ const TextContainer = styled.div`
   z-index: 1;
   padding-top: 265px;
   padding-left: 400px;
+  font-family: raleway;
 `;
 
 const Pic2 = () => {

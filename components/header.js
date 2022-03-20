@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import logo from "../media/Transparentlogo.jpeg";
+import "../pages/_document";
 
 const Container = styled.div`
   height: 100px;
@@ -13,7 +14,7 @@ const Left = styled.div`
   height: 100px;
   width: 50%;
   background-color: #e5e4e2;
-  padding-left: 10px;
+  padding-left: 58px;
 `;
 
 const Right = styled.div`
@@ -23,7 +24,8 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: right;
-  padding-right: 50px;
+  padding-right: 58px;
+  font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
     padding-right: 20px;
   }
