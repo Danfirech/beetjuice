@@ -53,6 +53,7 @@ const Pic2 = () => {
             width={1300}
             height={750}
             priority
+            alt="Cover"
           />
         </ImageContainer>
       </Container>

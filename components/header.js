@@ -46,6 +46,7 @@ const Header = () => {
           width={102}
           height={100}
           priority
+          alt="Logo"
         />
       </Left>
       <Right>

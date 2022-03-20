@@ -44,7 +44,13 @@ const MobilePhoto = () => {
     <Container>
       <Title>Beet Juice Enterntainment</Title>
       <ImageWrapper>
-        <Image src={pic} layout="intrinsic" width={450} height={450} />
+        <Image
+          src={pic}
+          layout="intrinsic"
+          width={450}
+          height={450}
+          alt="Cover"
+        />
       </ImageWrapper>
     </Container>
   );

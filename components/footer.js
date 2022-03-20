@@ -76,6 +76,7 @@ const Footer = () => {
             width={50}
             height={50}
             priority
+            alt="Insta"
           />
         </div>
         <div>
@@ -85,6 +86,7 @@ const Footer = () => {
             width={50}
             height={50}
             priority
+            alt="Facebook"
           />
         </div>
       </FooterTop>

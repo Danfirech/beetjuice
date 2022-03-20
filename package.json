@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bookb33tju1c3.com/",
   "name": "beetjuice",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
     "next": "12.1.0",
