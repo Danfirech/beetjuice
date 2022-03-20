@@ -20,6 +20,23 @@ a {
   padding-right: 50px;
   padding-left: 65px;
 }
+
+@media (max-width: 768px) {
+  .danphoto {
+    padding-right: none;
+    padding-left: none;
+    margin-top: -350px;
+  }
+}
+
 .ezraphoto {
   padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .ezraphoto {
+    padding-top: 50px;
+    width: 74%;
+    padding-left: 16px;
+  }
 }

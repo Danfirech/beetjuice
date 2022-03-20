@@ -15,6 +15,9 @@ const Left = styled.div`
   width: 50%;
   background-color: #e5e4e2;
   padding-left: 58px;
+  @media (max-width: 768px) {
+    padding-left: 18px;
+  }
 `;
 
 const Right = styled.div`

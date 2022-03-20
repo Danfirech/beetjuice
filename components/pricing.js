@@ -16,8 +16,8 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
     height: 1400px;
   }
 `;
@@ -34,9 +34,9 @@ const Left = styled.div`
     width: 100%;
     padding-top: 20px;
     margin-left: 0px;
-    margin-top: 20px;
     margin-bottom: 20px;
-    height: 650px;
+    height: 700px;
+    border: 1px solid black;
   }
 `;
 
@@ -53,9 +53,9 @@ const Right = styled.div`
     width: 100%;
     padding-top: 20px;
     margin-left: 0px;
-    margin-top: 20px;
     margin-bottom: 20px;
-    height: 650px;
+    height: 700px;
+    border: 1px solid black;
   }
 `;
 
@@ -80,7 +80,8 @@ const TopOfWeddingBoxes = styled.div`
   align-items: center;
   font-family: raleway;
   @media (max-width: 768px) {
-    font-size: 13px;
+    font-size: 11px;
+    margin-top: 0px;
   }
 `;
 
@@ -113,6 +114,9 @@ const Title = styled.div`
   padding: 25px;
   font-family: raleway;
   border-top: 2px solid black;
+  @media (max-width: 768px) {
+    font-size: 31px;
+  }
 `;
 
 const Button = styled.div`
@@ -143,7 +147,6 @@ const TextBox = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     margin-right: none;
-
     height: 350px;
   }
 `;
@@ -198,12 +201,29 @@ const BeetJuiceText = styled.div`
   font-size: 20px;
   font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
-    width: 70%;
+    width: 100%;
     padding-top: 20px;
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 20px;
     height: 650px;
+  }
+`;
+
+const BeetJuiceTextContainer = styled.div`
+  width: 100%;
+  height: 700px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 1700px;
   }
 `;
 
@@ -230,6 +250,9 @@ const Offerings = styled.div`
   justify-content: center;
   font-size: 100px;
   font-family: raleway;
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
 `;
 
 const Pricing = () => {
@@ -327,7 +350,7 @@ const Pricing = () => {
         <Title>B33T Ju1c3 Sindicate</Title>
         <Button>Contact For Booking/Pricing</Button>
       </TitleContainer>
-      <Container>
+      <BeetJuiceTextContainer>
         <div className="danphoto">
           <Image
             src={Ezra}
@@ -368,7 +391,7 @@ const Pricing = () => {
             created by Ezra and Daniel.
           </h5>
         </BeetJuiceText>
-      </Container>
+      </BeetJuiceTextContainer>
     </>
   );
 };

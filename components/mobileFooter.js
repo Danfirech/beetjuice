@@ -3,61 +3,44 @@ import styled from "styled-components";
 import Image from "next/image";
 import Insta from "../media/Instagram.jpeg";
 import Facebook from "../media/Facebook.jpeg";
+import "../pages/_document";
 
 const Container = styled.div`
-  width: 100vw;
-  height: 150px;
-  background-color: #e5e4e2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
   @media (max-width: 768px) {
-    display: none;
+    width: 100%;
+    height: 100px;
+    background-color: #e5e4e2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: "M PLUS 1", sans-serif;
   }
 `;
 
 const FooterTop = styled.div`
   width: 100vw;
-  height: 75px;
+  height: 50px;
   background-color: #e5e4e2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 800px;
-  padding-right: 800px;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
-    padding-left: none;
-    padding-right: none;
-  }
+  padding-right: 140px;
+  padding-left: 140px;
+  padding-top: 15px;
 `;
 
 const FooterBottom = styled.div`
   width: 100vw;
-  height: 75px;
+  height: 50px;
   background-color: #e5e4e2;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
-  }
 `;
 
-const Footer = () => {
+const MobileFooter = () => {
   return (
     <Container>
       <FooterTop>
@@ -88,4 +71,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default MobileFooter;

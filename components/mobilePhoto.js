@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import pic from "../media/BeetJuiceTest.jpeg";
 import Image from "next/image";
+import "../pages/_document";
 
 const Container = styled.div`
   display: none;
@@ -20,8 +21,9 @@ const Title = styled.div`
   align-items: center;
   height: 20%;
   width: 100vw;
-  background-color: pink;
+  background-color: #e5e4e2;
   font-size: 34px;
+  font-family: raleway;
 `;
 
 const Header = styled.div`
