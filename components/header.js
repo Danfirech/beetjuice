@@ -9,7 +9,12 @@ const Container = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: row;
-  padding-bottom: 150px;
+  /* padding-bottom: 150px; */
+  @media (max-width: 768px) {
+    padding-bottom: none;
+    width: 100%;
+    height: 100px;
+  }
 `;
 
 const Left = styled.div`
@@ -18,7 +23,13 @@ const Left = styled.div`
   background-color: #e5e4e2;
   padding-left: 58px;
   @media (max-width: 768px) {
-    padding-left: 18px;
+    height: 100px;
+    width: 100%;
+    padding-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
   }
 `;
 
@@ -32,6 +43,7 @@ const Right = styled.div`
   padding-right: 58px;
   font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
+    display: none;
   }
 `;
 

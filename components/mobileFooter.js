@@ -61,8 +61,8 @@ const MobileFooter = () => {
           <Image
             src={Insta}
             layout="intrinsic"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             priority
             alt="Insta"
           />
@@ -72,8 +72,8 @@ const MobileFooter = () => {
           <Image
             src={Facebook}
             layout="intrinsic"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             priority
             alt="Facebook"
           />

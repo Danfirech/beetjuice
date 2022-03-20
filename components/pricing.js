@@ -22,6 +22,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     height: 1400px;
+    background-color: #e5e4e2;
   }
 `;
 
@@ -65,25 +66,23 @@ const Right = styled.div`
 `;
 
 const MobileWeddingTitle = styled.div`
-  height: 120px;
-  width: 83%;
+  height: 250px;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  background-color: White;
-  font-size: 62px;
-  padding: 25px;
-  font-family: raleway;
-  border-top: 2px solid black;
   @media (max-width: 768px) {
-    height: 120px;
+    height: 200px;
     width: 100%
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: #e5e4e2;
-    font-size: 62px;
+    font-size: 25px;
     padding: 25px;
     font-family: raleway;
-    border-top: 2px solid black;
+ 
   }
 `;
 
@@ -183,7 +182,7 @@ const TextBox = styled.div`
 
 const CorporateTextContainter = styled.div`
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -201,7 +200,7 @@ const CorporateTextContainter = styled.div`
 
 const CorporateText = styled.div`
   width: 100%;
-  height: 300px;
+  height: 200px;
   padding-left: 380px;
   padding-right: 380px;
   display: flex;
@@ -296,10 +295,12 @@ const Pricing = () => {
     <>
       {/* WEDDINGS */}
       <Offerings>What We Offer</Offerings>
+
       <MobileWeddingTitle>
-        <Title>Weddings</Title>
+        <h3>Weddings</h3>
         <Button onClick={BasicContactForm}>CLICK TO INQUIRE</Button>
       </MobileWeddingTitle>
+
       <Container>
         <Left>
           <TopOfWeddingBoxes>
@@ -372,12 +373,6 @@ const Pricing = () => {
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
             distribution of letters, as opposed to using Content here, content
-            here, making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for lorem ipsum will uncover many web sites
-            still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
           </h5>
         </CorporateText>
       </CorporateTextContainter>
