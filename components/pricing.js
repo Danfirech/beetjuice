@@ -137,7 +137,7 @@ const Button = styled.div`
   font-family: raleway;
   cursor: pointer;
   @media (max-width: 768px) {
-    background-color: #66223d;
+    background-color: white;
     border-radius: 6px;
   }
 `;
