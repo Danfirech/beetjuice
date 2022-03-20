@@ -138,6 +138,7 @@ const Button = styled.div`
   cursor: pointer;
   @media (max-width: 768px) {
     background-color: white;
+    color: black;
     border-radius: 6px;
   }
 `;
