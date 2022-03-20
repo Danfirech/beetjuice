@@ -31,9 +31,9 @@ const TextContainer = styled.div`
   position: absolute;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 50px;
   z-index: 1;
-  padding-top: 250px;
+  padding-top: 265px;
   padding-left: 400px;
 `;
 

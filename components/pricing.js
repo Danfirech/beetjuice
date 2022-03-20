@@ -23,12 +23,13 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-  width: 40%;
+  width: 35%;
   height: 600px;
   background-color: white;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
+  border: 2px solid black;
   @media (max-width: 768px) {
     width: 100%;
     padding-top: 20px;
@@ -40,13 +41,14 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-  width: 40%;
+  width: 35%;
   height: 600px;
   background-color: white;
   border-radius: 6px;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
+  border: 2px solid black;
   @media (max-width: 768px) {
     width: 100%;
     padding-top: 20px;
@@ -81,6 +83,7 @@ const TopOfWeddingBoxes = styled.div`
 `;
 
 const BottomOfWeddingBoxes = styled.div`
+  padding: 42px;
   @media (max-width: 768px) {
     display: flex:
     align-items: center;
@@ -98,12 +101,12 @@ const TitleContainer = styled.div`
 `;
 
 const Title = styled.div`
-  height: 100px;
+  height: 120px;
   width: 80%;
   display: flex;
   justify-content: center;
   background-color: White;
-  font-size: 30px;
+  font-size: 42px;
   padding: 5px;
 
   border-top: 2px solid black;
@@ -119,6 +122,10 @@ const Button = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
+  @media (max-width: 768px) {
+    background-color: #66223d;
+    border-radius: 6px;
+  }
 `;
 
 const TextBox = styled.div`
@@ -226,7 +233,7 @@ const Pricing = () => {
             </h5>
           </BottomOfWeddingBoxes>
         </Left>
-        <WeddingLine />
+        {/* <WeddingLine /> */}
         <Right>
           <TopOfWeddingBoxes>
             <h1>Ceremony/Cocktail + Live DJ</h1>

@@ -10,7 +10,7 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #e5e4e2;
   }
 `;
 
@@ -21,7 +21,7 @@ const Title = styled.div`
   height: 20%;
   width: 100vw;
   background-color: pink;
-  font-size: 20px;
+  font-size: 34px;
 `;
 
 const Header = styled.div`
@@ -31,8 +31,7 @@ const Header = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  height: 65%;
-  height: 400px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;

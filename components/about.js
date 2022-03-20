@@ -8,7 +8,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 23px;
   padding-left: 350px;
   padding-right: 350px;
   @media (max-width: 768px) {
@@ -20,8 +20,9 @@ const Container = styled.div`
   @media (max-width: 568px) {
     height: 200px;
     font-size: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: -20px;
   }
 `;
 
