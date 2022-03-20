@@ -32,7 +32,6 @@ const Right = styled.div`
   padding-right: 58px;
   font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
-    padding-right: 20px;
   }
 `;
 
