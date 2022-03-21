@@ -51,7 +51,7 @@ a {
   font-family: "Merriweather", serif;
   font-size: 20px;
   font-weight: 10;
-  color: purple;
+  color: black;
 }
 @media (max-width: 768px) {
   .mobileVideo {
@@ -59,4 +59,8 @@ a {
     width: 100vw;
     object-fit: cover;
   }
+}
+
+.background {
+  background-color: #e5e4e2;
 }

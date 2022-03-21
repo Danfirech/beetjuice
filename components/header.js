@@ -62,6 +62,7 @@ const Header = () => {
           priority
           alt="Logo"
         />
+        <h4>B33t Ju1c3</h4>
       </Left>
       <Right>
         <h3>bookb33tju1c3@gmail.com</h3>

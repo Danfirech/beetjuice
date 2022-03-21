@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import pic from "../media/BeetJuiceTest.jpeg";
+import pic from "../media/Main.png";
 import Image from "next/image";
 import "../pages/_document";
 
@@ -20,7 +20,8 @@ const ImageContainer = styled.div`
   width: 100%;
   background-color: #e5e4e2;
   padding-left: 480px;
-  padding-top: 130px;
+  padding-top: 200px;
+  padding-bottom: 60px;
   display: flex;
   align-items: center;
 `;
@@ -52,7 +53,7 @@ const Pic2 = () => {
             src={pic}
             layout="intrinsic"
             width={1300}
-            height={750}
+            height={850}
             priority
             alt="Cover"
           />

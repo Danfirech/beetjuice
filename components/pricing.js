@@ -4,6 +4,7 @@ import Dan from "../media/Dan.jpeg";
 import Ezra from "../media/Ezra.jpeg";
 import Image from "next/image";
 import ReactPlayer from "react-player";
+import Stock from "../media/BandStock.jpeg";
 import "../pages/_document";
 
 const BasicContactForm = (e) => {
@@ -34,7 +35,7 @@ const Left = styled.div`
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   @media (max-width: 768px) {
     width: 100%;
     padding-top: 20px;
@@ -54,7 +55,7 @@ const Right = styled.div`
   margin-left: 100px;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   @media (max-width: 768px) {
     width: 100%;
     padding-top: 20px;
@@ -142,7 +143,22 @@ const Title = styled.div`
   font-size: 62px;
   padding: 25px;
   font-family: raleway;
-  border-top: 2px solid black;
+  /* border-top: 2px solid black; */
+  @media (max-width: 768px) {
+    font-size: 31px;
+  }
+`;
+
+const Titlegrey = styled.div`
+  height: 120px;
+  width: 83%;
+  display: flex;
+  justify-content: center;
+  background-color: #e5e4e2;
+  font-size: 62px;
+  padding: 25px;
+  font-family: raleway;
+  /* border-top: 2px solid black; */
   @media (max-width: 768px) {
     font-size: 31px;
   }
@@ -278,13 +294,14 @@ const VideoContainer = styled.div`
 `;
 
 const Offerings = styled.div`
-  height: 200px;
+  height: 700px;
   width: 100%;
   background-color: White;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 100px;
+  font-size: 60px;
   font-family: raleway;
   @media (max-width: 768px) {
     font-size: 50px;
@@ -295,10 +312,21 @@ const Pricing = (props) => {
   return (
     <>
       {/* WEDDINGS */}
-      <Offerings>What We Offer</Offerings>
+      <Offerings>
+        <h3>What We Offer</h3>
+        <Image
+          padding-top={10}
+          src={Stock}
+          layout="intrinsic"
+          width={600}
+          height={400}
+          priority
+          alt="Dan"
+        />
+      </Offerings>
 
-      <TitleContainer>
-        <Title>Wedding Services</Title>
+      <TitleContainer className="background">
+        <Titlegrey>Wedding Services</Titlegrey>
         <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <VideoContainer>
@@ -362,8 +390,8 @@ const Pricing = (props) => {
         </Right>
       </Container>
       {/* Corporate/Events */}
-      <TitleContainer>
-        <Title>Corporate/Events</Title>
+      <TitleContainer className="background">
+        <Titlegrey>Corporate/Events</Titlegrey>
         <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <VideoContainer>
@@ -385,8 +413,8 @@ const Pricing = (props) => {
         </CorporateText>
       </CorporateTextContainter>
       {/* B33T Ju1c3 Sindicate */}
-      <TitleContainer>
-        <Title>B33T Ju1c3 Sindicate</Title>
+      <TitleContainer className="background">
+        <Titlegrey>B33T Ju1c3 Sindicate</Titlegrey>
         <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <BeetJuiceTextContainer>
