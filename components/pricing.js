@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Dan from "../media/Dan.jpeg";
 import Ezra from "../media/Ezra.jpeg";
 import Image from "next/image";
+import ReactPlayer from "react-player";
 import "../pages/_document";
 
 const BasicContactForm = (e) => {
@@ -264,17 +265,16 @@ const BeetJuiceTextContainer = styled.div`
 `;
 
 const VideoContainer = styled.div`
-  height: 300px;
+  height: 400px;
   width: 100vw;
-  background-color: pink;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-const Vid = styled.div`
-  height: 300px;
-  width: 40%;
+  @media (max-width: 768px) {
+    height: 200px;
+    width: 100%;
+  }
 `;
 
 const Offerings = styled.div`
@@ -291,7 +291,7 @@ const Offerings = styled.div`
   }
 `;
 
-const Pricing = () => {
+const Pricing = (props) => {
   return (
     <>
       {/* WEDDINGS */}
@@ -301,7 +301,14 @@ const Pricing = () => {
         <Title>Wedding Services</Title>
         <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
-
+      <VideoContainer>
+        <ReactPlayer
+          className="mobileVideo "
+          width="40%"
+          height="300px"
+          url="https://vimeo.com/690357219"
+        />
+      </VideoContainer>
       <Container>
         <Left>
           <TopOfWeddingBoxes>
@@ -359,14 +366,14 @@ const Pricing = () => {
         <Title>Corporate/Events</Title>
         <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
-      {/* <VideoContainer>
-        <Vid>
-          <ReactPlayer
-            width="100%"
-            url="https://www.youtube.com/watch?v=wWgIAphfn2U"
-          />
-        </Vid>
-      </VideoContainer> */}
+      <VideoContainer>
+        <ReactPlayer
+          className="mobileVideo "
+          width="40%"
+          height="300px"
+          url="https://vimeo.com/690357219"
+        />
+      </VideoContainer>
       <CorporateTextContainter>
         <CorporateText>
           <h5 className="weddingparagraphs">

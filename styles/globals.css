@@ -53,3 +53,10 @@ a {
   font-weight: 10;
   color: purple;
 }
+@media (max-width: 768px) {
+  .mobileVideo {
+    height: 400px;
+    width: 100vw;
+    object-fit: cover;
+  }
+}
