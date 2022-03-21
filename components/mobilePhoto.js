@@ -7,7 +7,7 @@ import "../pages/_document";
 const Container = styled.div`
   display: none;
   @media (max-width: 1168px) {
-    height: 600px;
+    height: 480px;
     width: 100%;
     display: flex;
     flex-direction: column;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Dan from "../media/Dan.jpeg";
 import Ezra from "../media/Ezra.jpeg";
 import Image from "next/image";
-import ReactPlayer from "react-player";
+import "../pages/_document";
 
 const BasicContactForm = (e) => {
   window.location = "https://form.jotform.com/220784862221152";
@@ -22,7 +22,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     height: 1400px;
-    background-color: #e5e4e2;
+    background-color: white;
   }
 `;
 
@@ -41,7 +41,7 @@ const Left = styled.div`
     margin-bottom: 20px;
     height: 700px;
     border: none;
-    background-color: #e5e4e2;
+    background-color: white;
   }
 `;
 
@@ -61,7 +61,7 @@ const Right = styled.div`
     margin-bottom: 20px;
     height: 700px;
     border: none;
-    background-color: #e5e4e2;
+    background-color: white;
   }
 `;
 
@@ -78,7 +78,7 @@ const MobileWeddingTitle = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #e5e4e2;
+    background-color: white;
     font-size: 25px;
     padding: 25px;
     font-family: raleway;
@@ -98,7 +98,7 @@ const WeddingLine = styled.div`
 
 const TopOfWeddingBoxes = styled.div`
   width: 100%;
-  height: 200px;
+  height: 120px;
   background-color: black;
   color: white;
   display: flex;
@@ -109,11 +109,12 @@ const TopOfWeddingBoxes = styled.div`
   @media (max-width: 768px) {
     font-size: 11px;
     margin-top: 0px;
+    height: 100px;
   }
 `;
 
 const BottomOfWeddingBoxes = styled.div`
-  padding: 42px;
+  padding: 10px;
   font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
     display: flex:
@@ -296,31 +297,31 @@ const Pricing = () => {
       {/* WEDDINGS */}
       <Offerings>What We Offer</Offerings>
 
-      <MobileWeddingTitle>
-        <h3>Weddings</h3>
-        <Button onClick={BasicContactForm}>CLICK TO INQUIRE</Button>
-      </MobileWeddingTitle>
+      <TitleContainer>
+        <Title>Wedding Services</Title>
+        <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
+      </TitleContainer>
 
       <Container>
         <Left>
           <TopOfWeddingBoxes>
             <h1>Ceremony/Cocktail + Live Band</h1>
-            <h1>$6800</h1>
+            <h1>(Starting at) $6800</h1>
           </TopOfWeddingBoxes>
           <BottomOfWeddingBoxes>
-            <h2>Ceremony</h2>
-            <h4>
+            <h2 className="weddingtitles">Ceremony</h2>
+            <h4 className="weddingparagraphs">
               Live instrumental guitar for 30 minutes as guests arrive (or
               playlist)
             </h4>
-            <h2>Cocktail</h2>
-            <h4>
+            <h2 className="weddingtitles">Cocktail</h2>
+            <h4 className="weddingparagraphs">
               Your guests will enjoy 60 minutes of live music as they make their
               way into the reception hall with relaxing hits as they enjoy their
               meals.
             </h4>
-            <h2>Live Band</h2>
-            <h4>
+            <h2 className="weddingtitles">Live Band</h2>
+            <h4 className="weddingparagraphs">
               Our band will make your guests dance the night away and celebrate
               your special night with a wide variety of hits spanning the past
               decades.
@@ -331,22 +332,22 @@ const Pricing = () => {
         <Right>
           <TopOfWeddingBoxes>
             <h1>Ceremony/Cocktail + Live DJ</h1>
-            <h1>$4800</h1>
+            <h1>(Starting at) $4800</h1>
           </TopOfWeddingBoxes>
           <BottomOfWeddingBoxes>
-            <h2>Ceremony</h2>
-            <h4>
+            <h2 className="weddingtitles">Ceremony</h2>
+            <h4 className="weddingparagraphs">
               Live instrumental guitar for 30 minutes as guests arrive (or
               playlist)
             </h4>
-            <h2>Cocktail</h2>
-            <h4>
+            <h2 className="weddingtitles">Cocktail</h2>
+            <h4 className="weddingparagraphs">
               Your guests will enjoy 60 minutes of live music as they make their
               way into the reception hall with relaxing hits as they enjoy their
               meals.
             </h4>
-            <h2>Live DJ</h2>
-            <h4>
+            <h2 className="weddingtitles">Live DJ</h2>
+            <h4 className="weddingparagraphs">
               Our DJ will make your guests dance the night away and celebrate
               your special night with a wide variety of hits.
             </h4>
@@ -368,7 +369,7 @@ const Pricing = () => {
       </VideoContainer> */}
       <CorporateTextContainter>
         <CorporateText>
-          <h5>
+          <h5 className="weddingparagraphs">
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -404,19 +405,19 @@ const Pricing = () => {
           />
         </div>
         <BeetJuiceText>
-          <h5>
+          <h5 className="weddingparagraphs">
             Beet Juice (written as B33T JU1 C3), is a two-man project founded by
             former Mosaic Foundation keyboardist Ekewem Bogmis, A native of
             Rochester and Daniel Possehl a Midwestener at heart who both moved
             to LA to pursue their music careers.
           </h5>
-          <h5>
+          <h5 className="weddingparagraphs">
             Both on stage and in the studio, B33t Ju1c3 relies on live looping
             to create their dense soundscapes. Stacking grooves through
             beatboxing and percussion, laying down riffs on guitar, and singing
             heartfelt lyrics over the sonic backdrop.
           </h5>
-          <h5>
+          <h5 className="weddingparagraphs">
             Bogmis started experimenting with looping during a studio project
             five years ago. B33t Ju1c3 has evolved toward creating dub-style
             music underlined with soulful dance rythems. The project is rooted

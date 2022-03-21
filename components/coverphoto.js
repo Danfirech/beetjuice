@@ -20,6 +20,7 @@ const ImageContainer = styled.div`
   width: 100%;
   background-color: #e5e4e2;
   padding-left: 480px;
+  padding-top: 130px;
   display: flex;
   align-items: center;
 `;

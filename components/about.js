@@ -12,29 +12,25 @@ const Container = styled.div`
   font-size: 18px;
   padding-left: 390px;
   padding-right: 390px;
+  padding-top: 90px;
   font-family: "M PLUS 1", sans-serif;
   text-align: justify;
-  @media (max-width: 768px) {
-    height: 200px;
-    font-size: 20px;
-    padding-left: 140px;
-    padding-right: 140px;
-    text-align: left;
-  }
   @media (max-width: 568px) {
     height: 200px;
     font-size: 15px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 120px;
     margin-top: -20px;
     text-align: left;
+    display: none;
   }
 `;
 
 const About = () => {
   return (
     <Container>
-      <p>
+      <p className="weddingparagraphs">
         OVER 12 YEARS OF GROOVES, CLASSIC ELECTRIC GUITAR AND DANCE DRIVEN DRUMS
         PERFORMED LIVE, ALONG WITH SOULFUL AND HARD-HITTING VOCALS, B33T JU1C3
         WILL TAILOR THEIR WORLD CLASS LIVE PERFORMANCE/SET TO FIT THE NEEDS ANY
