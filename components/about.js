@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import '../pages/_document';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Container = styled.div`
   width: 100%;
@@ -30,12 +31,14 @@ const Container = styled.div`
 const About = () => {
   return (
     <Container>
-      <p>
-        OVER 12 YEARS OF GROOVES, CLASSIC ELECTRIC GUITAR AND DANCE DRIVEN DRUMS
-        PERFORMED LIVE, ALONG WITH SOULFUL AND HARD-HITTING VOCALS, B33T JU1C3
-        WILL TAILOR THEIR WORLD CLASS LIVE PERFORMANCE/SET TO FIT THE NEEDS ANY
-        EVENT, VENUE OR AUDIENCE.
-      </p>
+      <ScrollAnimation animateIn="fadeIn">
+        <p>
+          OVER 12 YEARS OF GROOVES, CLASSIC ELECTRIC GUITAR AND DANCE DRIVEN
+          DRUMS PERFORMED LIVE, ALONG WITH SOULFUL AND HARD-HITTING VOCALS, B33T
+          JU1C3 WILL TAILOR THEIR WORLD CLASS LIVE PERFORMANCE/SET TO FIT THE
+          NEEDS ANY EVENT, VENUE OR AUDIENCE.
+        </p>
+      </ScrollAnimation>
     </Container>
   );
 };

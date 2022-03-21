@@ -5,6 +5,7 @@ import Ezra from '../media/Ezra.jpeg';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
 import Stock from '../media/BandStock.jpeg';
+import ScrollAnimation from 'react-animate-on-scroll';
 import '../pages/_document';
 
 const BasicContactForm = (e) => {
