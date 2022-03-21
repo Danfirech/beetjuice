@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import Dan from "../media/Dan.jpeg";
-import Ezra from "../media/Ezra.jpeg";
-import Image from "next/image";
-import ReactPlayer from "react-player";
-import Stock from "../media/BandStock.jpeg";
-import "../pages/_document";
+import React from 'react';
+import styled from 'styled-components';
+import Dan from '../media/Dan.jpeg';
+import Ezra from '../media/Ezra.jpeg';
+import Image from 'next/image';
+import ReactPlayer from 'react-player';
+import Stock from '../media/BandStock.jpeg';
+import '../pages/_document';
 
 const BasicContactForm = (e) => {
-  window.location = "https://form.jotform.com/220784862221152";
+  window.location = 'https://form.jotform.com/220784862221152';
 };
 
 const Container = styled.div`
@@ -107,7 +107,7 @@ const TopOfWeddingBoxes = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: raleway;
+  font-family: 'Bebas Neue', cursive;
   @media (max-width: 768px) {
     font-size: 11px;
     margin-top: 0px;
@@ -157,7 +157,7 @@ const Titlegrey = styled.div`
   background-color: #e5e4e2;
   font-size: 62px;
   padding: 25px;
-  font-family: raleway;
+  font-family: 'Bebas Neue', cursive;
   /* border-top: 2px solid black; */
   @media (max-width: 768px) {
     font-size: 31px;
@@ -204,7 +204,7 @@ const CorporateTextContainter = styled.div`
   background-color: white;
   display: flex;
   justify-content: center;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: 'M PLUS 1', sans-serif;
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
@@ -248,7 +248,7 @@ const BeetJuiceText = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: 'M PLUS 1', sans-serif;
   @media (max-width: 768px) {
     width: 100%;
     padding-left: 20px;
@@ -302,7 +302,7 @@ const Offerings = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 60px;
-  font-family: raleway;
+  font-family: 'Bebas Neue', cursive;
   @media (max-width: 768px) {
     font-size: 50px;
   }
