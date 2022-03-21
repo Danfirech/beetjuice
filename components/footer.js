@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import Insta from "../media/Instagram.jpeg";
-import Facebook from "../media/Facebook.jpeg";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import Insta from '../media/Insta.png';
+import Facebook from '../media/Face.png';
 
 const InstgramLink = (e) => {
-  window.location = "https://www.instagram.com/b33tju1c3/?hl=en";
+  window.location = 'https://www.instagram.com/b33tju1c3/?hl=en';
 };
 
 const FacebookLink = (e) => {
-  window.location = "https://form.jotform.com/220784862221152";
+  window.location = 'https://form.jotform.com/220784862221152';
 };
 
 const Container = styled.div`
@@ -56,6 +56,7 @@ const FooterBottom = styled.div`
   justify-content: center;
   padding-left: 40px;
   padding-right: 40px;
+  font-family: 'Overpass Mono', monospace;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;

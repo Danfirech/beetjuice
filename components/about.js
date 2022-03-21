@@ -4,16 +4,17 @@ import '../pages/_document';
 
 const Container = styled.div`
   width: 100%;
-  height: 300px;
+  height: 350px;
   background-color: #e5e4e2;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 21px;
   padding-left: 390px;
   padding-right: 390px;
   padding-top: 150px;
   text-align: justify;
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 568px) {
     height: 200px;
     font-size: 15px;
@@ -29,7 +30,7 @@ const Container = styled.div`
 const About = () => {
   return (
     <Container>
-      <p className="weddingparagraphs">
+      <p>
         OVER 12 YEARS OF GROOVES, CLASSIC ELECTRIC GUITAR AND DANCE DRIVEN DRUMS
         PERFORMED LIVE, ALONG WITH SOULFUL AND HARD-HITTING VOCALS, B33T JU1C3
         WILL TAILOR THEIR WORLD CLASS LIVE PERFORMANCE/SET TO FIT THE NEEDS ANY
