@@ -14,7 +14,7 @@ const BasicContactForm = (e) => {
 const Container = styled.div`
   width: 100%;
   height: 700px;
-  background-color: white;
+  background-color: #e5e4e2;
   display: flex;
   justify-content: center;
 
@@ -117,7 +117,7 @@ const TopOfWeddingBoxes = styled.div`
 
 const BottomOfWeddingBoxes = styled.div`
   padding: 10px;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: 'Overpass Mono', monospace;
   @media (max-width: 768px) {
     display: flex:
     align-items: center;
@@ -165,17 +165,21 @@ const Titlegrey = styled.div`
 `;
 
 const Button = styled.div`
-  width: 210px;
+  width: 250px;
   height: 60px;
   border: 2px solid black;
+  border-radius: 10px;
   margin-top: -10px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: raleway;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 14px;
+  transition-duration: 0.4s;
   cursor: pointer;
+
   @media (max-width: 768px) {
     background-color: white;
     color: black;
@@ -240,7 +244,7 @@ const CorporateText = styled.div`
 const BeetJuiceText = styled.div`
   width: 30%;
   height: 680px;
-  background-color: white;
+  background-color: #e5e4e2;
   border-radius: 6px;
   padding-left: 80px;
   padding-right: 80px;
@@ -248,7 +252,7 @@ const BeetJuiceText = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  font-family: 'M PLUS 1', sans-serif;
+  font-family: 'Overpass Mono', monospace;
   @media (max-width: 768px) {
     width: 100%;
     padding-left: 20px;
@@ -265,7 +269,7 @@ const BeetJuiceText = styled.div`
 const BeetJuiceTextContainer = styled.div`
   width: 100%;
   height: 700px;
-  background-color: white;
+  background-color: #e5e4e2;
   display: flex;
   justify-content: center;
   text-align: justify;
@@ -327,21 +331,24 @@ const Pricing = (props) => {
 
       <TitleContainer className="background">
         <Titlegrey>Wedding Services</Titlegrey>
-        <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
+        <Button className="button:hover" onClick={BasicContactForm}>
+          Contact For Booking/Pricing
+        </Button>
       </TitleContainer>
       <VideoContainer>
         <ReactPlayer
-          className="mobileVideo "
+          className="mobileVideo"
           width="40%"
           height="300px"
           url="https://vimeo.com/690357219"
         />
       </VideoContainer>
       <Container>
-        <Left>
+        <Left className="slide-top">
           <TopOfWeddingBoxes>
-            <h1>Ceremony/Cocktail + Live Band</h1>
-            <h1>(Starting at) $6800</h1>
+            <h1>
+              Ceremony/Cocktail + Live Band <br /> (Starting at) $6800
+            </h1>
           </TopOfWeddingBoxes>
           <BottomOfWeddingBoxes>
             <h2 className="weddingtitles">Ceremony</h2>
@@ -364,10 +371,12 @@ const Pricing = (props) => {
           </BottomOfWeddingBoxes>
         </Left>
         {/* <WeddingLine /> */}
-        <Right>
+        <Right className="slide-top">
           <TopOfWeddingBoxes>
-            <h1>Ceremony/Cocktail + Live DJ</h1>
-            <h1>(Starting at) $4800</h1>
+            <h1>
+              Ceremony/Cocktail + Live DJ <br />
+              (Starting at) $4800
+            </h1>
           </TopOfWeddingBoxes>
           <BottomOfWeddingBoxes>
             <h2 className="weddingtitles">Ceremony</h2>
@@ -440,19 +449,19 @@ const Pricing = (props) => {
           />
         </div>
         <BeetJuiceText>
-          <h5 className="weddingparagraphs">
+          <h5>
             Beet Juice (written as B33T JU1 C3), is a two-man project founded by
             former Mosaic Foundation keyboardist Ekewem Bogmis, A native of
             Rochester and Daniel Possehl a Midwestener at heart who both moved
             to LA to pursue their music careers.
           </h5>
-          <h5 className="weddingparagraphs">
+          <h5>
             Both on stage and in the studio, B33t Ju1c3 relies on live looping
             to create their dense soundscapes. Stacking grooves through
             beatboxing and percussion, laying down riffs on guitar, and singing
             heartfelt lyrics over the sonic backdrop.
           </h5>
-          <h5 className="weddingparagraphs">
+          <h5>
             Bogmis started experimenting with looping during a studio project
             five years ago. B33t Ju1c3 has evolved toward creating dub-style
             music underlined with soulful dance rythems. The project is rooted
