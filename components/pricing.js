@@ -154,7 +154,6 @@ const Titlegrey = styled.div`
   width: 83%;
   display: flex;
   justify-content: center;
-  background-color: #e5e4e2;
   font-size: 62px;
   padding: 25px;
   font-family: 'Bebas Neue', cursive;
@@ -248,11 +247,11 @@ const BeetJuiceText = styled.div`
   border-radius: 6px;
   padding-left: 80px;
   padding-right: 80px;
-  padding-top: 70px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  font-family: 'Overpass Mono', monospace;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 768px) {
     width: 100%;
     padding-left: 20px;
@@ -287,7 +286,6 @@ const BeetJuiceTextContainer = styled.div`
 const VideoContainer = styled.div`
   height: 400px;
   width: 100vw;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,7 +333,7 @@ const Pricing = (props) => {
           Contact For Booking/Pricing
         </Button>
       </TitleContainer>
-      <VideoContainer>
+      <VideoContainer className="background">
         <ReactPlayer
           className="mobileVideo"
           width="40%"
@@ -399,7 +397,7 @@ const Pricing = (props) => {
         </Right>
       </Container>
       {/* Corporate/Events */}
-      <TitleContainer className="background">
+      <TitleContainer className="background-corporate">
         <Titlegrey>Corporate/Events</Titlegrey>
         <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
@@ -454,14 +452,14 @@ const Pricing = (props) => {
             former Mosaic Foundation keyboardist Ekewem Bogmis, A native of
             Rochester and Daniel Possehl a Midwestener at heart who both moved
             to LA to pursue their music careers.
-          </h5>
-          <h5>
+            <br />
+            <br />
             Both on stage and in the studio, B33t Ju1c3 relies on live looping
             to create their dense soundscapes. Stacking grooves through
             beatboxing and percussion, laying down riffs on guitar, and singing
             heartfelt lyrics over the sonic backdrop.
-          </h5>
-          <h5>
+            <br />
+            <br />
             Bogmis started experimenting with looping during a studio project
             five years ago. B33t Ju1c3 has evolved toward creating dub-style
             music underlined with soulful dance rythems. The project is rooted
