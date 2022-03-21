@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import logo from "../media/Transparentlogo.jpeg";
-import "../pages/_document";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import logo from '../media/Transparentlogo.jpeg';
+import '../pages/_document';
 
 const Container = styled.div`
   height: 100px;
@@ -43,7 +43,7 @@ const Right = styled.div`
   align-items: center;
   justify-content: right;
   padding-right: 58px;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: 'Overpass Mono', monospace;
   border-bottom: 1px solid black;
   @media (max-width: 768px) {
     display: none;
@@ -62,7 +62,6 @@ const Header = () => {
           priority
           alt="Logo"
         />
-        <h4>B33t Ju1c3</h4>
       </Left>
       <Right>
         <h3>bookb33tju1c3@gmail.com</h3>

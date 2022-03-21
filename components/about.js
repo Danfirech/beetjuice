@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import "../pages/_document";
+import React from 'react';
+import styled from 'styled-components';
+import '../pages/_document';
 
 const Container = styled.div`
   width: 100%;
@@ -12,8 +12,7 @@ const Container = styled.div`
   font-size: 18px;
   padding-left: 390px;
   padding-right: 390px;
-  padding-top: 90px;
-  font-family: "M PLUS 1", sans-serif;
+  padding-top: 150px;
   text-align: justify;
   @media (max-width: 568px) {
     height: 200px;

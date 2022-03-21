@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import pic from "../media/Main.png";
-import Image from "next/image";
-import "../pages/_document";
+import React from 'react';
+import styled from 'styled-components';
+import pic from '../media/Main.png';
+import Image from 'next/image';
+import '../pages/_document';
 
 const Container = styled.div`
   height: 70vh;
@@ -20,7 +20,7 @@ const ImageContainer = styled.div`
   width: 100%;
   background-color: #e5e4e2;
   padding-left: 480px;
-  padding-top: 200px;
+  padding-top: 250px;
   padding-bottom: 60px;
   display: flex;
   align-items: center;
@@ -34,11 +34,11 @@ const TextContainer = styled.div`
   position: absolute;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 55px;
   z-index: 1;
-  padding-top: 265px;
+  padding-top: 300px;
   padding-left: 400px;
-  font-family: raleway;
+  font-family: 'Bebas Neue', cursive;
 `;
 
 const Pic2 = () => {
@@ -46,7 +46,7 @@ const Pic2 = () => {
     <>
       <Container>
         <TextContainer>
-          <h1>Beet Juice Entertainment</h1>
+          <h1 className="flicker-in-1">Beet Juice Entertainment</h1>
         </TextContainer>
         <ImageContainer>
           <Image
