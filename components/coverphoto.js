@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import pic from '../media/Main.png';
 import Image from 'next/image';
+import ScrollAnimation from 'react-animate-on-scroll';
 import '../pages/_document';
 
 const Container = styled.div`
@@ -46,7 +47,9 @@ const Pic2 = () => {
     <>
       <Container>
         <TextContainer>
-          <h1 className="flicker-in-1">Beet Juice Entertainment</h1>
+          <ScrollAnimation animateIn="fadeIn">
+            <h1>Beet Juice Entertainment</h1>
+          </ScrollAnimation>
         </TextContainer>
         <ImageContainer>
           <Image

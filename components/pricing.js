@@ -5,6 +5,7 @@ import Ezra from '../media/Ezra.jpeg';
 import Image from 'next/image';
 import ReactPlayer from 'react-player';
 import Stock from '../media/BandStock.jpeg';
+import ScrollAnimation from 'react-animate-on-scroll';
 import '../pages/_document';
 
 const BasicContactForm = (e) => {
@@ -14,6 +15,7 @@ const BasicContactForm = (e) => {
 const Container = styled.div`
   width: 100%;
   height: 700px;
+  padding-top: 100px;
   background-color: #e5e4e2;
   display: flex;
   justify-content: center;
@@ -178,6 +180,10 @@ const Button = styled.div`
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
+  :hover {
+    background-color: white;
+    color: black;
+  }
 
   @media (max-width: 768px) {
     background-color: white;
@@ -333,14 +339,14 @@ const Pricing = (props) => {
           Contact For Booking/Pricing
         </Button>
       </TitleContainer>
-      <VideoContainer className="background">
+      {/* <VideoContainer className="background">
         <ReactPlayer
           className="mobileVideo"
           width="40%"
           height="300px"
           url="https://vimeo.com/690357219"
         />
-      </VideoContainer>
+      </VideoContainer> */}
       <Container>
         <Left className="slide-top">
           <TopOfWeddingBoxes>
@@ -401,14 +407,25 @@ const Pricing = (props) => {
         <Titlegrey>Corporate/Events</Titlegrey>
         <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
-      <VideoContainer>
+      {/* <VideoContainer>
         <ReactPlayer
           className="mobileVideo "
           width="40%"
           height="300px"
           url="https://vimeo.com/690357219"
         />
-      </VideoContainer>
+      </VideoContainer> */}
+      <Offerings>
+        <Image
+          padding-top={10}
+          src={Stock}
+          layout="intrinsic"
+          width={600}
+          height={400}
+          priority
+          alt="Dan"
+        />
+      </Offerings>
       <CorporateTextContainter>
         <CorporateText>
           <h5 className="weddingparagraphs">
