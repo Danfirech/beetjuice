@@ -2,8 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import pic from '../media/Main.png';
 import Image from 'next/image';
+import Insta from '../media/Insta.png';
+import Facebook from '../media/Face.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../pages/_document';
+
+const InstgramLink = (e) => {
+  window.location = 'https://www.instagram.com/b33tju1c3/?hl=en';
+};
+
+const FacebookLink = (e) => {
+  window.location = 'https://form.jotform.com/220784862221152';
+};
 
 const Container = styled.div`
   height: 70vh;
@@ -46,12 +56,10 @@ const Pic2 = () => {
   return (
     <>
       <Container>
-        <TextContainer>
-          <ScrollAnimation animateIn="fadeIn">
-            <h1>Beet Juice Entertainment</h1>
-          </ScrollAnimation>
+        <TextContainer className="flicker-in-1">
+          <h1>Beet Juice Entertainment</h1>
         </TextContainer>
-        <ImageContainer>
+        <ImageContainer className="flicker-in-1">
           <Image
             src={pic}
             layout="intrinsic"
