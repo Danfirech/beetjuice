@@ -206,179 +206,82 @@ const TextBox = styled.div`
   }
 `;
 
-const CorporateTextContainter = styled.div`
-  width: 100%;
-  height: 200px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  font-family: "M PLUS 1", sans-serif;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    height: 400px;
-  }
-`;
-
-const CorporateText = styled.div`
-  width: 100%;
-  height: 200px;
-  padding-left: 380px;
-  padding-right: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  text-align: justify;
-  @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: justify;
-  }
-`;
-
-const Offerings = styled.div`
-  height: 700px;
-  width: 100%;
-  background-color: White;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  font-family: "Bebas Neue", cursive;
-  @media (max-width: 768px) {
-    font-size: 50px;
-  }
-`;
-
-const BannerContainer = styled.div`
+const WeddingContainer = styled.div`
   height: 300px;
   width: 100%;
+  position: absolute;
 `;
 
 const Pricing = (props) => {
   return (
     <>
       {/* WEDDINGS */}
-      <BannerContainer>
-        <Image src={WeddingBanner} layout="intrinsic" priority alt="Dan" />
-      </BannerContainer>
-      <Offerings>
-        <h3>What We Offer</h3>
-      </Offerings>
 
-      <TitleContainer className="background">
-        <Titlegrey>Wedding Services</Titlegrey>
-        <Button className="button:hover" onClick={BasicContactForm}>
-          Contact For Booking/Pricing
-        </Button>
-      </TitleContainer>
-      {/* <VideoContainer className="background">
-        <ReactPlayer
-          className="mobileVideo"
-          width="40%"
-          height="300px"
-          url="https://vimeo.com/690357219"
-        />
-      </VideoContainer> */}
-      <Container>
-        <Left className="slide-top">
-          <TopOfWeddingBoxes>
-            <h1>
-              Ceremony/Cocktail + Live Band <br /> (Starting at) $6800
-            </h1>
-          </TopOfWeddingBoxes>
-          <BottomOfWeddingBoxes>
-            <h2 className="weddingtitles">Ceremony</h2>
-            <h4 className="weddingparagraphs">
-              Live instrumental guitar for 30 minutes as guests arrive (or
-              playlist)
-            </h4>
-            <h2 className="weddingtitles">Cocktail</h2>
-            <h4 className="weddingparagraphs">
-              Your guests will enjoy 60 minutes of live music as they make their
-              way into the reception hall with relaxing hits as they enjoy their
-              meals.
-            </h4>
-            <h2 className="weddingtitles">Live Band</h2>
-            <h4 className="weddingparagraphs">
-              Our band will make your guests dance the night away and celebrate
-              your special night with a wide variety of hits spanning the past
-              decades.
-            </h4>
-          </BottomOfWeddingBoxes>
-        </Left>
-        {/* <WeddingLine /> */}
-        <Right className="slide-top">
-          <TopOfWeddingBoxes>
-            <h1>
-              Ceremony/Cocktail + Live DJ <br />
-              (Starting at) $4800
-            </h1>
-          </TopOfWeddingBoxes>
-          <BottomOfWeddingBoxes>
-            <h2 className="weddingtitles">Ceremony</h2>
-            <h4 className="weddingparagraphs">
-              Live instrumental guitar for 30 minutes as guests arrive (or
-              playlist)
-            </h4>
-            <h2 className="weddingtitles">Cocktail</h2>
-            <h4 className="weddingparagraphs">
-              Your guests will enjoy 60 minutes of live music as they make their
-              way into the reception hall with relaxing hits as they enjoy their
-              meals.
-            </h4>
-            <h2 className="weddingtitles">Live DJ</h2>
-            <h4 className="weddingparagraphs">
-              Our DJ will make your guests dance the night away and celebrate
-              your special night with a wide variety of hits.
-            </h4>
-          </BottomOfWeddingBoxes>
-        </Right>
-      </Container>
-      {/* Corporate/Events */}
-      <TitleContainer className="background-corporate">
-        <Titlegrey>Corporate/Events</Titlegrey>
-        <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
-      </TitleContainer>
-      {/* <VideoContainer>
-        <ReactPlayer
-          className="mobileVideo "
-          width="40%"
-          height="300px"
-          url="https://vimeo.com/690357219"
-        />
-      </VideoContainer> */}
-      <Offerings>
-        <Image
-          padding-top={10}
-          src={Stock}
-          layout="intrinsic"
-          width={600}
-          height={400}
-          priority
-          alt="Dan"
-        />
-      </Offerings>
-      <CorporateTextContainter>
-        <CorporateText>
-          <h5 className="weddingparagraphs">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using Content here, content
-          </h5>
-        </CorporateText>
-      </CorporateTextContainter>
+      <WeddingContainer>
+        <Image src={WeddingBanner} layout="intrinsic" priority alt="Dan" />
+
+        <TitleContainer className="background">
+          <Titlegrey>Wedding Services</Titlegrey>
+          <Button className="button:hover" onClick={BasicContactForm}>
+            Contact For Booking/Pricing
+          </Button>
+        </TitleContainer>
+        <Container>
+          <Left className="slide-top">
+            <TopOfWeddingBoxes>
+              <h1>
+                Ceremony/Cocktail + Live Band <br /> (Starting at) $6800
+              </h1>
+            </TopOfWeddingBoxes>
+            <BottomOfWeddingBoxes>
+              <h2 className="weddingtitles">Ceremony</h2>
+              <h4 className="weddingparagraphs">
+                Live instrumental guitar for 30 minutes as guests arrive (or
+                playlist)
+              </h4>
+              <h2 className="weddingtitles">Cocktail</h2>
+              <h4 className="weddingparagraphs">
+                Your guests will enjoy 60 minutes of live music as they make
+                their way into the reception hall with relaxing hits as they
+                enjoy their meals.
+              </h4>
+              <h2 className="weddingtitles">Live Band</h2>
+              <h4 className="weddingparagraphs">
+                Our band will make your guests dance the night away and
+                celebrate your special night with a wide variety of hits
+                spanning the past decades.
+              </h4>
+            </BottomOfWeddingBoxes>
+          </Left>
+          {/* <WeddingLine /> */}
+          <Right className="slide-top">
+            <TopOfWeddingBoxes>
+              <h1>
+                Ceremony/Cocktail + Live DJ <br />
+                (Starting at) $4800
+              </h1>
+            </TopOfWeddingBoxes>
+            <BottomOfWeddingBoxes>
+              <h2 className="weddingtitles">Ceremony</h2>
+              <h4 className="weddingparagraphs">
+                Live instrumental guitar for 30 minutes as guests arrive (or
+                playlist)
+              </h4>
+              <h2 className="weddingtitles">Cocktail</h2>
+              <h4 className="weddingparagraphs">
+                Your guests will enjoy 60 minutes of live music as they make
+                their way into the reception hall with relaxing hits as they
+                enjoy their meals.
+              </h4>
+              <h2 className="weddingtitles">Live DJ</h2>
+              <h4 className="weddingparagraphs">
+                Our DJ will make your guests dance the night away and celebrate
+                your special night with a wide variety of hits.
+              </h4>
+            </BottomOfWeddingBoxes>
+          </Right>
+        </Container>
+      </WeddingContainer>
     </>
   );
 };
