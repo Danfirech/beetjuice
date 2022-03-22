@@ -1,17 +1,17 @@
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
-import Pricing from "../components/WeddingCorporatePage/pricing";
+import Coverphoto from "../components/coverphoto";
+import About from "../components/about";
 import Footer from "../components/footer";
-import Video from "../components/video";
 // import MobilePhoto from '../components/mobilePhoto';
 import MobileFooter from "../components/mobileFooter";
+import Aboutb33tju1c3 from "../components/B33tJu1c3Page/aboutB33tju1c3";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Video />
-      <Pricing />
+      <Aboutb33tju1c3 />
       <Footer />
       <MobileFooter />
     </>

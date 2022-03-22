@@ -67,11 +67,14 @@ const Header = () => {
         />
       </Left>
       <Right>
-        <Link href="/" passHref>
+        <Link href="/b33tju1c3" passHref>
           B33t Ju1c3
         </Link>
         <Link href="/weddingCorporate" passHref>
           Weddings/Corporate
+        </Link>
+        <Link href="/" passHref>
+          PassionFruite
         </Link>
         <Link href="/" passHref>
           Contact

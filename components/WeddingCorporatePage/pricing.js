@@ -1,15 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import Dan from '../media/Dan.jpeg';
-import Ezra from '../media/Ezra.jpeg';
-import Image from 'next/image';
-import ReactPlayer from 'react-player';
-import Stock from '../media/BandStock.jpeg';
-import ScrollAnimation from 'react-animate-on-scroll';
-import '../pages/_document';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import ReactPlayer from "react-player";
+import Stock from "../../media/BandStock.jpeg";
+import ScrollAnimation from "react-animate-on-scroll";
+import "../../pages/_document";
 
 const BasicContactForm = (e) => {
-  window.location = 'https://form.jotform.com/220784862221152';
+  window.location = "https://form.jotform.com/220784862221152";
 };
 
 const Container = styled.div`
@@ -109,7 +107,7 @@ const TopOfWeddingBoxes = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
     font-size: 11px;
     margin-top: 0px;
@@ -158,7 +156,7 @@ const Titlegrey = styled.div`
   justify-content: center;
   font-size: 62px;
   padding: 25px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   /* border-top: 2px solid black; */
   @media (max-width: 768px) {
     font-size: 31px;
@@ -176,7 +174,7 @@ const Button = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -213,7 +211,7 @@ const CorporateTextContainter = styled.div`
   background-color: white;
   display: flex;
   justify-content: center;
-  font-family: 'M PLUS 1', sans-serif;
+  font-family: "M PLUS 1", sans-serif;
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
@@ -257,7 +255,7 @@ const BeetJuiceText = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 21px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   @media (max-width: 768px) {
     width: 100%;
     padding-left: 20px;
@@ -310,7 +308,7 @@ const Offerings = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 60px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
     font-size: 50px;
   }
@@ -436,55 +434,6 @@ const Pricing = (props) => {
           </h5>
         </CorporateText>
       </CorporateTextContainter>
-      {/* B33T Ju1c3 Sindicate */}
-      <TitleContainer className="background">
-        <Titlegrey>B33T Ju1c3 Sindicate</Titlegrey>
-        <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
-      </TitleContainer>
-      <BeetJuiceTextContainer>
-        <div className="danphoto">
-          <Image
-            src={Ezra}
-            layout="intrinsic"
-            width={400}
-            height={500}
-            priority
-            alt="Ezra"
-          />
-        </div>
-        <div className="ezraphoto">
-          <Image
-            padding-top={10}
-            src={Dan}
-            layout="intrinsic"
-            width={400}
-            height={500}
-            priority
-            alt="Dan"
-          />
-        </div>
-        <BeetJuiceText>
-          <h5>
-            Beet Juice (written as B33T JU1 C3), is a two-man project founded by
-            former Mosaic Foundation keyboardist Ekewem Bogmis, A native of
-            Rochester and Daniel Possehl a Midwestener at heart who both moved
-            to LA to pursue their music careers.
-            <br />
-            <br />
-            Both on stage and in the studio, B33t Ju1c3 relies on live looping
-            to create their dense soundscapes. Stacking grooves through
-            beatboxing and percussion, laying down riffs on guitar, and singing
-            heartfelt lyrics over the sonic backdrop.
-            <br />
-            <br />
-            Bogmis started experimenting with looping during a studio project
-            five years ago. B33t Ju1c3 has evolved toward creating dub-style
-            music underlined with soulful dance rythems. The project is rooted
-            in building a safe space for people to feel and move to the rythems
-            created by Ezra and Daniel.
-          </h5>
-        </BeetJuiceText>
-      </BeetJuiceTextContainer>
     </>
   );
 };
