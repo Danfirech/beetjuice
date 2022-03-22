@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import WeddingBanner from "../../media/weddingbanner.jpeg";
 import ReactPlayer from "react-player";
 import Stock from "../../media/BandStock.jpeg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -244,61 +245,6 @@ const CorporateText = styled.div`
   }
 `;
 
-const BeetJuiceText = styled.div`
-  width: 30%;
-  height: 680px;
-  background-color: #e5e4e2;
-  border-radius: 6px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  font-size: 21px;
-  font-family: "Roboto", sans-serif;
-  @media (max-width: 768px) {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    margin-left: 0px;
-    margin-top: 20px;
-    margin-bottom: -180px;
-    height: 200px;
-    text-align: left;
-  }
-`;
-
-const BeetJuiceTextContainer = styled.div`
-  width: 100%;
-  height: 700px;
-  background-color: #e5e4e2;
-  display: flex;
-  justify-content: center;
-  text-align: justify;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    height: 1500px;
-  }
-`;
-
-const VideoContainer = styled.div`
-  height: 400px;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 768px) {
-    height: 200px;
-    width: 100%;
-  }
-`;
-
 const Offerings = styled.div`
   height: 700px;
   width: 100%;
@@ -314,21 +260,20 @@ const Offerings = styled.div`
   }
 `;
 
+const BannerContainer = styled.div`
+  height: 300px;
+  width: 100%;
+`;
+
 const Pricing = (props) => {
   return (
     <>
       {/* WEDDINGS */}
+      <BannerContainer>
+        <Image src={WeddingBanner} layout="intrinsic" priority alt="Dan" />
+      </BannerContainer>
       <Offerings>
         <h3>What We Offer</h3>
-        <Image
-          padding-top={10}
-          src={Stock}
-          layout="intrinsic"
-          width={600}
-          height={400}
-          priority
-          alt="Dan"
-        />
       </Offerings>
 
       <TitleContainer className="background">
