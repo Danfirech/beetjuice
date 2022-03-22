@@ -14,8 +14,6 @@ export default function Home() {
       <Header />
       <Coverphoto />
       <About />
-      <Video />
-      <Pricing />
       <Footer />
       <MobileFooter />
     </>
