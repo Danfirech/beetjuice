@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import logo from '../media/Transparentlogo.jpeg';
-import '../pages/_document';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import logo from "../media/Transparentlogo.jpeg";
+import Link from "next/link";
+import "../pages/_document";
 
 const Container = styled.div`
   height: 100px;
@@ -40,11 +41,13 @@ const Right = styled.div`
   width: 50%;
   background-color: #e5e4e2;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
   padding-right: 58px;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   border-bottom: 1px solid black;
+  padding-left: 250px;
   @media (max-width: 768px) {
     display: none;
   }
@@ -64,7 +67,15 @@ const Header = () => {
         />
       </Left>
       <Right>
-        <h3>bookb33tju1c3@gmail.com</h3>
+        <Link href="/" passHref>
+          B33t Ju1c3
+        </Link>
+        <Link href="/weddingCorporate" passHref>
+          Weddings/Corporate
+        </Link>
+        <Link href="/" passHref>
+          Contact
+        </Link>
       </Right>
     </Container>
   );
