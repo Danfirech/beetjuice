@@ -76,7 +76,7 @@ const Header = () => {
         <Link href="/corporate" passHref>
           Corporate/Events
         </Link>
-        <Link href="/" passHref>
+        <Link href="/passionfruit" passHref>
           PassionFruite
         </Link>
         <Link href="/" passHref>
