@@ -70,8 +70,11 @@ const Header = () => {
         <Link href="/b33tju1c3" passHref>
           B33t Ju1c3
         </Link>
-        <Link href="/weddingCorporate" passHref>
-          Weddings/Corporate
+        <Link href="/wedding" passHref>
+          Weddings
+        </Link>
+        <Link href="/corporate" passHref>
+          Corporate/Events
         </Link>
         <Link href="/" passHref>
           PassionFruite
