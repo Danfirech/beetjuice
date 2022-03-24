@@ -7,12 +7,12 @@ import Stock from "../../media/BandStock.jpeg";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../pages/_document";
 
-// const BasicContactForm = (e) => {
-//   window.location = "https://form.jotform.com/220784862221152";
-// };
+const BasicContactForm = (e) => {
+  window.location = "https://form.jotform.com/220784862221152";
+};
 
 const Container = styled.div`
-  height: 800px;
+  height: 1400px;
   width: 100vw;
   background-color: pink;
   display: flex;
@@ -20,11 +20,15 @@ const Container = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  height: 200px;
+  padding-top: 100px;
+  height: 300px;
   width: 100vw;
-  background-color: green;
+  background-color: black;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 const Title = styled.div`
@@ -36,7 +40,78 @@ const Title = styled.div`
   justify-content: center;
 `;
 
-// const Container = styled.div`
+const PriceCardContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+  padding-left: 100px;
+`;
+
+const PriceLeft = styled.div`
+  height: 90%;
+  width: 400px;
+  background-color: red;
+`;
+const PriceMiddle = styled.div`
+  height: 90%;
+  width: 400px;
+  background-color: Pink;
+`;
+
+const PriceRight = styled.div`
+  height: 90%;
+  width: 400px;
+  background-color: black;
+`;
+
+const PriceCardTop = styled.div`
+  height: 30%;
+  width: 100%;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 56%,
+    0 100%,
+    0% 70%,
+    0 0,
+    20% 0
+  );
+  background-color: red;
+`;
+
+const Button = styled.div`
+  width: 250px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-family: "Overpass Mono", monospace;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  :hover {
+    background-color: white;
+    color: black;
+  `;
+
+const Price = styled.div`
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+`;
+
+// const Container = styled.div`;
 //   width: 100%;
 //   height: 700px;
 //   padding-top: 100px;
@@ -61,45 +136,6 @@ const Title = styled.div`
 //   border-radius: 6px;
 //   display: flex;
 //   flex-direction: column;
-//   @media (max-width: 768px) {
-//     width: 100%;
-//     padding-top: 20px;
-//     margin-left: 0px;
-//     margin-bottom: 20px;
-//     height: 700px;
-//     border: none;
-//     background-color: white;
-//   }
-// `;
-
-// const Left = styled.div`
-//   width: 30%;
-//   height: 600px;
-//   background-color: white;
-//   border-radius: 6px;
-//   display: flex;
-//   flex-direction: column;
-//   /* border: 2px solid black; */
-//   @media (max-width: 768px) {
-//     width: 100%;
-//     padding-top: 20px;
-//     margin-left: 0px;
-//     margin-bottom: 20px;
-//     height: 700px;
-//     border: none;
-//     background-color: white;
-//   }
-// `;
-
-// const Right = styled.div`
-//   width: 30%;
-//   height: 600px;
-//   background-color: white;
-//   border-radius: 6px;
-//   margin-left: 100px;
-//   display: flex;
-//   flex-direction: column;
-//   /* border: 2px solid black; */
 //   @media (max-width: 768px) {
 //     width: 100%;
 //     padding-top: 20px;
@@ -259,11 +295,32 @@ const Pricing = () => {
   return (
     <>
       <Container>
+        <Image
+          src={WeddingBanner}
+          height="2500"
+          layout="intrinsic"
+          priority
+          alt="Dan"
+        />
         <TitleContainer>
           <Title>
-            <h1>Test</h1>
+            <h1 className="textcolorwhite">Wedding Services</h1>
+            <Button className="button:hover" onClick={BasicContactForm}>
+              Contact For Booking/Pricing
+            </Button>
           </Title>
         </TitleContainer>
+        <PriceCardContainer>
+          <PriceLeft></PriceLeft>
+          <PriceMiddle>
+            <PriceCardTop>
+              <h1>Test</h1>
+            </PriceCardTop>
+          </PriceMiddle>
+          <PriceRight>
+            <PriceCardTop></PriceCardTop>
+          </PriceRight>
+        </PriceCardContainer>
       </Container>
     </>
   );

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import '../pages/_document';
-import ScrollAnimation from 'react-animate-on-scroll';
+import React from "react";
+import styled from "styled-components";
+import "../pages/_document";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Container = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ const Container = styled.div`
   padding-right: 390px;
   padding-top: 150px;
   text-align: justify;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   @media (max-width: 568px) {
     height: 200px;
     font-size: 15px;
@@ -36,7 +36,7 @@ const About = () => {
           OVER 12 YEARS OF GROOVES, CLASSIC ELECTRIC GUITAR AND DANCE DRIVEN
           DRUMS PERFORMED LIVE, ALONG WITH SOULFUL AND HARD-HITTING VOCALS, B33T
           JU1C3 WILL TAILOR THEIR WORLD CLASS LIVE PERFORMANCE/SET TO FIT THE
-          NEEDS ANY EVENT, VENUE OR AUDIENCE.
+          NEEDS OF ANY EVENT, VENUE OR AUDIENCE.
         </p>
       </ScrollAnimation>
     </Container>
