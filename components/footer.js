@@ -22,6 +22,7 @@ const Container = styled.div`
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
+  z-index: 99;
   @media (max-width: 768px) {
     display: none;
   }
@@ -34,9 +35,9 @@ const FooterTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-left: 800px;
-  padding-right: 800px;
+  padding-left: 900px;
+  padding-right: 900px;
+  z-index: 99;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -57,6 +58,7 @@ const FooterBottom = styled.div`
   justify-content: center;
   padding-left: 40px;
   padding-right: 40px;
+  z-index: 99;
   font-family: "Overpass Mono", monospace;
   @media (max-width: 768px) {
     display: flex;

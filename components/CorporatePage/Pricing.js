@@ -14,12 +14,12 @@ const CorporateContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 1190px;
 `;
 
 const ImageContainer = styled.div`
   width: 100vw;
-  height: 700px;
+  height: 100%;
   display: flex;
 `;
 
@@ -102,8 +102,8 @@ const Pricing = (props) => {
             <Image
               src={EventBanner}
               objectFit={"cover"}
-              width={1920}
-              height={1080}
+              // width={1920}
+              // height={1080}
             />
           </div>
           <TitleContainer>
