@@ -1,18 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
-import pic from '../media/Main.png';
-import Image from 'next/image';
-import Insta from '../media/Insta.png';
-import Facebook from '../media/Face.png';
-import ScrollAnimation from 'react-animate-on-scroll';
-import '../pages/_document';
+import React from "react";
+import styled from "styled-components";
+import pic from "../media/Main.png";
+import Image from "next/image";
+import Insta from "../media/Insta.png";
+import Facebook from "../media/Face.png";
+import ScrollAnimation from "react-animate-on-scroll";
+import "../pages/_document";
 
 const InstgramLink = (e) => {
-  window.location = 'https://www.instagram.com/b33tju1c3/?hl=en';
+  window.location = "https://www.instagram.com/b33tju1c3/?hl=en";
 };
 
 const FacebookLink = (e) => {
-  window.location = 'https://form.jotform.com/220784862221152';
+  window.location = "https://form.jotform.com/220784862221152";
 };
 
 const Container = styled.div`
@@ -49,7 +49,7 @@ const TextContainer = styled.div`
   z-index: 1;
   padding-top: 300px;
   padding-left: 400px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 `;
 
 const Pic2 = () => {

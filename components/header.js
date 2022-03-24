@@ -81,7 +81,7 @@ const Header = () => {
           Corporate/Events
         </Link>
         <Link href="/passionfruit" passHref>
-          PassionFruite
+          Passionfruit
         </Link>
         <Link href="/" passHref>
           Contact

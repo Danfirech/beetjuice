@@ -1,30 +1,30 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import EventBanner from '../../media/event-heads.jpg';
-import ReactPlayer from 'react-player';
-import ScrollAnimation from 'react-animate-on-scroll';
-import '../../pages/_document';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import EventBanner from "../../media/event-heads.jpg";
+import ReactPlayer from "react-player";
+import ScrollAnimation from "react-animate-on-scroll";
+import "../../pages/_document";
 
 const BasicContactForm = (e) => {
-  window.location = 'https://form.jotform.com/220784862221152';
+  window.location = "https://form.jotform.com/220784862221152";
 };
 
 const CorporateContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 700px;
+  height: 100vh;
 `;
 
-const Imag = styled.div`
+const ImageContainer = styled.div`
   width: 100vw;
-  height: 10%;
+  height: 700px;
   display: flex;
 `;
 
 const TitleContainer = styled.div`
-  height: 500px;
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ const Titlegrey = styled.div`
   padding: 25px;
   /* padding-top: 80px; */
   z-index: 99;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
     font-size: 31px;
   }
@@ -55,7 +55,7 @@ const Info = styled.div`
   font-size: 40px;
   padding: 25px;
   z-index: 99;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
     font-size: 31px;
   }
@@ -73,7 +73,7 @@ const Button = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -93,27 +93,29 @@ const Pricing = (props) => {
   return (
     <>
       <CorporateContainer>
-        <Imag>
+        <ImageContainer>
           <div
             style={{
-              position: 'absolute',
+              position: "absolute",
             }}
           >
             <Image
               src={EventBanner}
-              objectFit={'cover'}
+              objectFit={"cover"}
               width={1920}
-              height={880}
+              height={1080}
             />
           </div>
-        </Imag>
-        <TitleContainer>
-          <Titlegrey>Corporate and Other Events</Titlegrey>
-          <Info>WE DO EVENTS AND STUFF. GOD IS REAL BUT LEBRON IS REALER.</Info>
-          <Button className="button:hover" onClick={BasicContactForm}>
-            Contact For Booking/Pricing
-          </Button>
-        </TitleContainer>
+          <TitleContainer>
+            <Titlegrey>Corporate and Other Events</Titlegrey>
+            <Info>
+              WE DO EVENTS AND STUFF. GOD IS REAL BUT LEBRON IS REALER.
+            </Info>
+            <Button className="button:hover" onClick={BasicContactForm}>
+              Contact For Booking/Pricing
+            </Button>
+          </TitleContainer>
+        </ImageContainer>
       </CorporateContainer>
     </>
   );

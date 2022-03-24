@@ -34,6 +34,7 @@ const FooterTop = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 50px;
   padding-left: 800px;
   padding-right: 800px;
   @media (max-width: 768px) {
