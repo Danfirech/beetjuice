@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   height: 100px;
-  width: 50%;
+  width: 40%;
   background-color: #e5e4e2;
   padding-left: 58px;
   border-bottom: 1px solid black;
@@ -38,7 +38,7 @@ const Left = styled.div`
 
 const Right = styled.div`
   height: 100px;
-  width: 50%;
+  width: 60%;
   background-color: #e5e4e2;
   display: flex;
   flex-direction: row;
@@ -66,7 +66,11 @@ const Header = () => {
           alt="Logo"
         />
       </Left>
+
       <Right>
+        <Link href="/" passHref>
+          Home
+        </Link>
         <Link href="/b33tju1c3" passHref>
           B33t Ju1c3
         </Link>

@@ -1,20 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import Insta from '../media/Insta.png';
-import Facebook from '../media/Face.png';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import Insta from "../media/Insta.png";
+import Facebook from "../media/Face.png";
 
 const InstgramLink = (e) => {
-  window.location = 'https://www.instagram.com/b33tju1c3/?hl=en';
+  window.location = "https://www.instagram.com/b33tju1c3/?hl=en";
 };
 
 const FacebookLink = (e) => {
-  window.location = 'https://form.jotform.com/220784862221152';
+  window.location = "https://form.jotform.com/220784862221152";
 };
 
 const Container = styled.div`
   width: 100vw;
-  height: 150px;
+  height: 130px;
   background-color: #e5e4e2;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ const Container = styled.div`
 
 const FooterTop = styled.div`
   width: 100vw;
-  height: 75px;
+  height: 65px;
   background-color: #e5e4e2;
   display: flex;
   align-items: center;
@@ -49,14 +49,14 @@ const FooterTop = styled.div`
 
 const FooterBottom = styled.div`
   width: 100vw;
-  height: 75px;
+  height: 65px;
   background-color: #e5e4e2;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 40px;
   padding-right: 40px;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -74,8 +74,8 @@ const Footer = () => {
           <Image
             src={Insta}
             layout="intrinsic"
-            width={50}
-            height={50}
+            width={35}
+            height={35}
             priority
             alt="Insta"
           />
@@ -84,8 +84,8 @@ const Footer = () => {
           <Image
             src={Facebook}
             layout="intrinsic"
-            width={50}
-            height={50}
+            width={35}
+            height={35}
             priority
             alt="Facebook"
           />

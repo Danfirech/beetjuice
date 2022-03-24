@@ -5,12 +5,10 @@ import WeddingFooter from "../components/WeddingCorporatePage/weddingfooter";
 import Video from "../components/video";
 // import MobilePhoto from '../components/mobilePhoto';
 
-import WeddingHeader from "../components/WeddingCorporatePage/weddingheader";
-
 export default function Home() {
   return (
     <>
-      <WeddingHeader />
+      <Header />
       <Pricing />
       <WeddingFooter />
     </>

@@ -4,15 +4,15 @@ import Image from "next/image";
 import Passionfruit from "../../media/passionfruit.png";
 
 const Container = styled.div`
-  height: 800px;
+  height: 830px;
   width: 100vw;
-  background-color: pink;
+  background-color: black;
   display: flex;
   flex-direction: row;
 `;
 
 const Containerleft = styled.div`
-  height: 800px;
+  height: 830px;
   width: 50%;
   background-color: black;
   display: flex;
@@ -39,7 +39,7 @@ const ContainerRightBottom = styled.div`
 `;
 
 const ContainerRight = styled.div`
-  height: 800px;
+  height: 830px;
   width: 50%;
   background-color: black;
   display: flex;
