@@ -24,7 +24,7 @@ const Imag = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  height: 250px;
+  height: 500px;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -39,6 +39,21 @@ const Titlegrey = styled.div`
   justify-content: center;
   font-size: 62px;
   padding: 25px;
+  /* padding-top: 80px; */
+  z-index: 99;
+  font-family: 'Bebas Neue', cursive;
+  @media (max-width: 768px) {
+    font-size: 31px;
+  }
+`;
+
+const Info = styled.div`
+  height: 80px;
+  width: 83%;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding: 25px;
   z-index: 99;
   font-family: 'Bebas Neue', cursive;
   @media (max-width: 768px) {
@@ -51,7 +66,7 @@ const Button = styled.div`
   height: 60px;
   border: 2px solid black;
   border-radius: 10px;
-  margin-top: -10px;
+  margin-top: 15px;
   z-index: 99;
   display: flex;
   align-items: center;
@@ -88,12 +103,13 @@ const Pricing = (props) => {
               src={EventBanner}
               objectFit={'cover'}
               width={1920}
-              height={650}
+              height={880}
             />
           </div>
         </Imag>
         <TitleContainer>
           <Titlegrey>Corporate and Other Events</Titlegrey>
+          <Info>WE DO EVENTS AND STUFF. GOD IS REAL BUT LEBRON IS REALER.</Info>
           <Button className="button:hover" onClick={BasicContactForm}>
             Contact For Booking/Pricing
           </Button>
