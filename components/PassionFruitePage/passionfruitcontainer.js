@@ -2,13 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import Passionfruit from '../../media/passionfruit.png';
+import Passionfruity from '../../media/passionfruity.png';
 
 const Container = styled.div`
-  height: 830px;
+  /* height: 830px;
   width: 100vw;
   background-color: black;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; */
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  background-color: #e5e4e2;
 `;
 
 const Containerleft = styled.div`
@@ -71,7 +76,19 @@ const ContainerRightTextBottom = styled.div`
 const PassionfruitContainer = () => {
   return (
     <Container>
-      <Containerleft>
+      <div
+        style={{
+          position: 'absolute',
+        }}
+      >
+        <Image
+          src={Passionfruity}
+          objectFit={'cover'}
+          // width={920}
+          // height={80}
+        />
+      </div>
+      {/* <Containerleft>
         <Image
           src={Passionfruit}
           layout="intrinsic"
@@ -99,7 +116,7 @@ const PassionfruitContainer = () => {
             </h2>
           </ContainerRightTextBottom>
         </ContainerRightBottom>
-      </ContainerRight>
+      </ContainerRight> */}
     </Container>
   );
 };
