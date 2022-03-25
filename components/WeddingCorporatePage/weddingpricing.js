@@ -12,9 +12,9 @@ const BasicContactForm = (e) => {
 };
 
 const Container = styled.div`
-  height: 1400px;
+  height: 1700px;
   width: 100vw;
-  background-color: pink;
+  background-color: black;
   display: flex;
   flex-direction: column;
 `;
@@ -27,25 +27,29 @@ const TitleContainer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px;
 `;
 
 const Title = styled.div`
   height: 200px
   width: 400px;
   display: flex;
+  background: none;
+  color: white;
+  position: absolute;
+  z-index: 99;
+  bottom: 8px;
+  left: 16px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
 
 const PriceCardContainer = styled.div`
-  height: 100%;
+  height: 1200px;
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: #e5e4e2;
   justify-content: space-between;
   align-items: center;
   padding-right: 100px;
@@ -53,36 +57,39 @@ const PriceCardContainer = styled.div`
 `;
 
 const PriceLeft = styled.div`
-  height: 90%;
+  height: 70%;
   width: 400px;
-  background-color: red;
+  background-color: pink;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `;
+
 const PriceMiddle = styled.div`
   height: 90%;
   width: 400px;
-  background-color: Pink;
+  background-color: #e5e4e2;
+  border: 1px solid black;
 `;
 
 const PriceRight = styled.div`
   height: 90%;
   width: 400px;
-  background-color: black;
+  background-color: #e5e4e2;
+  border: 1px solid black;
 `;
 
 const PriceCardTop = styled.div`
-  height: 30%;
+  height: 200px;
   width: 100%;
-  clip-path: polygon(
-    50% 0%,
-    100% 0,
-    100% 35%,
-    100% 56%,
-    0 100%,
-    0% 70%,
-    0 0,
-    20% 0
-  );
-  background-color: red;
+  background-color: #e5e4e2;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Button = styled.div`
@@ -94,7 +101,7 @@ const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+   background-color: #e5e4e2;
   color: black;
   font-family: "Overpass Mono", monospace;
   font-size: 14px;
@@ -110,6 +117,13 @@ const Price = styled.div`
   height: 30px;
   background-color: blue;
 `;
+
+const PriceCardBottom = styled.div`
+  padding: 10px;
+  font-family: "Overpass Mono", monospace;
+`;
+
+const ImageContainer = styled.div``;
 
 // const Container = styled.div`;
 //   width: 100%;
@@ -192,16 +206,6 @@ const Price = styled.div`
 //     font-size: 11px;
 //     margin-top: 0px;
 //     height: 100px;
-//   }
-// `;
-
-// const BottomOfWeddingBoxes = styled.div`
-//   padding: 10px;
-//   font-family: 'Overpass Mono', monospace;
-//   @media (max-width: 768px) {
-//     display: flex:
-//     align-items: center;
-//     justify: content;
 //   }
 // `;
 
@@ -295,30 +299,80 @@ const Pricing = () => {
   return (
     <>
       <Container>
-        <Image
-          src={WeddingBanner}
-          height="2500"
-          layout="intrinsic"
-          priority
-          alt="Dan"
-        />
-        <TitleContainer>
+        <ImageContainer>
           <Title>
             <h1 className="textcolorwhite">Wedding Services</h1>
+          </Title>
+          <Image
+            src={WeddingBanner}
+            height="2000"
+            objectFit={"cover"}
+            alt="Dan"
+          />
+        </ImageContainer>
+
+        <PriceCardContainer>
+          <PriceLeft>
+            <h1>
+              We pride ourselves on building you a setlist unlike other wedding
+              bands. We want you to hear songs that bring you back to, We want
+              you to hear songs that bring you back to, We want you to hear
+              songs that bring you back to, We want you to hear songs that bring
+              you back to,
+            </h1>
             <Button className="button:hover" onClick={BasicContactForm}>
               Contact For Booking/Pricing
             </Button>
-          </Title>
-        </TitleContainer>
-        <PriceCardContainer>
-          <PriceLeft></PriceLeft>
+          </PriceLeft>
           <PriceMiddle>
             <PriceCardTop>
-              <h1>Test</h1>
+              <h2>Ceremony/Cocktail + Live Band</h2>
+              <h3>(Starting at) $5200</h3>
             </PriceCardTop>
+            <PriceCardBottom>
+              <h2 className="weddingtitles">Ceremony</h2>
+              <h4 className="weddingparagraphs">
+                Live instrumental guitar for 30 minutes as guests arrive (or
+                playlist)
+              </h4>
+              <h2 className="weddingtitles">Cocktail</h2>
+              <h4 className="weddingparagraphs">
+                Your guests will enjoy 60 minutes of live music as they make
+                their way into the reception hall with relaxing hits as they
+                enjoy their meals.
+              </h4>
+              <h2 className="weddingtitles">Live Band</h2>
+              <h4 className="weddingparagraphs">
+                Our band will make your guests dance the night away and
+                celebrate your special night with a wide variety of hits
+                spanning the past decades.
+              </h4>
+            </PriceCardBottom>
           </PriceMiddle>
           <PriceRight>
-            <PriceCardTop></PriceCardTop>
+            <PriceCardTop>
+              <h2>Ceremony/Cocktail + Live DJ</h2>
+              <h3>(Starting at) $4000</h3>
+            </PriceCardTop>
+            <PriceCardBottom>
+              <h2 className="weddingtitles">Ceremony</h2>
+              <h4 className="weddingparagraphs">
+                Live instrumental guitar for 30 minutes as guests arrive (or
+                playlist)
+              </h4>
+              <h2 className="weddingtitles">Cocktail</h2>
+              <h4 className="weddingparagraphs">
+                Your guests will enjoy 60 minutes of live music as they make
+                their way into the reception hall with relaxing hits as they
+                enjoy their meals.
+              </h4>
+              <h2 className="weddingtitles">Live Band</h2>
+              <h4 className="weddingparagraphs">
+                Our band will make your guests dance the night away and
+                celebrate your special night with a wide variety of hits
+                spanning the past decades.
+              </h4>
+            </PriceCardBottom>
           </PriceRight>
         </PriceCardContainer>
       </Container>
