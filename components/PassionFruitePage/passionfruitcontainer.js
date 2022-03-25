@@ -84,8 +84,8 @@ const PassionfruitContainer = () => {
         <Image
           src={Passionfruity}
           objectFit={'cover'}
-          width={920}
-          height={80}
+          // width={920}
+          // height={80}
         />
       </div>
       {/* <Containerleft>
