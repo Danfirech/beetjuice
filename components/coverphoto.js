@@ -24,7 +24,7 @@ const Container = styled.div`
   background-color: #e5e4e2;
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 70vh;
+    height: 60vh;
   }
 `;
 
@@ -69,8 +69,8 @@ const TextContainer = styled.div`
     height: 100px;
     width: 350px;
     font-size: 35px;
-    padding-top: 200px;
-    padding-left: 200px;
+    padding-top: 150px;
+    padding-left: 50px;
   }
 `;
 
