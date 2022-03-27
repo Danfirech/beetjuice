@@ -13,11 +13,15 @@ const BasicContactForm = (e) => {
 };
 
 const Container = styled.div`
-  height: 1900px;
+  height: 1600px;
   width: 100vw;
   background-color: black;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 2700px;
+  }
 `;
 
 const TitleContainer = styled.div`
@@ -28,6 +32,10 @@ const TitleContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 2700px;
+  }
 `;
 
 const Title = styled.div`
@@ -41,12 +49,15 @@ const Title = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+    @media (max-width: 768px) {
+    flex-direction: column;
+    height: 400px;
+  }
 `;
 
 const PriceCardContainer = styled.div`
-  height: 1200px;
+  height: 1400px;
   width: 100%;
-  margin-top: -150px;
   display: flex;
   flex-direction: row;
   background-color: #e5e4e2;
@@ -54,6 +65,14 @@ const PriceCardContainer = styled.div`
   align-items: center;
   padding-right: 100px;
   padding-left: 100px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 1900px;
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
 `;
 
 const PriceLeft = styled.div`
@@ -66,20 +85,31 @@ const PriceLeft = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const PriceMiddle = styled.div`
-  height: 70%;
+  height: 90%;
   width: 450px;
   background-color: #e5e4e2;
   border: 1px solid black;
+  @media (max-width: 768px) {
+    height: 40%;
+    width: 90vw;
+  }
 `;
 
 const PriceRight = styled.div`
-  height: 70%;
-  width: 500px;
+  height: 90%;
+  width: 450px;
   background-color: #e5e4e2;
   border: 1px solid black;
+  @media (max-width: 768px) {
+    height: 40%;
+    width: 90vw;
+  }
 `;
 
 const PriceCardTop = styled.div`
@@ -130,6 +160,9 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    height: 500px;
+  }
 `;
 
 const Sections = styled.div`
@@ -141,10 +174,13 @@ const Sections = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    font-size: 35px;
+  }
 `;
 
 const FaqSection = styled.div`
-  height: 1100px;
+  height: 1200px;
   width: 100vw;
   display: flex;
   background-color: #e5e4e2;
@@ -168,6 +204,9 @@ const QuestionsBox = styled.div`
   margin-top: 40px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 const Top = styled.div`
@@ -177,6 +216,9 @@ const Top = styled.div`
   width: 1200px;
   /* background-color: #fefefe; */
   background-color: #dfe5e5;
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 const Bottom = styled.div`
@@ -187,6 +229,9 @@ const Bottom = styled.div`
   /* background-color: #fefefe; */
   background-color: white;
   color: gray;
+  @media (max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 const Pricing = () => {
@@ -271,7 +316,7 @@ const Pricing = () => {
       </Container>
       <FaqSection>
         <QuestionsPageContainer>
-          <h1>Frequently Asked Questions (FAQ)</h1>
+          <Sections>FAQ</Sections>
           <QuestionsBox>
             <Top>
               <h1
