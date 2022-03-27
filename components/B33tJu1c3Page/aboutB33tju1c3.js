@@ -321,7 +321,7 @@ const Pricing = (props) => {
     <>
       {/* B33T Ju1c3 Sindicate */}
       <TitleContainer className="background">
-        <Titlegrey>B33T Ju1c3 Sindicate</Titlegrey>
+        <Titlegrey>B33T Ju1c3</Titlegrey>
         <Button onClick={BasicContactForm}>Contact For Booking/Pricing</Button>
       </TitleContainer>
       <BeetJuiceTextContainer>

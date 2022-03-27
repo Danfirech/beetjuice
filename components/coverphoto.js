@@ -5,6 +5,7 @@ import Image from "next/image";
 import Insta from "../media/Insta.png";
 import Facebook from "../media/Face.png";
 import ScrollAnimation from "react-animate-on-scroll";
+import MobileCover from "../media/CutDownCover.jpeg";
 import "../pages/_document";
 
 const InstgramLink = (e) => {
@@ -21,8 +22,9 @@ const Container = styled.div`
   display: flex;
   padding-right: 150px;
   background-color: #e5e4e2;
-  @media (max-width: 1168px) {
-    display: none;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 70vh;
   }
 `;
 
@@ -35,6 +37,19 @@ const ImageContainer = styled.div`
   padding-bottom: 60px;
   display: flex;
   align-items: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const MobileImageContainer = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    height: 400px;
+    width: 100vw;
+  }
 `;
 
 const TextContainer = styled.div`
@@ -50,6 +65,13 @@ const TextContainer = styled.div`
   padding-top: 300px;
   padding-left: 400px;
   font-family: "Bebas Neue", cursive;
+  @media (max-width: 768px) {
+    height: 100px;
+    width: 350px;
+    font-size: 35px;
+    padding-top: 200px;
+    padding-left: 200px;
+  }
 `;
 
 const Pic2 = () => {
@@ -59,6 +81,16 @@ const Pic2 = () => {
         <TextContainer className="flicker-in-1">
           <h1>Beet Juice Entertainment</h1>
         </TextContainer>
+        <MobileImageContainer className="flicker-in-1">
+          <Image
+            src={MobileCover}
+            layout="intrinsic"
+            width={700}
+            height={950}
+            priority
+            alt="Cover"
+          />
+        </MobileImageContainer>
         <ImageContainer className="flicker-in-1">
           <Image
             src={pic}

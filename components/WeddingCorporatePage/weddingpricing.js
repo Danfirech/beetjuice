@@ -6,6 +6,7 @@ import ReactPlayer from "react-player";
 import Stock from "../../media/BandStock.jpeg";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../pages/_document";
+import DJ from "../../media/DJ.jpeg";
 
 const BasicContactForm = (e) => {
   window.location = "https://form.jotform.com/220784862221152";
@@ -20,13 +21,13 @@ const Container = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  padding-top: 100px;
   height: 300px;
   width: 100vw;
   background-color: black;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Title = styled.div`
@@ -37,8 +38,6 @@ const Title = styled.div`
   color: white;
   position: absolute;
   z-index: 99;
-  bottom: 8px;
-  left: 16px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -58,9 +57,10 @@ const PriceCardContainer = styled.div`
 
 const PriceLeft = styled.div`
   height: 70%;
-  width: 400px;
-  background-color: pink;
-  color: white;
+  width: 500px;
+  background-color: #e5e4e2;
+  color: black;
+  padding-bottom: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -68,15 +68,15 @@ const PriceLeft = styled.div`
 `;
 
 const PriceMiddle = styled.div`
-  height: 90%;
-  width: 400px;
+  height: 70%;
+  width: 450px;
   background-color: #e5e4e2;
   border: 1px solid black;
 `;
 
 const PriceRight = styled.div`
-  height: 90%;
-  width: 400px;
+  height: 70%;
+  width: 500px;
   background-color: #e5e4e2;
   border: 1px solid black;
 `;
@@ -101,6 +101,8 @@ const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  z-index: 99;
    background-color: #e5e4e2;
   color: black;
   font-family: "Overpass Mono", monospace;
@@ -123,7 +125,11 @@ const PriceCardBottom = styled.div`
   font-family: "Overpass Mono", monospace;
 `;
 
-const ImageContainer = styled.div``;
+const ImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 // const Container = styled.div`;
 //   width: 100%;
@@ -303,6 +309,10 @@ const Pricing = () => {
           <Title>
             <h1 className="textcolorwhite">Wedding Services</h1>
           </Title>
+
+          <Button className="button:hover" onClick={BasicContactForm}>
+            Contact For Booking/Pricing
+          </Button>
           <Image
             src={WeddingBanner}
             height="2000"
@@ -313,16 +323,14 @@ const Pricing = () => {
 
         <PriceCardContainer>
           <PriceLeft>
-            <h1>
+            <h2>
               We pride ourselves on building you a setlist unlike other wedding
               bands. We want you to hear songs that bring you back to, We want
               you to hear songs that bring you back to, We want you to hear
               songs that bring you back to, We want you to hear songs that bring
               you back to,
-            </h1>
-            <Button className="button:hover" onClick={BasicContactForm}>
-              Contact For Booking/Pricing
-            </Button>
+            </h2>
+            <Image src={DJ} height="400" width="500" alt="Dan" />
           </PriceLeft>
           <PriceMiddle>
             <PriceCardTop>

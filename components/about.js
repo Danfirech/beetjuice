@@ -17,14 +17,12 @@ const Container = styled.div`
   text-align: justify;
   font-family: "Roboto", sans-serif;
   @media (max-width: 568px) {
-    height: 200px;
+    height: 100px;
     font-size: 15px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 120px;
-    margin-top: -20px;
     text-align: left;
-    display: none;
   }
 `;
 

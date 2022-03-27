@@ -108,9 +108,7 @@ const Pricing = (props) => {
           </div>
           <TitleContainer>
             <Titlegrey>Corporate and Other Events</Titlegrey>
-            <Info>
-              WE DO EVENTS AND STUFF. GOD IS REAL BUT LEBRON IS REALER.
-            </Info>
+            <Info>WE DO EVENTS AND STUFF. LEBRON IS REALER.</Info>
             <Button className="button:hover" onClick={BasicContactForm}>
               Contact For Booking/Pricing
             </Button>
