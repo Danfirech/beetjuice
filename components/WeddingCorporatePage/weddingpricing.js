@@ -13,7 +13,7 @@ const BasicContactForm = (e) => {
 };
 
 const Container = styled.div`
-  height: 1700px;
+  height: 1900px;
   width: 100vw;
   background-color: black;
   display: flex;
@@ -46,6 +46,7 @@ const Title = styled.div`
 const PriceCardContainer = styled.div`
   height: 1200px;
   width: 100%;
+  margin-top: -150px;
   display: flex;
   flex-direction: row;
   background-color: #e5e4e2;
@@ -56,7 +57,7 @@ const PriceCardContainer = styled.div`
 `;
 
 const PriceLeft = styled.div`
-  height: 70%;
+  height: 50%;
   width: 500px;
   background-color: #e5e4e2;
   color: black;
@@ -131,175 +132,62 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-// const Container = styled.div`;
-//   width: 100%;
-//   height: 700px;
-//   padding-top: 100px;
-//   background-color: #e5e4e2;
-//   display: flex;
-//   justify-content: center;
+const Sections = styled.div`
+  height: 200px;
+  width: 100vw;
+  background-color: #e5e4e2;
+  z-index: 100;
+  font-size: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-//   @media (max-width: 768px) {
-//     flex-direction: column;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 1400px;
-//     background-color: white;
-//   }
-// `;
+const FaqSection = styled.div`
+  height: 1100px;
+  width: 100vw;
+  display: flex;
+  background-color: #e5e4e2;
+  margin-top: -120px;
+`;
 
-// const InfoBox = styled.div`
-//   width: 30%;
-//   height: 600px;
-//   background-color: white;
-//   border-radius: 6px;
-//   display: flex;
-//   flex-direction: column;
-//   @media (max-width: 768px) {
-//     width: 100%;
-//     padding-top: 20px;
-//     margin-left: 0px;
-//     margin-bottom: 20px;
-//     height: 700px;
-//     border: none;
-//     background-color: white;
-//   }
-// `;
+const QuestionsPageContainer = styled.div`
+  height: 1100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+`;
 
-// const MobileWeddingTitle = styled.div`
-//   height: 250px;
-//   width: 100vw;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   @media (max-width: 768px) {
-//     height: 200px;
-//     width: 100%
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     background-color: white;
-//     font-size: 25px;
-//     padding: 25px;
-//     font-family: raleway;
+const QuestionsBox = styled.div`
+  background-color: black;
+  width: 1200px;
+  height: 100px;
+  background-color: white;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+`;
 
-//   }
-// `;
+const Top = styled.div`
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 1200px;
+  /* background-color: #fefefe; */
+  background-color: #dfe5e5;
+`;
 
-// const WeddingLine = styled.div`
-//   width: 2px;
-//   height: 600px;
-//   background-color: black;
-//   margin-left: 90px;
-//   @media (max-width: 768px) {
-//     display: none;
-//   }
-// `;
-
-// const TopOfWeddingBoxes = styled.div`
-//   width: 100%;
-//   height: 120px;
-//   background-color: black;
-//   color: white;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   font-family: "Bebas Neue", cursive;
-//   @media (max-width: 768px) {
-//     font-size: 11px;
-//     margin-top: 0px;
-//     height: 100px;
-//   }
-// `;
-
-// const TitleContainer = styled.div`
-//   height: 250px;
-//   width: 100vw;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
-// const Title = styled.div`
-//   height: 120px;
-//   width: 83%;
-//   display: flex;
-//   justify-content: center;
-//   background-color: White;
-//   font-size: 62px;
-//   padding: 25px;
-//   font-family: raleway;
-//   /* border-top: 2px solid black; */
-//   @media (max-width: 768px) {
-//     font-size: 31px;
-//   }
-// `;
-
-// const Titlegrey = styled.div`
-//   height: 120px;
-//   width: 83%;
-//   display: flex;
-//   justify-content: center;
-//   font-size: 62px;
-//   padding: 25px;
-//   font-family: "Bebas Neue", cursive;
-//   /* border-top: 2px solid black; */
-//   @media (max-width: 768px) {
-//     font-size: 31px;
-//   }
-// `;
-
-// const Button = styled.div`
-//   width: 250px;
-//   height: 60px;
-//   border: 2px solid black;
-//   border-radius: 10px;
-//   margin-top: -10px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background-color: black;
-//   color: white;
-//   font-family: "Overpass Mono", monospace;
-//   font-size: 14px;
-//   transition-duration: 0.4s;
-//   cursor: pointer;
-//   :hover {
-//     background-color: white;
-//     color: black;
-//   }
-
-//   @media (max-width: 768px) {
-//     background-color: white;
-//     color: black;
-//     border-radius: 6px;
-//   }
-// `;
-
-// const TextBox = styled.div`
-//   width: 65%;
-//   height: 400px;
-//   background-color: #e5e4e2;
-//   border-radius: 6px;
-//   margin-left: 100px;
-//   margin-right: 100px;
-//   display: flex;
-//   @media (max-width: 768px) {
-//     width: 100%;
-//     margin-right: none;
-//     height: 350px;
-//   }
-// `;
-
-// const WeddingContainer = styled.div`
-//   height: 300px;
-//   width: 100%;
-//   position: absolute;
-// `;
+const Bottom = styled.div`
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 1200px;
+  /* background-color: #fefefe; */
+  background-color: white;
+  color: gray;
+`;
 
 const Pricing = () => {
   return (
@@ -307,7 +195,7 @@ const Pricing = () => {
       <Container>
         <ImageContainer>
           <Title>
-            <h1 className="textcolorwhite">Wedding Services</h1>
+            <h1 className="textcolorwhite">Weddings</h1>
           </Title>
 
           <Button className="button:hover" onClick={BasicContactForm}>
@@ -320,15 +208,12 @@ const Pricing = () => {
             alt="Dan"
           />
         </ImageContainer>
-
+        <Sections>Packages We Offer</Sections>
         <PriceCardContainer>
           <PriceLeft>
             <h2>
-              We pride ourselves on building you a setlist unlike other wedding
-              bands. We want you to hear songs that bring you back to, We want
-              you to hear songs that bring you back to, We want you to hear
-              songs that bring you back to, We want you to hear songs that bring
-              you back to,
+              We can customize any package. Our Band or DJ will curate a set to
+              fit your weddings vibes.{" "}
             </h2>
             <Image src={DJ} height="400" width="500" alt="Dan" />
           </PriceLeft>
@@ -384,82 +269,259 @@ const Pricing = () => {
           </PriceRight>
         </PriceCardContainer>
       </Container>
+      <FaqSection>
+        <QuestionsPageContainer>
+          <h1>Frequently Asked Questions (FAQ)</h1>
+          <QuestionsBox>
+            <Top>
+              <h1
+                className="boxBorderTop"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                  color: "#0c234b",
+                }}
+              >
+                Q.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please ask your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Top>
+            <Bottom>
+              <h1
+                className="boxBorderBottom"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                }}
+              >
+                A.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please Answer your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Bottom>
+          </QuestionsBox>
+          <QuestionsBox>
+            <Top>
+              <h1
+                className="boxBorderTop"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                  color: "#0c234b",
+                }}
+              >
+                Q.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please ask your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Top>
+            <Bottom>
+              <h1
+                className="boxBorderBottom"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                }}
+              >
+                A.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please Answer your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Bottom>
+          </QuestionsBox>
+          <QuestionsBox>
+            <Top>
+              <h1
+                className="boxBorderTop"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                  color: "#0c234b",
+                }}
+              >
+                Q.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please ask your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Top>
+            <Bottom>
+              <h1
+                className="boxBorderBottom"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                }}
+              >
+                A.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please Answer your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Bottom>
+          </QuestionsBox>
+          <QuestionsBox>
+            <Top>
+              <h1
+                className="boxBorderTop"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                  color: "#0c234b",
+                }}
+              >
+                Q.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please ask your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Top>
+            <Bottom>
+              <h1
+                className="boxBorderBottom"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                }}
+              >
+                A.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please Answer your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Bottom>
+          </QuestionsBox>
+          <QuestionsBox>
+            <Top>
+              <h1
+                className="boxBorderTop"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                  color: "#0c234b",
+                }}
+              >
+                Q.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please ask your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Top>
+            <Bottom>
+              <h1
+                className="boxBorderBottom"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                }}
+              >
+                A.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please Answer your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Bottom>
+          </QuestionsBox>
+          <QuestionsBox>
+            <Top>
+              <h1
+                className="boxBorderTop"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                  color: "#0c234b",
+                }}
+              >
+                Q.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please ask your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Top>
+            <Bottom>
+              <h1
+                className="boxBorderBottom"
+                style={{
+                  paddingRight: 20,
+                  paddingLeft: 15,
+                }}
+              >
+                A.
+              </h1>
+              <h4
+                style={{
+                  paddingTop: 10,
+                }}
+              >
+                Please Answer your first question here. It may be any lenght you
+                chose?
+              </h4>
+            </Bottom>
+          </QuestionsBox>
+        </QuestionsPageContainer>
+      </FaqSection>
     </>
   );
 };
-export default Pricing;
 
-{
-  /* NEW WEDDING SECTION */
-}
-{
-  /* WEDDINGS */
-}
-{
-  /* <WeddingContainer>
-        <Image src={WeddingBanner} layout="intrinsic" priority alt="Dan" />
-        <TitleContainer className="background">
-          <Titlegrey>Wedding Services</Titlegrey>
-          <Button className="button:hover" onClick={BasicContactForm}>
-            Contact For Booking/Pricing
-          </Button>
-        </TitleContainer>
-        <Container>
-          <Left className="slide-top">
-            <TopOfWeddingBoxes>
-              <h1>
-                Ceremony/Cocktail + Live Band <br /> (Starting at) $6800
-              </h1>
-            </TopOfWeddingBoxes>
-            <BottomOfWeddingBoxes>
-              <h2 className="weddingtitles">Ceremony</h2>
-              <h4 className="weddingparagraphs">
-                Live instrumental guitar for 30 minutes as guests arrive (or
-                playlist)
-              </h4>
-              <h2 className="weddingtitles">Cocktail</h2>
-              <h4 className="weddingparagraphs">
-                Your guests will enjoy 60 minutes of live music as they make
-                their way into the reception hall with relaxing hits as they
-                enjoy their meals.
-              </h4>
-              <h2 className="weddingtitles">Live Band</h2>
-              <h4 className="weddingparagraphs">
-                Our band will make your guests dance the night away and
-                celebrate your special night with a wide variety of hits
-                spanning the past decades.
-              </h4>
-            </BottomOfWeddingBoxes>
-          </Left>
-          {/* <WeddingLine /> */
-}
-{
-  /* <Right className="slide-top">
-            <TopOfWeddingBoxes>
-              <h1>
-                Ceremony/Cocktail + Live DJ <br />
-                (Starting at) $4800
-              </h1>
-            </TopOfWeddingBoxes>
-            <BottomOfWeddingBoxes>
-              <h2 className="weddingtitles">Ceremony</h2>
-              <h4 className="weddingparagraphs">
-                Live instrumental guitar for 30 minutes as guests arrive (or
-                playlist)
-              </h4>
-              <h2 className="weddingtitles">Cocktail</h2>
-              <h4 className="weddingparagraphs">
-                Your guests will enjoy 60 minutes of live music as they make
-                their way into the reception hall with relaxing hits as they
-                enjoy their meals.
-              </h4>
-              <h2 className="weddingtitles">Live DJ</h2>
-              <h4 className="weddingparagraphs">
-                Our DJ will make your guests dance the night away and celebrate
-                your special night with a wide variety of hits.
-              </h4>
-            </BottomOfWeddingBoxes>
-          </Right>
-        </Container>
-      </WeddingContainer> */
-}
+export default Pricing;

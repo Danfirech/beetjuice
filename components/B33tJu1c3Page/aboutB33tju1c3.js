@@ -25,7 +25,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1400px;
+    height: 1200px;
     background-color: white;
   }
 `;
@@ -66,64 +66,6 @@ const Right = styled.div`
     height: 700px;
     border: none;
     background-color: white;
-  }
-`;
-
-const MobileWeddingTitle = styled.div`
-  height: 250px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 768px) {
-    height: 200px;
-    width: 100%
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    font-size: 25px;
-    padding: 25px;
-    font-family: raleway;
- 
-  }
-`;
-
-const WeddingLine = styled.div`
-  width: 2px;
-  height: 600px;
-  background-color: black;
-  margin-left: 90px;
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const TopOfWeddingBoxes = styled.div`
-  width: 100%;
-  height: 120px;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Bebas Neue", cursive;
-  @media (max-width: 768px) {
-    font-size: 11px;
-    margin-top: 0px;
-    height: 100px;
-  }
-`;
-
-const BottomOfWeddingBoxes = styled.div`
-  padding: 10px;
-  font-family: 'Overpass Mono', monospace;
-  @media (max-width: 768px) {
-    display: flex:
-    align-items: center;
-    justify: content;
   }
 `;
 
@@ -207,45 +149,6 @@ const TextBox = styled.div`
   }
 `;
 
-const CorporateTextContainter = styled.div`
-  width: 100%;
-  height: 200px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  font-family: "M PLUS 1", sans-serif;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    height: 400px;
-  }
-`;
-
-const CorporateText = styled.div`
-  width: 100%;
-  height: 200px;
-  padding-left: 380px;
-  padding-right: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  text-align: justify;
-  @media (max-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: justify;
-  }
-`;
-
 const BeetJuiceText = styled.div`
   width: 30%;
   height: 680px;
@@ -260,13 +163,13 @@ const BeetJuiceText = styled.div`
   font-family: "Roboto", sans-serif;
   @media (max-width: 768px) {
     width: 100%;
+    height: 10px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: -180px;
-    height: 200px;
     text-align: left;
   }
 `;
