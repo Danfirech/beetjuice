@@ -14,7 +14,10 @@ const CorporateContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1190px;
+  height: 1150px;
+  @media (max-width: 768px) {
+    height: 300px;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -30,6 +33,10 @@ const TitleContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    height: 700px;
+    padding-bottom: 100px;
+  }
 `;
 
 const Titlegrey = styled.div`
@@ -39,11 +46,14 @@ const Titlegrey = styled.div`
   justify-content: center;
   font-size: 62px;
   padding: 25px;
-  /* padding-top: 80px; */
   z-index: 99;
   font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
-    font-size: 31px;
+    font-size: 41px;
+    color: white;
+    padding-top: 50px;
+    width: 100%;
+    padding-left: 35px;
   }
 `;
 
@@ -52,12 +62,14 @@ const Info = styled.div`
   width: 83%;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 40px;
-  padding: 25px;
+
   z-index: 99;
   font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
     font-size: 31px;
+    height: 180px;
   }
 `;
 
@@ -81,11 +93,13 @@ const Button = styled.div`
     background-color: white;
     color: black;
   }
-
   @media (max-width: 768px) {
     background-color: white;
     color: black;
     border-radius: 6px;
+    width: 200px;
+    height: 60px;
+    padding: 25px;
   }
 `;
 

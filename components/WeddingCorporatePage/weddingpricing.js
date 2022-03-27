@@ -56,7 +56,7 @@ const Title = styled.div`
 `;
 
 const PriceCardContainer = styled.div`
-  height: 1400px;
+  height: 1500px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -166,7 +166,7 @@ const ImageContainer = styled.div`
 `;
 
 const Sections = styled.div`
-  height: 200px;
+  height: 220px;
   width: 100vw;
   background-color: #e5e4e2;
   z-index: 100;
