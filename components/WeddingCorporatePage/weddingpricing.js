@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import WeddingBanner from "../../media/weddingbanner.jpeg";
-import ReactPlayer from "react-player";
-import Stock from "../../media/BandStock.jpeg";
-import ScrollAnimation from "react-animate-on-scroll";
-import "../../pages/_document";
-import DJ from "../../media/DJ.jpeg";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import WeddingBanner from '../../media/weddingbanner.jpeg';
+import ReactPlayer from 'react-player';
+import Stock from '../../media/BandStock.jpeg';
+import ScrollAnimation from 'react-animate-on-scroll';
+import '../../pages/_document';
+import DJ from '../../media/DJ.jpeg';
 
 const BasicContactForm = (e) => {
-  window.location = "https://form.jotform.com/220784862221152";
+  window.location = 'https://form.jotform.com/220784862221152';
 };
 
 const Container = styled.div`
@@ -134,16 +134,17 @@ const Button = styled.div`
   justify-content: center;
   position: absolute;
   z-index: 99;
-   background-color: #e5e4e2;
+  background-color: #e5e4e2;
   color: black;
-  font-family: "Overpass Mono", monospace;
+  font-family: 'Overpass Mono', monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
   :hover {
     background-color: white;
     color: black;
-  `;
+  }
+`;
 
 const Price = styled.div`
   width: 30px;
@@ -153,7 +154,7 @@ const Price = styled.div`
 
 const PriceCardBottom = styled.div`
   padding: 10px;
-  font-family: "Overpass Mono", monospace;
+  font-family: 'Overpass Mono', monospace;
 `;
 
 const ImageContainer = styled.div`
@@ -249,7 +250,7 @@ const Pricing = () => {
           <Image
             src={WeddingBanner}
             height="2000"
-            objectFit={"cover"}
+            objectFit={'cover'}
             alt="Dan"
           />
         </ImageContainer>
@@ -258,7 +259,7 @@ const Pricing = () => {
           <PriceLeft>
             <h2>
               We can customize any package. Our Band or DJ will curate a set to
-              fit your weddings vibes.{" "}
+              fit your weddings vibes.{' '}
             </h2>
             <Image src={DJ} height="400" width="500" alt="Dan" />
           </PriceLeft>
@@ -324,7 +325,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "#0c234b",
+                  color: '#0c234b',
                 }}
               >
                 Q.
@@ -334,7 +335,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please ask your first question here. It may be any lenght you
+                Please ask your first question here. It may be any length you
                 chose?
               </h4>
             </Top>
@@ -353,7 +354,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any lenght you
+                Please Answer your first question here. It may be any length you
                 chose?
               </h4>
             </Bottom>
@@ -365,7 +366,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "#0c234b",
+                  color: '#0c234b',
                 }}
               >
                 Q.
@@ -375,7 +376,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please ask your first question here. It may be any lenght you
+                Please ask your first question here. It may be any length you
                 chose?
               </h4>
             </Top>
@@ -394,7 +395,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any lenght you
+                Please Answer your first question here. It may be any length you
                 chose?
               </h4>
             </Bottom>
@@ -406,7 +407,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "#0c234b",
+                  color: '#0c234b',
                 }}
               >
                 Q.
@@ -416,7 +417,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please ask your first question here. It may be any lenght you
+                Please ask your first question here. It may be any length you
                 chose?
               </h4>
             </Top>
@@ -435,7 +436,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any lenght you
+                Please Answer your first question here. It may be any length you
                 chose?
               </h4>
             </Bottom>
@@ -447,7 +448,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "#0c234b",
+                  color: '#0c234b',
                 }}
               >
                 Q.
@@ -457,7 +458,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please ask your first question here. It may be any lenght you
+                Please ask your first question here. It may be any length you
                 chose?
               </h4>
             </Top>
@@ -476,7 +477,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any lenght you
+                Please Answer your first question here. It may be any length you
                 chose?
               </h4>
             </Bottom>
@@ -488,7 +489,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "#0c234b",
+                  color: '#0c234b',
                 }}
               >
                 Q.
@@ -498,7 +499,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please ask your first question here. It may be any lenght you
+                Please ask your first question here. It may be any length you
                 chose?
               </h4>
             </Top>
@@ -517,7 +518,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any lenght you
+                Please Answer your first question here. It may be any length you
                 chose?
               </h4>
             </Bottom>
@@ -529,7 +530,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "#0c234b",
+                  color: '#0c234b',
                 }}
               >
                 Q.
@@ -539,7 +540,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please ask your first question here. It may be any lenght you
+                Please ask your first question here. It may be any length you
                 chose?
               </h4>
             </Top>
@@ -558,7 +559,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any lenght you
+                Please Answer your first question here. It may be any length you
                 chose?
               </h4>
             </Bottom>
