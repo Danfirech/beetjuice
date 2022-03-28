@@ -15,6 +15,7 @@ const CorporateContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 1150px;
+  background-color: #e5e4e2;
   @media (max-width: 768px) {
     height: 300px;
   }
@@ -63,7 +64,12 @@ const Info = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 30px;
+  padding-right: 300px;
+  padding-left: 300px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  color: black;
 
   z-index: 99;
   font-family: "Bebas Neue", cursive;
@@ -122,7 +128,13 @@ const Pricing = (props) => {
           </div>
           <TitleContainer>
             <Titlegrey>Corporate and Other Events</Titlegrey>
-            <Info>WE DO EVENTS AND STUFF. LEBRON IS REALER.</Info>
+            <Info>
+              B33t Ju1c3 Entertainment offers live music selections that fit any
+              event. Whether you are looking for a high energy experience that
+              has your party Dancing or a quiet cocktail hour, the B33t Ju1c3
+              band will be able to meet your needs. Please contact us for
+              Pricing.
+            </Info>
             <Button className="button:hover" onClick={BasicContactForm}>
               Contact For Booking/Pricing
             </Button>

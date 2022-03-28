@@ -150,13 +150,13 @@ const TextBox = styled.div`
 `;
 
 const BeetJuiceText = styled.div`
-  width: 30%;
+  width: 40%;
   height: 680px;
   background-color: #e5e4e2;
   border-radius: 6px;
   padding-left: 80px;
   padding-right: 80px;
-  padding-top: 100px;
+  padding-top: 180px;
   display: flex;
   flex-direction: column;
   font-size: 21px;
