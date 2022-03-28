@@ -44,6 +44,7 @@ const Title = styled.div`
   display: flex;
   background: none;
   color: white;
+  font-family: "Bebas Neue", cursive;
   position: absolute;
   z-index: 99;
   flex-direction: column;
@@ -65,6 +66,7 @@ const PriceCardContainer = styled.div`
   align-items: center;
   padding-right: 100px;
   padding-left: 100px;
+  padding-top: 100px;
   @media (max-width: 768px) {
     flex-direction: column;
     height: 1900px;
@@ -76,17 +78,24 @@ const PriceCardContainer = styled.div`
 `;
 
 const PriceLeft = styled.div`
-  height: 50%;
+  height: 90%;
   width: 500px;
   background-color: #e5e4e2;
   color: black;
-  padding-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: black;
+  /* padding-bottom: 5px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   @media (max-width: 768px) {
     display: none;
+  }
+  .wedding-package-title {
+    font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
   }
 `;
 
@@ -126,22 +135,22 @@ const PriceCardTop = styled.div`
 const Button = styled.div`
   width: 250px;
   height: 60px;
-  border: 2px solid black;
+  border: 2px solid #e5e4e2;
   border-radius: 10px;
-  margin-top: -10px;
+  margin-top: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   z-index: 99;
-  background-color: #e5e4e2;
+  background-color: white;
   color: black;
   font-family: 'Overpass Mono', monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
   :hover {
-    background-color: white;
+    background-color: #e5e4e2;
     color: black;
   }
 `;
@@ -169,9 +178,12 @@ const ImageContainer = styled.div`
 const Sections = styled.div`
   height: 220px;
   width: 100vw;
+  padding-top: 80px;
+  padding-left: 150px;
   background-color: #e5e4e2;
   z-index: 100;
   font-size: 65px;
+  font-family: 'Bebas Neue', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,18 +266,22 @@ const Pricing = () => {
             alt="Dan"
           />
         </ImageContainer>
-        <Sections>Packages We Offer</Sections>
+        {/* <Sections>Packages We Offer</Sections> */}
         <PriceCardContainer>
           <PriceLeft>
+            <h1 className="wedding-package-title">Packages We Offer</h1>
             <h2>
               We can customize any package. Our Band or DJ will curate a set to
-              fit your weddings vibes.{' '}
+              fit your weddings vibes. We can customize any package. Our Band or
+              DJ will curate a set to fit your weddings vibes. We can customize
+              any package. Our Band or DJ will curate a set to fit your weddings
+              vibes.
             </h2>
             <Image src={DJ} height="400" width="500" alt="Dan" />
           </PriceLeft>
           <PriceMiddle>
             <PriceCardTop>
-              <h2>Ceremony/Cocktail + Live Band</h2>
+              <h2 className="weddingtitles">Ceremony/Cocktail + Live Band</h2>
               <h3>(Starting at) $5200</h3>
             </PriceCardTop>
             <PriceCardBottom>
