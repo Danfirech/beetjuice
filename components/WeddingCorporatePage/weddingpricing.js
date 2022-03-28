@@ -66,7 +66,7 @@ const PriceCardContainer = styled.div`
   align-items: center;
   padding-right: 100px;
   padding-left: 100px;
-  padding-top: 100px;
+  padding-top: 107px;
   @media (max-width: 768px) {
     flex-direction: column;
     height: 1900px;
@@ -83,7 +83,7 @@ const PriceLeft = styled.div`
   background-color: #e5e4e2;
   color: black;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 13.5px;
   color: black;
   /* padding-bottom: 5px; */
   display: flex;
@@ -101,7 +101,7 @@ const PriceLeft = styled.div`
 
 const PriceMiddle = styled.div`
   height: 90%;
-  width: 450px;
+  width: 480px;
   background-color: #e5e4e2;
   border: 1px solid black;
   @media (max-width: 768px) {
@@ -112,7 +112,7 @@ const PriceMiddle = styled.div`
 
 const PriceRight = styled.div`
   height: 90%;
-  width: 450px;
+  width: 480px;
   background-color: #e5e4e2;
   border: 1px solid black;
   @media (max-width: 768px) {
@@ -124,8 +124,11 @@ const PriceRight = styled.div`
 const PriceCardTop = styled.div`
   height: 200px;
   width: 100%;
-  background-color: #e5e4e2;
+  background-color: #d1cfcc;
   border-bottom: 1px solid black;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -135,7 +138,7 @@ const PriceCardTop = styled.div`
 const Button = styled.div`
   width: 250px;
   height: 60px;
-  border: 2px solid #e5e4e2;
+  border: 2px solid black;
   border-radius: 10px;
   margin-top: 150px;
   display: flex;
@@ -143,8 +146,8 @@ const Button = styled.div`
   justify-content: center;
   position: absolute;
   z-index: 99;
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   font-family: 'Overpass Mono', monospace;
   font-size: 14px;
   transition-duration: 0.4s;
@@ -152,6 +155,7 @@ const Button = styled.div`
   :hover {
     background-color: #e5e4e2;
     color: black;
+    border: 2px solid #e5e4e2;
   }
 `;
 
@@ -228,9 +232,15 @@ const Top = styled.div`
   height: 60px;
   width: 1200px;
   /* background-color: #fefefe; */
-  background-color: #dfe5e5;
+  background-color: #d1cfcc;
   @media (max-width: 768px) {
     width: 300px;
+  }
+  .boxBorderTop {
+    font-family: 'Bebas Neue', cursive;
+  }
+  .boxBorderBottom {
+    font-family: 'Bebas Neue', cursive;
   }
 `;
 
@@ -242,6 +252,7 @@ const Bottom = styled.div`
   /* background-color: #fefefe; */
   background-color: white;
   color: gray;
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 768px) {
     width: 300px;
   }
@@ -281,8 +292,8 @@ const Pricing = () => {
           </PriceLeft>
           <PriceMiddle>
             <PriceCardTop>
-              <h2 className="weddingtitles">Ceremony/Cocktail + Live Band</h2>
-              <h3>(Starting at) $5200</h3>
+              <h2>Ceremony/Cocktail + Live Band</h2>
+              (Starting at) $5200
             </PriceCardTop>
             <PriceCardBottom>
               <h2 className="weddingtitles">Ceremony</h2>
@@ -307,7 +318,7 @@ const Pricing = () => {
           <PriceRight>
             <PriceCardTop>
               <h2>Ceremony/Cocktail + Live DJ</h2>
-              <h3>(Starting at) $4000</h3>
+              (Starting at) $4000
             </PriceCardTop>
             <PriceCardBottom>
               <h2 className="weddingtitles">Ceremony</h2>
@@ -341,7 +352,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: '#0c234b',
+                  color: 'black',
                 }}
               >
                 Q.
@@ -382,7 +393,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: '#0c234b',
+                  color: 'black',
                 }}
               >
                 Q.
@@ -423,7 +434,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: '#0c234b',
+                  color: 'black',
                 }}
               >
                 Q.
@@ -464,7 +475,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: '#0c234b',
+                  color: 'black',
                 }}
               >
                 Q.
@@ -505,7 +516,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: '#0c234b',
+                  color: 'black',
                 }}
               >
                 Q.
@@ -546,7 +557,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: '#0c234b',
+                  color: 'black',
                 }}
               >
                 Q.
