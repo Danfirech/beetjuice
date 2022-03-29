@@ -49,12 +49,75 @@ const Right = styled.div`
   font-family: 'Overpass Mono', monospace;
   border-bottom: 1px solid black;
   padding-left: 250px;
-  @media (max-width: 768px) {
+  word-spacing: 30px;
+
+  ul {
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: inline-block;
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 4rem;
+    cursor: pointer;
     display: none;
+    outline: none;
+    * {
+      pointer-events: none;
+    }
+  }
+
+  .navItems .closeNavIcon {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0;
+    .hide-item {
+      transform: translateY(calc(-100% - var(--top)));
+    }
+    .mobile-menu-icon {
+      display: block;
+    }
+    .navItems {
+      --top: 1rem;
+      transition: 0.3s ease transform;
+      padding: 2rem;
+      width: 90%;
+      max-width: 300px;
+      border-radius: 12px;
+      position: absolute;
+      right: 1rem;
+      top: var(--top);
+      .closeNavIcon {
+        display: block;
+        width: 3rem;
+        margin: 0 0 0 auto;
+        cursor: pointer;
+        * {
+          pointer-events: none;
+        }
+      }
+      li {
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
   }
 `;
 
 const Header = () => {
+  const [showNav, setShowNav] = useState(false);
+
   return (
     <Container>
       <Left>
@@ -69,24 +132,98 @@ const Header = () => {
       </Left>
 
       <Right>
-        <Link href="/" passHref>
-          Home
-        </Link>
-        <Link href="/b33tju1c3" passHref>
-          B33t Ju1c3
-        </Link>
-        <Link href="/wedding" passHref>
-          Weddings
-        </Link>
-        <Link href="/corporate" passHref>
-          Corporate/Events
-        </Link>
-        <Link href="/passionfruit" passHref>
-          Passionfruit
-        </Link>
-        <Link href="/" passHref>
-          Contact
-        </Link>
+        <div
+          className="mobile-menu-icon"
+          onClick={() => setShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => setShowNav(!showNav)}
+          tabIndex={0}
+        >
+          <MdMenu />
+        </div>
+        <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+          <div
+            className="closeNavIcon"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            <MdClose />
+          </div>
+          <li>
+            <Link
+              href="/"
+              passHref
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/b33tju1c3"
+              passHref
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              B33t Ju1c3
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/wedding"
+              passHref
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Weddings
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/corporate"
+              passHref
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Corporate/Events
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/passionfruit"
+              passHref
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Passionfruit
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/"
+              passHref
+              onClick={() => setShowNav(!showNav)}
+              role="button"
+              onKeyDown={() => setShowNav(!showNav)}
+              tabIndex={0}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
       </Right>
     </Container>
   );
