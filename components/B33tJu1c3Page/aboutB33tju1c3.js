@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Dan from "../../media/Dan.jpeg";
 import Ezra from "../../media/Ezra.jpeg";
 import Image from "next/image";
+import CutDown from "../../media/CutDownCover.jpeg";
 import ReactPlayer from "react-player";
 import Stock from "../../media/BandStock.jpeg";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -230,7 +231,7 @@ const Pricing = (props) => {
       <BeetJuiceTextContainer>
         <div className="danphoto">
           <Image
-            src={Ezra}
+            src={CutDown}
             layout="intrinsic"
             width={400}
             height={500}
@@ -238,7 +239,7 @@ const Pricing = (props) => {
             alt="Ezra"
           />
         </div>
-        <div className="ezraphoto">
+        {/* <div className="ezraphoto">
           <Image
             padding-top={10}
             src={Dan}
@@ -248,7 +249,7 @@ const Pricing = (props) => {
             priority
             alt="Dan"
           />
-        </div>
+        </div> */}
         <BeetJuiceText>
           <h5>
             Beet Juice (written as B33T JU1 C3), is a two-man project founded by

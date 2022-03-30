@@ -5,14 +5,14 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const Container = styled.div`
   width: 100%;
-  height: 350px;
+  height: 300px;
   background-color: #e5e4e2;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 21px;
-  padding-left: 390px;
-  padding-right: 390px;
+  padding-left: 480px;
+  padding-right: 150px;
   padding-top: 150px;
   text-align: justify;
   font-family: "Roboto", sans-serif;

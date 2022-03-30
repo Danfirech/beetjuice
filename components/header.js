@@ -28,12 +28,10 @@ const Left = styled.div`
   border-bottom: 1px solid black;
   @media (max-width: 768px) {
     height: 100px;
-    width: 100%;
-    padding-left: none;
+    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-right: 50px;
+    justify-content: flex-start;
   }
 `;
 
@@ -55,6 +53,8 @@ const Right = styled.div`
     max-width: 1200px;
     width: 90%;
     text-align: center;
+    z-index: 99;
+    background-color: #e5e4e2;
   }
   li {
     display: inline-block;
@@ -88,15 +88,17 @@ const Right = styled.div`
     }
     .mobile-menu-icon {
       display: block;
+      font-size: 40px;
+      padding-top: 13px;
     }
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      padding: 2rem;
-      width: 90%;
+      padding: 1rem;
+      width: 50%;
       max-width: 300px;
-      border-radius: 12px;
       position: absolute;
+
       right: 1rem;
       top: var(--top);
       .closeNavIcon {
@@ -111,6 +113,7 @@ const Right = styled.div`
       li {
         display: block;
         margin-bottom: 1rem;
+        padding-right: 2rem;
       }
     }
   }
