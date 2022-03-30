@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import logo from '../media/Transparentlogo.jpeg';
-import Link from 'next/link';
-import { MdClose, MdMenu } from 'react-icons/md';
-import '../pages/_document';
+import React, { useState } from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import logo from "../media/Transparentlogo.jpeg";
+import Link from "next/link";
+import { MdClose, MdMenu } from "react-icons/md";
+import "../pages/_document";
 
 const Container = styled.div`
   height: 100px;
@@ -22,7 +22,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   height: 100px;
-  width: 40%;
+  width: 30%;
   background-color: #e5e4e2;
   padding-left: 58px;
   border-bottom: 1px solid black;
@@ -39,14 +39,14 @@ const Left = styled.div`
 
 const Right = styled.div`
   height: 100px;
-  width: 60%;
+  width: 70%;
   background-color: #e5e4e2;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-right: 58px;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   border-bottom: 1px solid black;
   padding-left: 250px;
   word-spacing: 30px;
@@ -61,6 +61,7 @@ const Right = styled.div`
   }
   a {
     display: inline-block;
+    padding-left: 25px;
   }
 
   .mobile-menu-icon {
@@ -141,7 +142,7 @@ const Header = () => {
         >
           <MdMenu />
         </div>
-        <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+        <ul className={!showNav ? "navItems hide-item" : "navItems"}>
           <div
             className="closeNavIcon"
             onClick={() => setShowNav(!showNav)}
@@ -172,7 +173,7 @@ const Header = () => {
               onKeyDown={() => setShowNav(!showNav)}
               tabIndex={0}
             >
-              B33t Ju1c3
+              B33tJu1c3
             </Link>
           </li>
           <li>
