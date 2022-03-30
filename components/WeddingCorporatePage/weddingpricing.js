@@ -1,15 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import WeddingBanner from '../../media/weddingbanner.jpeg';
-import ReactPlayer from 'react-player';
-import Stock from '../../media/BandStock.jpeg';
-import ScrollAnimation from 'react-animate-on-scroll';
-import '../../pages/_document';
-import DJ from '../../media/DJ.jpeg';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import WeddingBanner from "../../media/weddingbanner.jpeg";
+import ReactPlayer from "react-player";
+import Stock from "../../media/BandStock.jpeg";
+import ScrollAnimation from "react-animate-on-scroll";
+import "../../pages/_document";
+import DJ from "../../media/DJ.jpeg";
 
 const BasicContactForm = (e) => {
-  window.location = 'https://form.jotform.com/220784862221152';
+  window.location = "https://form.jotform.com/220784862221152";
 };
 
 const Container = styled.div`
@@ -82,7 +82,7 @@ const PriceLeft = styled.div`
   width: 500px;
   background-color: #e5e4e2;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 13.5px;
   color: black;
   /* padding-bottom: 5px; */
@@ -95,7 +95,7 @@ const PriceLeft = styled.div`
   }
   .wedding-package-title {
     font-size: 60px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
   }
 `;
 
@@ -126,7 +126,7 @@ const PriceCardTop = styled.div`
   width: 100%;
   background-color: #d1cfcc;
   border-bottom: 1px solid black;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 24px;
   color: black;
   display: flex;
@@ -148,7 +148,7 @@ const Button = styled.div`
   z-index: 99;
   background-color: black;
   color: white;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -167,7 +167,7 @@ const Price = styled.div`
 
 const PriceCardBottom = styled.div`
   padding: 10px;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
 `;
 
 const ImageContainer = styled.div`
@@ -187,7 +187,7 @@ const Sections = styled.div`
   background-color: #e5e4e2;
   z-index: 100;
   font-size: 65px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,28 +231,30 @@ const Top = styled.div`
   align-items: center;
   height: 60px;
   width: 1200px;
+  font-size: 20px;
   /* background-color: #fefefe; */
   background-color: #d1cfcc;
   @media (max-width: 768px) {
     width: 300px;
   }
   .boxBorderTop {
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
   }
   .boxBorderBottom {
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
   }
 `;
 
 const Bottom = styled.div`
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 80px;
   width: 1200px;
+  font-size: 20px;
   /* background-color: #fefefe; */
   background-color: white;
   color: gray;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   @media (max-width: 768px) {
     width: 300px;
   }
@@ -273,7 +275,7 @@ const Pricing = () => {
           <Image
             src={WeddingBanner}
             height="2000"
-            objectFit={'cover'}
+            objectFit={"cover"}
             alt="Dan"
           />
         </ImageContainer>
@@ -334,9 +336,8 @@ const Pricing = () => {
               </h4>
               <h2 className="weddingtitles">Live Band</h2>
               <h4 className="weddingparagraphs">
-                Our band will make your guests dance the night away and
-                celebrate your special night with a wide variety of hits
-                spanning the past decades.
+                Our DJ will select hit after hit and have your guests dancing
+                for hours into the night.
               </h4>
             </PriceCardBottom>
           </PriceRight>
@@ -352,7 +353,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: 'black',
+                  color: "black",
                 }}
               >
                 Q.
@@ -360,10 +361,10 @@ const Pricing = () => {
               <h4
                 style={{
                   paddingTop: 10,
+                  paddingLeft: 10,
                 }}
               >
-                Please ask your first question here. It may be any length you
-                chose?
+                What is needed from you once B33t Ju1c3 is booked?
               </h4>
             </Top>
             <Bottom>
@@ -381,8 +382,10 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any length you
-                chose?
+                We ask for a 20% down payment upon booking us. After that
+                logistics will be taken care of between your wedding planner and
+                our team. The final 80% of payment is due 2 weeks out from your
+                booked date.
               </h4>
             </Bottom>
           </QuestionsBox>
@@ -393,7 +396,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: 'black',
+                  color: "black",
                 }}
               >
                 Q.
@@ -401,10 +404,10 @@ const Pricing = () => {
               <h4
                 style={{
                   paddingTop: 10,
+                  paddingLeft: 10,
                 }}
               >
-                Please ask your first question here. It may be any length you
-                chose?
+                How is pricing determined?
               </h4>
             </Top>
             <Bottom>
@@ -422,8 +425,10 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any length you
-                chose?
+                We have a base rate for our packeges. Aditional costs are added
+                based on customization and your needs. Location and timing also
+                dictates our prices. We know everyone has a budget and we can
+                customize our service to match yours.
               </h4>
             </Bottom>
           </QuestionsBox>
@@ -434,7 +439,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: 'black',
+                  color: "black",
                 }}
               >
                 Q.
@@ -442,10 +447,10 @@ const Pricing = () => {
               <h4
                 style={{
                   paddingTop: 10,
+                  paddingLeft: 10,
                 }}
               >
-                Please ask your first question here. It may be any length you
-                chose?
+                What do our musicians wear?
               </h4>
             </Top>
             <Bottom>
@@ -463,8 +468,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any length you
-                chose?
+                Our band can match your theme!
               </h4>
             </Bottom>
           </QuestionsBox>
@@ -475,7 +479,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: 'black',
+                  color: "black",
                 }}
               >
                 Q.
@@ -483,10 +487,10 @@ const Pricing = () => {
               <h4
                 style={{
                   paddingTop: 10,
+                  paddingLeft: 10,
                 }}
               >
-                Please ask your first question here. It may be any length you
-                chose?
+                Will your band learn knew songs for us?
               </h4>
             </Top>
             <Bottom>
@@ -504,8 +508,8 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any length you
-                chose?
+                While we do have a curated setlist of songs we know you will
+                enjoy, we do learn new songs as well!
               </h4>
             </Bottom>
           </QuestionsBox>
@@ -516,7 +520,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: 'black',
+                  color: "black",
                 }}
               >
                 Q.
@@ -524,10 +528,10 @@ const Pricing = () => {
               <h4
                 style={{
                   paddingTop: 10,
+                  paddingLeft: 10,
                 }}
               >
-                Please ask your first question here. It may be any length you
-                chose?
+                Is the sound system included?
               </h4>
             </Top>
             <Bottom>
@@ -545,8 +549,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Please Answer your first question here. It may be any length you
-                chose?
+                Yes! Our team will set up all sound needs.
               </h4>
             </Bottom>
           </QuestionsBox>
@@ -557,7 +560,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: 'black',
+                  color: "black",
                 }}
               >
                 Q.
@@ -565,10 +568,10 @@ const Pricing = () => {
               <h4
                 style={{
                   paddingTop: 10,
+                  paddingLeft: 10,
                 }}
               >
-                Please ask your first question here. It may be any length you
-                chose?
+                A.
               </h4>
             </Top>
             <Bottom>
