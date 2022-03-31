@@ -5,6 +5,7 @@ import EventBanner from "../../media/event-heads.jpg";
 import ReactPlayer from "react-player";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../pages/_document";
+import Crowd from "../../media/crowd.png";
 
 const BasicContactForm = (e) => {
   window.location = "https://form.jotform.com/220784862221152";
@@ -17,7 +18,7 @@ const CorporateContainer = styled.div`
   height: 1150px;
   background-color: #e5e4e2;
   @media (max-width: 768px) {
-    height: 300px;
+    height: 500px;
   }
 `;
 
@@ -35,8 +36,10 @@ const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
-    height: 700px;
-    padding-bottom: 100px;
+    height: 550px;
+    padding-bottom: 20px;
+    height: 480px;
+    width: 100%;
   }
 `;
 
@@ -54,7 +57,7 @@ const Titlegrey = styled.div`
     color: white;
     padding-top: 50px;
     width: 100%;
-    padding-left: 35px;
+    height: 30px;
   }
 `;
 
@@ -70,12 +73,16 @@ const Info = styled.div`
   padding-top: 150px;
   padding-bottom: 150px;
   color: black;
-
   z-index: 99;
   font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
-    font-size: 31px;
-    height: 180px;
+    font-size: 21px;
+    height: 580px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: white;
   }
 `;
 
@@ -115,6 +122,21 @@ const Pricing = (props) => {
       <CorporateContainer>
         <ImageContainer>
           <div
+            className="cutweddingphoto"
+            style={{
+              position: "absolute",
+            }}
+          >
+            <Image
+              src={Crowd}
+              height="950"
+              width="700"
+              objectFit={"cover"}
+              alt="Crowd"
+            />
+          </div>
+          <div
+            className="weddingphotodisplay"
             style={{
               position: "absolute",
             }}
