@@ -1,75 +1,84 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import Passionfruit from "../../media/passionfruit.png";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import Passionfruit from '../../media/passionfruity poster.png';
+import Top from '../../media/top.png';
+import Bottom from '../../media/bottom.png';
 
 const Container = styled.div`
-  /* height: 830px;
-  width: 100vw;
-  background-color: black;
-  display: flex;
-  flex-direction: row; */
   width: 100vw;
   height: 100%;
   display: flex;
   background-color: #e5e4e2;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `;
 
 const Containerleft = styled.div`
   height: 830px;
   width: 50%;
-  background-color: black;
+  background-color: #e5e4e2;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 200px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const ContainerRightTop = styled.div`
   height: 50%;
   width: 100%;
-  background-color: black;
+  background-color: #e5e4e2;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 200px;
+  padding-top: 250px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const ContainerRightBottom = styled.div`
   height: 50%;
   width: 100%;
-  background-color: black;
+  background-color: #e5e4e2;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 200px;
+  padding-bottom: 250px;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const ContainerRight = styled.div`
   height: 830px;
   width: 50%;
-  background-color: black;
+  background-color: #e5e4e2;
   display: flex;
   flex-direction: column;
-`;
-
-const ContainerRightTextTop = styled.div`
-  height: 200px;
-  width: 600px;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const ContainerRightTextBottom = styled.div`
-  height: 200px;
-  width: 600px;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const PassionfruitContainer = () => {
@@ -87,21 +96,24 @@ const PassionfruitContainer = () => {
       </Containerleft>
       <ContainerRight>
         <ContainerRightTop>
-          <ContainerRightTextTop>
-            <h1>B33t Ju1c3 Entertainment presents</h1>
-            <h3>Passionfruit</h3>
-            <h2>A Triubute To Drake</h2>
-          </ContainerRightTextTop>
+          <Image
+            src={Top}
+            layout="intrinsic"
+            width={1100}
+            height={250}
+            priority
+            alt="top"
+          />
         </ContainerRightTop>
         <ContainerRightBottom>
-          <ContainerRightTextBottom>
-            <h2>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industrys standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book
-            </h2>
-          </ContainerRightTextBottom>
+          <Image
+            src={Bottom}
+            layout="intrinsic"
+            width={1100}
+            height={300}
+            priority
+            alt="bottom"
+          />
         </ContainerRightBottom>
       </ContainerRight>
     </Container>
