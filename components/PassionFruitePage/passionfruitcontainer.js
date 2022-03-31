@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import Passionfruit from '../../media/passionfruity poster.png';
-import Top from '../../media/top.png';
-import Bottom from '../../media/bottom.png';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import Passionfruit from "../../media/passionfruity poster.png";
+import Top from "../../media/top.png";
+import Bottom from "../../media/bottom.png";
 
 const Container = styled.div`
   width: 100vw;
@@ -16,7 +16,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 700px;
   }
 `;
 
@@ -30,10 +30,10 @@ const Containerleft = styled.div`
   padding-left: 200px;
   @media (max-width: 768px) {
     align-items: center;
-    width: 100%;
     height: 100%;
-    /* padding-top: 10px;
-    padding-right: 50px; */
+    padding-left: 0px;
+    width: 90%;
+    padding-top: 20px;
   }
 `;
 const ContainerRight = styled.div`
@@ -45,8 +45,8 @@ const ContainerRight = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -60,8 +60,11 @@ const ContainerRightTop = styled.div`
   padding-right: 200px;
   padding-top: 250px;
   @media (max-width: 768px) {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
   }
 `;
 
@@ -75,8 +78,10 @@ const ContainerRightBottom = styled.div`
   padding-right: 200px;
   padding-bottom: 250px;
   @media (max-width: 768px) {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    padding-right: 0px;
+    padding-bottom: 0px;
   }
 `;
 
