@@ -1,8 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import Passionfruit from '../../media/passionfruit.png';
-import Passionfruity from '../../media/passionfruity.png';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import Passionfruit from "../../media/passionfruit.png";
 
 const Container = styled.div`
   /* height: 830px;
@@ -78,12 +77,12 @@ const PassionfruitContainer = () => {
     <Container>
       <div
         style={{
-          position: 'absolute',
+          position: "absolute",
         }}
       >
         <Image
           src={Passionfruity}
-          objectFit={'cover'}
+          objectFit={"cover"}
           // width={920}
           // height={80}
         />
