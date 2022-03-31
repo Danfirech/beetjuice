@@ -79,7 +79,7 @@ const Header = () => {
           PassionFruite
         </Link>
         <Link href="/" passHref>
-          Contact
+          Contacts
         </Link>
       </Right>
     </Container>
