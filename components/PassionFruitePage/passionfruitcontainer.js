@@ -75,19 +75,7 @@ const ContainerRightTextBottom = styled.div`
 const PassionfruitContainer = () => {
   return (
     <Container>
-      <div
-        style={{
-          position: "absolute",
-        }}
-      >
-        <Image
-          src={Passionfruity}
-          objectFit={"cover"}
-          // width={920}
-          // height={80}
-        />
-      </div>
-      {/* <Containerleft>
+      <Containerleft>
         <Image
           src={Passionfruit}
           layout="intrinsic"
@@ -115,7 +103,7 @@ const PassionfruitContainer = () => {
             </h2>
           </ContainerRightTextBottom>
         </ContainerRightBottom>
-      </ContainerRight> */}
+      </ContainerRight>
     </Container>
   );
 };
