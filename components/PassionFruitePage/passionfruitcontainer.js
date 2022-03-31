@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import Passionfruit from "../../media/passionfruity poster.png";
+import Passionfruit from "../../media/passionfruityposter.png";
 import Top from "../../media/top.png";
 import Bottom from "../../media/bottom.png";
 
