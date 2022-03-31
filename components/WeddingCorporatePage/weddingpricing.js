@@ -7,6 +7,7 @@ import Stock from "../../media/BandStock.jpeg";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../pages/_document";
 import DJ from "../../media/DJ.jpeg";
+import Sax from "../../media/Sax.jpeg";
 
 const BasicContactForm = (e) => {
   window.location = "https://form.jotform.com/220784862221152";
@@ -18,9 +19,11 @@ const Container = styled.div`
   background-color: black;
   display: flex;
   flex-direction: column;
+  background-color: #e5e4e2;
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 2700px;
+    height: 2200px;
+    background-color: black;
   }
 `;
 
@@ -69,11 +72,12 @@ const PriceCardContainer = styled.div`
   padding-top: 107px;
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 1900px;
+    justify-content: space-between;
+    height: 1700px;
     margin-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    padding-top: 0px;
+    padding-top: 30px;
   }
 `;
 
@@ -105,7 +109,7 @@ const PriceMiddle = styled.div`
   background-color: #e5e4e2;
   border: 1px solid black;
   @media (max-width: 768px) {
-    height: 40%;
+    height: 60%;
     width: 90vw;
   }
 `;
@@ -116,8 +120,9 @@ const PriceRight = styled.div`
   background-color: #e5e4e2;
   border: 1px solid black;
   @media (max-width: 768px) {
-    height: 40%;
+    height: 60%;
     width: 90vw;
+    margin-top: 50px;
   }
 `;
 
@@ -162,7 +167,7 @@ const Button = styled.div`
 const Price = styled.div`
   width: 30px;
   height: 30px;
-  background-color: blue;
+  background-color: #e5e4e2;
 `;
 
 const PriceCardBottom = styled.div`
@@ -174,8 +179,10 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #e5e4e2;
   @media (max-width: 768px) {
-    height: 500px;
+    height: 340px;
+    background-color: #e5e4e2;
   }
 `;
 
@@ -193,6 +200,12 @@ const Sections = styled.div`
   align-items: center;
   @media (max-width: 768px) {
     font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-left: 0px;
+    height: 120px;
   }
 `;
 
@@ -201,7 +214,8 @@ const FaqSection = styled.div`
   width: 100vw;
   display: flex;
   background-color: #e5e4e2;
-  margin-top: -120px;
+  margin-top: -190px;
+  height: 1600px;
 `;
 
 const QuestionsPageContainer = styled.div`
@@ -211,6 +225,12 @@ const QuestionsPageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1600px;
+  }
 `;
 
 const QuestionsBox = styled.div`
@@ -222,7 +242,8 @@ const QuestionsBox = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
-    width: 300px;
+    width: 350px;
+    height: 200px;
   }
 `;
 
@@ -235,7 +256,9 @@ const Top = styled.div`
   /* background-color: #fefefe; */
   background-color: #d1cfcc;
   @media (max-width: 768px) {
-    width: 300px;
+    width: 350px;
+    height: 70px;
+    font-size: 12px;
   }
   .boxBorderTop {
     font-family: "Bebas Neue", cursive;
@@ -256,7 +279,9 @@ const Bottom = styled.div`
   color: gray;
   font-family: "Roboto", sans-serif;
   @media (max-width: 768px) {
-    width: 300px;
+    width: 350px;
+    height: 100px;
+    font-size: 12px;
   }
 `;
 
@@ -268,16 +293,26 @@ const Pricing = () => {
           <Title>
             <h1 className="textcolorwhite">Weddings</h1>
           </Title>
-
+          <div className="cutweddingphoto">
+            <Image
+              src={Sax}
+              height="450"
+              width="500"
+              objectFit={"cover"}
+              alt="Dan"
+            />
+          </div>
           <Button className="button:hover" onClick={BasicContactForm}>
             Contact For Booking/Pricing
           </Button>
-          <Image
-            src={WeddingBanner}
-            height="2000"
-            objectFit={"cover"}
-            alt="Dan"
-          />
+          <div className="weddingphotodisplay">
+            <Image
+              src={WeddingBanner}
+              height="2000"
+              objectFit={"cover"}
+              alt="Dan"
+            />
+          </div>
         </ImageContainer>
         {/* <Sections>Packages We Offer</Sections> */}
         <PriceCardContainer>
@@ -292,6 +327,9 @@ const Pricing = () => {
             </h2>
             <Image src={DJ} height="400" width="500" alt="Dan" />
           </PriceLeft>
+          <div className="cutweddingphoto">
+            <Sections>Packages</Sections>
+          </div>
           <PriceMiddle>
             <PriceCardTop>
               <h2>Ceremony/Cocktail + Live Band</h2>

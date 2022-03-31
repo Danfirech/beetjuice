@@ -177,7 +177,7 @@ const BeetJuiceText = styled.div`
 
 const BeetJuiceTextContainer = styled.div`
   width: 100%;
-  height: 700px;
+  height: 600px;
   background-color: #e5e4e2;
   display: flex;
   justify-content: center;
@@ -189,7 +189,7 @@ const BeetJuiceTextContainer = styled.div`
     justify-content: center;
     padding-right: 0px;
     padding-left: 0px;
-    height: 1500px;
+    height: 1000px;
   }
 `;
 
