@@ -332,7 +332,7 @@ const Pricing = () => {
               We can customize any package. Our Band or DJ will curate a set to
               fit your weddings vibes. Our live band will create lasting
               memories for you and your guests with a mix of modern top 40 urban
-              pop hits splashed with some of your favorie classics. Our Dj's
+              pop hits splashed with some of your favorie classics. Our Dj will
               spin vinl that spans decades of crate digging to make a unuiqe
               memorable evening even more special. Contact us to talk about your
               perfect package!
