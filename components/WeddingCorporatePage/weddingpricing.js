@@ -268,7 +268,7 @@ const Top = styled.div`
   @media (max-width: 768px) {
     width: 350px;
     height: 70px;
-    font-size: 12px;
+    font-size: 10px;
   }
   .boxBorderTop {
     font-family: "Bebas Neue", cursive;
