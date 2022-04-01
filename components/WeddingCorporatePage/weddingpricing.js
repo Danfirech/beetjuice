@@ -167,6 +167,7 @@ const Button = styled.div`
   }
   @media (max-width: 768px) {
     background-color: black;
+    margin-bottom: 30px;
   }
 `;
 
@@ -598,7 +599,7 @@ const Pricing = () => {
               </h4>
             </Bottom>
           </QuestionsBox>
-          <QuestionsBox>
+          {/* <QuestionsBox>
             <Top>
               <h1
                 className="boxBorderTop"
@@ -638,7 +639,7 @@ const Pricing = () => {
                 chose?
               </h4>
             </Bottom>
-          </QuestionsBox>
+          </QuestionsBox> */}
         </QuestionsPageContainer>
       </FaqSection>
     </>
