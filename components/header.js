@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import logo from '../media/Transparentlogo.jpeg';
-import Link from 'next/link';
-import { MdClose, MdMenu } from 'react-icons/md';
-import '../pages/_document';
+import React, { useState } from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import logo from "../media/Transparentlogo.jpeg";
+import Link from "next/link";
+import { MdClose, MdMenu } from "react-icons/md";
+import "../pages/_document";
 
 const Container = styled.div`
-  height: 100px;
+  height: 90px;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -26,12 +26,14 @@ const Left = styled.div`
   background-color: #e5e4e2;
   padding-left: 58px;
   border-bottom: 1px solid black;
+  z-index: 98;
   @media (max-width: 768px) {
     height: 100px;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    z-index: 98;
   }
 `;
 
@@ -44,10 +46,11 @@ const Right = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-right: 58px;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   border-bottom: 1px solid black;
   padding-left: 250px;
   word-spacing: 30px;
+  z-index: 98;
 
   ul {
     max-width: 1200px;
@@ -147,7 +150,7 @@ const Header = () => {
         >
           <MdMenu />
         </div>
-        <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
+        <ul className={!showNav ? "navItems hide-item" : "navItems"}>
           <div
             className="closeNavIcon"
             onClick={() => setShowNav(!showNav)}
