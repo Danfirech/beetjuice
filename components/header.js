@@ -222,7 +222,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="https://form.jotform.com/220784862221152"
               passHref
               onClick={() => setShowNav(!showNav)}
               role="button"

@@ -139,7 +139,9 @@ const PriceCardTop = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 768px) {
-    font-size: 22px;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
   }
 `;
 
