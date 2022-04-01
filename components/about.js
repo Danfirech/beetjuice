@@ -22,7 +22,7 @@ const Container = styled.div`
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 120px;
-    padding-top: 50px;
+    padding-top: 220px;
     text-align: left;
   }
 `;
