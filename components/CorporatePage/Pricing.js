@@ -1,24 +1,25 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import EventBanner from "../../media/event-heads.jpg";
-import ReactPlayer from "react-player";
-import ScrollAnimation from "react-animate-on-scroll";
-import "../../pages/_document";
-import Crowd from "../../media/crowd.png";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import EventBanner from '../../media/event-heads.jpg';
+import ReactPlayer from 'react-player';
+import ScrollAnimation from 'react-animate-on-scroll';
+import '../../pages/_document';
+import Crowd from '../../media/crowd.png';
 
 const BasicContactForm = (e) => {
-  window.location = "https://form.jotform.com/220784862221152";
+  window.location = 'https://form.jotform.com/220784862221152';
 };
 
 const CorporateContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1150px;
+  height: 1200px;
+  /* height: 1150px; */
   background-color: #e5e4e2;
   @media (max-width: 768px) {
-    height: 500px;
+    height: 650px;
   }
 `;
 
@@ -36,10 +37,9 @@ const TitleContainer = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
-    height: 550px;
-    padding-bottom: 20px;
     height: 480px;
     width: 100%;
+    text-align: center;
   }
 `;
 
@@ -51,11 +51,11 @@ const Titlegrey = styled.div`
   font-size: 62px;
   padding: 25px;
   z-index: 99;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   @media (max-width: 768px) {
     font-size: 41px;
     color: white;
-    padding-top: 50px;
+    padding-top: 70px;
     width: 100%;
     height: 30px;
   }
@@ -74,7 +74,7 @@ const Info = styled.div`
   padding-bottom: 150px;
   color: black;
   z-index: 99;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   @media (max-width: 768px) {
     font-size: 21px;
     height: 580px;
@@ -98,7 +98,7 @@ const Button = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: "Overpass Mono", monospace;
+  font-family: 'Overpass Mono', monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -113,6 +113,7 @@ const Button = styled.div`
     width: 200px;
     height: 60px;
     padding: 25px;
+    text-align: center;
   }
 `;
 
@@ -124,26 +125,26 @@ const Pricing = (props) => {
           <div
             className="cutweddingphoto"
             style={{
-              position: "absolute",
+              position: 'absolute',
             }}
           >
             <Image
               src={Crowd}
               height="950"
               width="700"
-              objectFit={"cover"}
+              objectFit={'cover'}
               alt="Crowd"
             />
           </div>
           <div
             className="weddingphotodisplay"
             style={{
-              position: "absolute",
+              position: 'absolute',
             }}
           >
             <Image
               src={EventBanner}
-              objectFit={"cover"}
+              objectFit={'cover'}
               // width={1920}
               // height={1080}
             />

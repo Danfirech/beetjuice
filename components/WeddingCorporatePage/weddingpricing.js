@@ -1,16 +1,16 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import WeddingBanner from "../../media/weddingbanner.jpeg";
-import ReactPlayer from "react-player";
-import Stock from "../../media/BandStock.jpeg";
-import ScrollAnimation from "react-animate-on-scroll";
-import "../../pages/_document";
-import DJ from "../../media/DJ.jpeg";
-import Sax from "../../media/Sax.jpeg";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import WeddingBanner from '../../media/weddingbanner.jpeg';
+import ReactPlayer from 'react-player';
+import Stock from '../../media/BandStock.jpeg';
+import ScrollAnimation from 'react-animate-on-scroll';
+import '../../pages/_document';
+import DJ from '../../media/DJ.jpeg';
+import Sax from '../../media/Sax.jpeg';
 
 const BasicContactForm = (e) => {
-  window.location = "https://form.jotform.com/220784862221152";
+  window.location = 'https://form.jotform.com/220784862221152';
 };
 
 const Container = styled.div`
@@ -86,7 +86,7 @@ const PriceLeft = styled.div`
   width: 500px;
   background-color: #e5e4e2;
   color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13.5px;
   color: black;
   /* padding-bottom: 5px; */
@@ -99,7 +99,7 @@ const PriceLeft = styled.div`
   }
   .wedding-package-title {
     font-size: 60px;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
   }
 `;
 
@@ -131,13 +131,16 @@ const PriceCardTop = styled.div`
   width: 100%;
   background-color: #d1cfcc;
   border-bottom: 1px solid black;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 24px;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `;
 
 const Button = styled.div`
@@ -153,7 +156,7 @@ const Button = styled.div`
   z-index: 99;
   background-color: black;
   color: white;
-  font-family: "Overpass Mono", monospace;
+  font-family: 'Overpass Mono', monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -161,6 +164,9 @@ const Button = styled.div`
     background-color: #e5e4e2;
     color: black;
     border: 2px solid #e5e4e2;
+  }
+  @media (max-width: 768px) {
+    background-color: black;
   }
 `;
 
@@ -172,7 +178,7 @@ const Price = styled.div`
 
 const PriceCardBottom = styled.div`
   padding: 10px;
-  font-family: "Overpass Mono", monospace;
+  font-family: 'Overpass Mono', monospace;
 `;
 
 const ImageContainer = styled.div`
@@ -194,7 +200,7 @@ const Sections = styled.div`
   background-color: #e5e4e2;
   z-index: 100;
   font-size: 65px;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,12 +230,13 @@ const QuestionsPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 170px;
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 1600px;
+    padding-top: 60px;
   }
 `;
 
@@ -261,10 +268,10 @@ const Top = styled.div`
     font-size: 12px;
   }
   .boxBorderTop {
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
   }
   .boxBorderBottom {
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Bebas Neue', cursive;
   }
 `;
 
@@ -277,7 +284,7 @@ const Bottom = styled.div`
   /* background-color: #fefefe; */
   background-color: white;
   color: gray;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 768px) {
     width: 350px;
     height: 100px;
@@ -296,9 +303,9 @@ const Pricing = () => {
           <div className="cutweddingphoto">
             <Image
               src={Sax}
-              height="450"
+              height="432"
               width="500"
-              objectFit={"cover"}
+              objectFit={'cover'}
               alt="Dan"
             />
           </div>
@@ -309,7 +316,7 @@ const Pricing = () => {
             <Image
               src={WeddingBanner}
               height="2000"
-              objectFit={"cover"}
+              objectFit={'cover'}
               alt="Dan"
             />
           </div>
@@ -391,7 +398,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "black",
+                  color: 'black',
                 }}
               >
                 Q.
@@ -434,7 +441,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "black",
+                  color: 'black',
                 }}
               >
                 Q.
@@ -477,7 +484,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "black",
+                  color: 'black',
                 }}
               >
                 Q.
@@ -517,7 +524,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "black",
+                  color: 'black',
                 }}
               >
                 Q.
@@ -558,7 +565,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "black",
+                  color: 'black',
                 }}
               >
                 Q.
@@ -598,7 +605,7 @@ const Pricing = () => {
                 style={{
                   paddingRight: 20,
                   paddingLeft: 15,
-                  color: "black",
+                  color: 'black',
                 }}
               >
                 Q.
