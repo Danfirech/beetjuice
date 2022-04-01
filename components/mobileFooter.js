@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import Insta from "../media/Instagram.jpeg";
-import Facebook from "../media/Facebook.jpeg";
-import "../pages/_document";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import Insta from '../media/Insta.png';
+import Facebook from '../media/Face.png';
+import '../pages/_document';
 
 const Container = styled.div`
   @media (min-width: 768px) {
@@ -18,7 +18,7 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    font-family: "M PLUS 1", sans-serif;
+    font-family: 'Overpass Mono', monospace;
   }
 `;
 
@@ -68,7 +68,7 @@ const MobileFooter = () => {
           />
         </div>
         <div>
-          {" "}
+          {' '}
           <Image
             src={Facebook}
             layout="intrinsic"
