@@ -1,8 +1,8 @@
-import styles from "../styles/Home.module.css";
-import Header from "../components/header";
-import Weddingpricing from "../components/WeddingCorporatePage/weddingpricing";
-import Footer from "../components/footer";
-import Video from "../components/video";
+import Header from '../components/header';
+import Weddingpricing from '../components/WeddingCorporatePage/weddingpricing';
+import Footer from '../components/footer';
+import MobileFooter from '../components/mobileFooter';
+import Video from '../components/video';
 // import MobilePhoto from '../components/mobilePhoto';
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <Header />
       <Weddingpricing />
       <Footer />
+      <MobileFooter />
     </>
   );
 }

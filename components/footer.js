@@ -1,19 +1,19 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import Insta from "../media/Insta.png";
-import Facebook from "../media/Face.png";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import Insta from '../media/Insta.png';
+import Facebook from '../media/Face.png';
 
 const InstgramLink = (e) => {
-  window.location = "https://www.instagram.com/b33tju1c3/?hl=en";
+  window.location = 'https://www.instagram.com/b33tju1c3/?hl=en';
 };
 
 const FacebookLink = (e) => {
-  window.location = "https://form.jotform.com/220784862221152";
+  window.location = 'https://form.jotform.com/220784862221152';
 };
 
 const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 130px;
   background-color: #e5e4e2;
   display: flex;
@@ -22,22 +22,22 @@ const Container = styled.div`
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
-  z-index: 99;
+  z-index: 999;
   @media (max-width: 768px) {
     display: none;
   }
 `;
 
 const FooterTop = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 65px;
   background-color: #e5e4e2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 900px;
-  padding-right: 900px;
-  z-index: 99;
+  padding-left: 800px;
+  padding-right: 800px;
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ const FooterTop = styled.div`
 `;
 
 const FooterBottom = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 65px;
   background-color: #e5e4e2;
   display: flex;
@@ -58,8 +58,8 @@ const FooterBottom = styled.div`
   justify-content: center;
   padding-left: 40px;
   padding-right: 40px;
-  z-index: 99;
-  font-family: "Overpass Mono", monospace;
+  /* z-index: 99; */
+  font-family: 'Overpass Mono', monospace;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;

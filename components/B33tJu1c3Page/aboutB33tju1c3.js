@@ -1,16 +1,17 @@
-import React from "react";
-import styled from "styled-components";
-import Dan from "../../media/Dan.jpeg";
-import Ezra from "../../media/Ezra.jpeg";
-import Image from "next/image";
-import CutDown from "../../media/CutDownCover.jpeg";
-import ReactPlayer from "react-player";
-import Stock from "../../media/BandStock.jpeg";
-import ScrollAnimation from "react-animate-on-scroll";
-import "../../pages/_document";
+import React from 'react';
+import styled from 'styled-components';
+import Dan from '../../media/Dan.jpeg';
+import Ezra from '../../media/Ezra.jpeg';
+import Image from 'next/image';
+import CutDown from '../../media/CutDownCover.jpeg';
+import ReactPlayer from 'react-player';
+import Stock from '../../media/BandStock.jpeg';
+import ScrollAnimation from 'react-animate-on-scroll';
+import '../../pages/_document';
+import Footer from '../footer';
 
 const BasicContactForm = (e) => {
-  window.location = "https://form.jotform.com/220784862221152";
+  window.location = 'https://form.jotform.com/220784862221152';
 };
 
 const Container = styled.div`
@@ -101,7 +102,7 @@ const Titlegrey = styled.div`
   justify-content: center;
   font-size: 62px;
   padding: 25px;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   /* border-top: 2px solid black; */
   @media (max-width: 768px) {
     font-size: 31px;
@@ -119,7 +120,7 @@ const Button = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: "Overpass Mono", monospace;
+  font-family: 'Overpass Mono', monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -161,7 +162,7 @@ const BeetJuiceText = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 21px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 768px) {
     width: 100%;
     height: 10px;
@@ -214,7 +215,7 @@ const Offerings = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 60px;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   @media (max-width: 768px) {
     font-size: 50px;
   }
