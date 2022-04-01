@@ -362,7 +362,7 @@ const Pricing = () => {
               <h2 className="weddingtitles">Live Band</h2>
               <h4 className="weddingparagraphs">
                 Our band wants to create a night of memories for you and your
-                guests. With two hours of dance music we will fill the space
+                guests. With two hours of dance music the space will be filled
                 with static party energy!
               </h4>
             </PriceCardBottom>
