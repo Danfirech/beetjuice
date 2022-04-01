@@ -167,7 +167,7 @@ const Button = styled.div`
   }
   @media (max-width: 768px) {
     background-color: black;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
   }
 `;
 
