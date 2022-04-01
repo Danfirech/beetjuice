@@ -330,10 +330,12 @@ const Pricing = () => {
             <h1 className="wedding-package-title">Packages We Offer</h1>
             <h2>
               We can customize any package. Our Band or DJ will curate a set to
-              fit your weddings vibes. We can customize any package. Our Band or
-              DJ will curate a set to fit your weddings vibes. We can customize
-              any package. Our Band or DJ will curate a set to fit your weddings
-              vibes.
+              fit your weddings vibes. Our live band will create lasting
+              memories for you and your guests with a mix of modern top 40 urban
+              pop hits splashed with some of your favorie classics. Our Dj's
+              spin vinl that spans decades of crate digging to make a unuiqe
+              memorable evening even more special. Contact us to talk about your
+              perfect package!
             </h2>
             <Image src={DJ} height="400" width="500" alt="Dan" />
           </PriceLeft>
@@ -354,14 +356,14 @@ const Pricing = () => {
               <h2 className="weddingtitles">Cocktail</h2>
               <h4 className="weddingparagraphs">
                 Your guests will enjoy 60 minutes of live music as they make
-                their way into the reception hall with relaxing hits as they
-                enjoy their meals.
+                their way into the reception with relaxing meolodies as they
+                enjoy their meal.
               </h4>
               <h2 className="weddingtitles">Live Band</h2>
               <h4 className="weddingparagraphs">
-                Our band will make your guests dance the night away and
-                celebrate your special night with a wide variety of hits
-                spanning the past decades.
+                Our band wants to create a night of memories for you and your
+                guests. With two hours of dance music we will fill the space
+                with static party energy!
               </h4>
             </PriceCardBottom>
           </PriceMiddle>
@@ -379,13 +381,13 @@ const Pricing = () => {
               <h2 className="weddingtitles">Cocktail</h2>
               <h4 className="weddingparagraphs">
                 Your guests will enjoy 60 minutes of live music as they make
-                their way into the reception hall with relaxing hits as they
-                enjoy their meals.
+                their way into the reception with relaxing meolodies as they
+                enjoy their meal.
               </h4>
               <h2 className="weddingtitles">Live Band</h2>
               <h4 className="weddingparagraphs">
-                Our DJ will select hit after hit and have your guests dancing
-                for hours into the night.
+                Our DJ will curate a event specific playlist unuiqe to you and
+                your special moment. 3 hours of energecit sounds!
               </h4>
             </PriceCardBottom>
           </PriceRight>
@@ -412,7 +414,7 @@ const Pricing = () => {
                   paddingLeft: 10,
                 }}
               >
-                What is needed from you once B33t Ju1c3 is booked?
+                What is needed from you once the B33t Ju1c3 band is booked?
               </h4>
             </Top>
             <Bottom>
@@ -430,9 +432,9 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                We ask for a 20% down payment upon booking us. After that
-                logistics will be taken care of between your wedding planner and
-                our team. The final 80% of payment is due 2 weeks out from your
+                We ask for a 20% down payment upon booking. After that logistics
+                will be taken care of between your wedding planner and our
+                liasion. The final 80% of payment is due 2 weeks out from your
                 booked date.
               </h4>
             </Bottom>
@@ -476,7 +478,7 @@ const Pricing = () => {
                 We have a base rate for our packeges. Aditional costs are added
                 based on customization and your needs. Location and timing also
                 dictates our prices. We know everyone has a budget and we can
-                customize our service to match yours.
+                customize our services to match yours.
               </h4>
             </Bottom>
           </QuestionsBox>
@@ -516,7 +518,7 @@ const Pricing = () => {
                   paddingTop: 10,
                 }}
               >
-                Our band can match your theme!
+                Our band can match your theme.
               </h4>
             </Bottom>
           </QuestionsBox>
@@ -557,7 +559,7 @@ const Pricing = () => {
                 }}
               >
                 While we do have a curated setlist of songs we know you will
-                enjoy, we do learn new songs as well!
+                enjoy, we do learn new songs!
               </h4>
             </Bottom>
           </QuestionsBox>

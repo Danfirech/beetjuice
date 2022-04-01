@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import logo from '../../media/Transparentlogo.jpeg';
-import Link from 'next/link';
-import '../../pages/_document';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import logo from "../../media/Transparentlogo.jpeg";
+import Link from "next/link";
+import "../../pages/_document";
 
 const Container = styled.div`
   height: 100px;
@@ -47,7 +47,7 @@ const Right = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-right: 58px;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   border-bottom: 1px solid black;
   padding-left: 250px;
   @media (max-width: 768px) {

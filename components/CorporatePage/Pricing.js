@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import EventBanner from '../../media/event-heads.jpg';
-import ReactPlayer from 'react-player';
-import ScrollAnimation from 'react-animate-on-scroll';
-import '../../pages/_document';
-import Crowd from '../../media/crowd.png';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import EventBanner from "../../media/event-heads.jpg";
+import ReactPlayer from "react-player";
+import ScrollAnimation from "react-animate-on-scroll";
+import "../../pages/_document";
+import Crowd from "../../media/crowd.png";
 
 const BasicContactForm = (e) => {
-  window.location = 'https://form.jotform.com/220784862221152';
+  window.location = "https://form.jotform.com/220784862221152";
 };
 
 const CorporateContainer = styled.div`
@@ -51,7 +51,7 @@ const Titlegrey = styled.div`
   font-size: 62px;
   padding: 25px;
   z-index: 99;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
     font-size: 41px;
     color: white;
@@ -74,7 +74,7 @@ const Info = styled.div`
   padding-bottom: 150px;
   color: black;
   z-index: 99;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   @media (max-width: 768px) {
     font-size: 21px;
     height: 580px;
@@ -98,7 +98,7 @@ const Button = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: 'Overpass Mono', monospace;
+  font-family: "Overpass Mono", monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -125,26 +125,26 @@ const Pricing = (props) => {
           <div
             className="cutweddingphoto"
             style={{
-              position: 'absolute',
+              position: "absolute",
             }}
           >
             <Image
               src={Crowd}
               height="950"
               width="700"
-              objectFit={'cover'}
+              objectFit={"cover"}
               alt="Crowd"
             />
           </div>
           <div
             className="weddingphotodisplay"
             style={{
-              position: 'absolute',
+              position: "absolute",
             }}
           >
             <Image
               src={EventBanner}
-              objectFit={'cover'}
+              objectFit={"cover"}
               // width={1920}
               // height={1080}
             />
@@ -154,7 +154,7 @@ const Pricing = (props) => {
             <Info>
               B33t Ju1c3 Entertainment offers live music selections that fit any
               event. Whether you are looking for a high energy experience that
-              has your party Dancing or a quiet cocktail hour, the B33t Ju1c3
+              has your group Dancing or a quiet cocktail hour, the B33t Ju1c3
               band will be able to meet your needs. Please contact us for
               Pricing.
             </Info>
