@@ -130,8 +130,8 @@ const Button = styled.div`
   }
 
   @media (max-width: 768px) {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 6px;
   }
 `;
