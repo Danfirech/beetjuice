@@ -22,6 +22,15 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
 
+  @media (max-width: 1068px) {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: white;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;
@@ -40,6 +49,15 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   /* border: 2px solid black; */
+  @media (max-width: 1068px) {
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    height: 100vh;
+    border: none;
+    background-color: white;
+  }
   @media (max-width: 768px) {
     width: 100%;
     padding-top: 20px;
@@ -60,6 +78,15 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   /* border: 2px solid black; */
+  @media (max-width: 1068px) {
+    width: 100%;
+    padding-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 120px;
+    height: 100vh;
+    border: none;
+    background-color: white;
+  }
   @media (max-width: 768px) {
     width: 100%;
     padding-top: 20px;
@@ -163,6 +190,16 @@ const BeetJuiceText = styled.div`
   flex-direction: column;
   font-size: 21px;
   font-family: "Roboto", sans-serif;
+  @media (max-width: 1068px) {
+    width: 100%;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    margin-left: 0px;
+    text-align: left;
+    padding-bottom: 3020px;
+  }
   @media (max-width: 768px) {
     width: 100%;
     height: 10px;
@@ -183,6 +220,15 @@ const BeetJuiceTextContainer = styled.div`
   display: flex;
   justify-content: center;
   text-align: justify;
+  @media (max-width: 1068px) {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 1000px;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     display: flex;

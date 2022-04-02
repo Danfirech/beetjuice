@@ -70,6 +70,15 @@ const PriceCardContainer = styled.div`
   padding-right: 100px;
   padding-left: 100px;
   padding-top: 107px;
+  @media (max-width: 1068px) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1700px;
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 30px;
+  }
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: space-between;
@@ -94,6 +103,14 @@ const PriceLeft = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 1068px) {
+    display: flex;
+    width: 150px;
+  }
+  .wedding-package-title {
+    font-size: 60px;
+    font-family: "Bebas Neue", cursive;
+  }
   @media (max-width: 768px) {
     display: none;
   }
@@ -108,6 +125,10 @@ const PriceMiddle = styled.div`
   width: 480px;
   background-color: #e5e4e2;
   border: 1px solid black;
+  @media (max-width: 1068px) {
+    height: 60%;
+    width: 150px;
+  }
   @media (max-width: 768px) {
     height: 60%;
     width: 90vw;
@@ -119,6 +140,10 @@ const PriceRight = styled.div`
   width: 480px;
   background-color: #e5e4e2;
   border: 1px solid black;
+  @media (max-width: 1068px) {
+    height: 60%;
+    width: 150px;
+  }
   @media (max-width: 768px) {
     height: 60%;
     width: 90vw;
@@ -138,6 +163,12 @@ const PriceCardTop = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1068px) {
+    font-size: 18px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+  }
   @media (max-width: 768px) {
     font-size: 18px;
     padding-right: 5px;
@@ -182,6 +213,11 @@ const Price = styled.div`
 const PriceCardBottom = styled.div`
   padding: 10px;
   font-family: "Overpass Mono", monospace;
+  @media (max-width: 1068px) {
+    height: 340px;
+    background-color: #e5e4e2;
+    font-size: 12px;
+  }
 `;
 
 const ImageContainer = styled.div`

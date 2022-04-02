@@ -65,6 +65,16 @@ const TextContainer = styled.div`
   padding-top: 300px;
   padding-left: 400px;
   font-family: "Bebas Neue", cursive;
+
+  @media (max-width: 1068px) {
+    height: 100px;
+    width: 350px;
+    font-size: 35px;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+
   @media (max-width: 768px) {
     height: 100px;
     width: 350px;
@@ -82,6 +92,14 @@ const Pic2 = () => {
           <h1>Beet Juice Entertainment</h1>
         </TextContainer>
         <MobileImageContainer className="flicker-in-1">
+          <Image
+            src={MobileCover}
+            layout="intrinsic"
+            width={700}
+            height={950}
+            priority
+            alt="Cover"
+          />
           <Image
             src={MobileCover}
             layout="intrinsic"

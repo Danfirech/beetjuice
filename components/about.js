@@ -16,6 +16,15 @@ const Container = styled.div`
   padding-top: 150px;
   text-align: justify;
   font-family: "Roboto", sans-serif;
+  @media (max-width: 1068px) {
+    height: 100px;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 120px;
+    padding-top: 220px;
+    text-align: left;
+  }
   @media (max-width: 568px) {
     height: 100px;
     font-size: 15px;

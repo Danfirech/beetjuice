@@ -13,7 +13,7 @@ const Container = styled.div`
   flex-direction: row;
   border-bottom: 1px solid black;
   /* padding-bottom: 150px; */
-  @media (max-width: 768px) {
+  @media (max-width: 1068px) {
     padding-bottom: none;
     width: 100%;
     height: 100px;
@@ -27,7 +27,7 @@ const Left = styled.div`
   padding-left: 58px;
   border-bottom: 1px solid black;
   z-index: 98;
-  @media (max-width: 768px) {
+  @media (max-width: 1068px) {
     height: 100px;
     width: 50%;
     display: flex;
@@ -84,7 +84,7 @@ const Right = styled.div`
     display: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1068px) {
     padding: 0;
     z-index: 999;
     .hide-item {
