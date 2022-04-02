@@ -80,7 +80,7 @@ const TextContainer = styled.div`
     width: 350px;
     font-size: 35px;
     padding-top: 150px;
-    padding-left: 50px;
+    padding-left: 80px;
   }
 `;
 
