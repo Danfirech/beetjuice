@@ -36,7 +36,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1200px;
+    height: 100px;
     background-color: white;
   }
 `;
@@ -54,7 +54,7 @@ const Left = styled.div`
     padding-top: 20px;
     margin-left: 0px;
     margin-bottom: 20px;
-    height: 100vh;
+    height: 100px;
     border: none;
     background-color: white;
   }
@@ -63,7 +63,7 @@ const Left = styled.div`
     padding-top: 20px;
     margin-left: 0px;
     margin-bottom: 20px;
-    height: 700px;
+    height: 100vh;
     border: none;
     background-color: white;
   }
@@ -92,7 +92,7 @@ const Right = styled.div`
     padding-top: 20px;
     margin-left: 0px;
     margin-bottom: 20px;
-    height: 700px;
+    height: 100px;
     border: none;
     background-color: white;
   }
@@ -198,11 +198,11 @@ const BeetJuiceText = styled.div`
     padding-top: 5px;
     margin-left: 0px;
     text-align: left;
-    padding-bottom: 3020px;
+    padding-bottom: 30px;
   }
   @media (max-width: 768px) {
     width: 100%;
-    height: 10px;
+    height: 50vh;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -221,13 +221,13 @@ const BeetJuiceTextContainer = styled.div`
   justify-content: center;
   text-align: justify;
   @media (max-width: 1068px) {
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-right: 0px;
     padding-left: 0px;
-    height: 1000px;
+    height: 100vh;
   }
   @media (max-width: 768px) {
     flex-direction: column;
@@ -236,7 +236,8 @@ const BeetJuiceTextContainer = styled.div`
     justify-content: center;
     padding-right: 0px;
     padding-left: 0px;
-    height: 1000px;
+    height: 1150px;
+    padding-top: 200px;
   }
 `;
 

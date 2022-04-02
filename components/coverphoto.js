@@ -100,14 +100,6 @@ const Pic2 = () => {
             priority
             alt="Cover"
           />
-          <Image
-            src={MobileCover}
-            layout="intrinsic"
-            width={700}
-            height={950}
-            priority
-            alt="Cover"
-          />
         </MobileImageContainer>
         <ImageContainer className="flicker-in-1">
           <Image
