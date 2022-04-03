@@ -87,6 +87,7 @@ const PriceCardContainer = styled.div`
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 30px;
+    padding-bottom: 30px;
   }
 `;
 
