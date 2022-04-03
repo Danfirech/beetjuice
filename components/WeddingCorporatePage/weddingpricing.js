@@ -373,7 +373,7 @@ const Pricing = () => {
           <div className="cutweddingphoto">
             <Image
               src={Sax}
-              height="432"
+              height="500"
               width="500"
               objectFit={"cover"}
               alt="Dan"
