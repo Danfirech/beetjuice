@@ -27,7 +27,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    height: 700px;
     background-color: white;
   }
 
@@ -192,7 +192,7 @@ const BeetJuiceText = styled.div`
   font-family: "Roboto", sans-serif;
   @media (max-width: 1068px) {
     width: 100%;
-    height: 10px;
+    height: 600px;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
@@ -227,7 +227,7 @@ const BeetJuiceTextContainer = styled.div`
     justify-content: center;
     padding-right: 0px;
     padding-left: 0px;
-    height: 100vh;
+    height: 800px;
   }
   @media (max-width: 768px) {
     flex-direction: column;
@@ -236,7 +236,7 @@ const BeetJuiceTextContainer = styled.div`
     justify-content: center;
     padding-right: 0px;
     padding-left: 0px;
-    height: 1150px;
+    height: 1050px;
     padding-top: 200px;
   }
 `;
