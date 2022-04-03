@@ -75,6 +75,15 @@ const Info = styled.div`
   color: black;
   z-index: 99;
   font-family: "Bebas Neue", cursive;
+  @media (max-width: 1068px) {
+    font-size: 21px;
+    height: 580px;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    color: black;
+  }
   @media (max-width: 768px) {
     font-size: 21px;
     height: 580px;

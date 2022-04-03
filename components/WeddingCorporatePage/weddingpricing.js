@@ -73,10 +73,10 @@ const PriceCardContainer = styled.div`
   @media (max-width: 1068px) {
     flex-direction: row;
     justify-content: space-between;
-    height: 1700px;
+    height: 1900px;
     margin-top: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 30px;
   }
   @media (max-width: 768px) {
@@ -105,7 +105,9 @@ const PriceLeft = styled.div`
   align-items: center;
   @media (max-width: 1068px) {
     display: flex;
-    width: 150px;
+    width: 240px;
+    font-size: 10.5px;
+    height: 80%;
   }
   .wedding-package-title {
     font-size: 60px;
@@ -126,8 +128,8 @@ const PriceMiddle = styled.div`
   background-color: #e5e4e2;
   border: 1px solid black;
   @media (max-width: 1068px) {
-    height: 60%;
-    width: 150px;
+    height: 80%;
+    width: 240px;
   }
   @media (max-width: 768px) {
     height: 60%;
@@ -141,8 +143,8 @@ const PriceRight = styled.div`
   background-color: #e5e4e2;
   border: 1px solid black;
   @media (max-width: 1068px) {
-    height: 60%;
-    width: 150px;
+    height: 80%;
+    width: 240px;
   }
   @media (max-width: 768px) {
     height: 60%;
@@ -261,6 +263,13 @@ const FaqSection = styled.div`
   background-color: #e5e4e2;
   margin-top: -190px;
   height: 1600px;
+  @media (max-width: 1068px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2500px;
+    padding-top: 60px;
+  }
 `;
 
 const QuestionsPageContainer = styled.div`
@@ -270,6 +279,13 @@ const QuestionsPageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 170px;
+  @media (max-width: 1068px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1900px;
+    padding-top: 60px;
+  }
   @media (max-width: 768px) {
     display: flex;
     justify-content: center;
@@ -287,6 +303,10 @@ const QuestionsBox = styled.div`
   margin-top: 40px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 1068px) {
+    width: 100%;
+    height: 400px;
+  }
   @media (max-width: 768px) {
     width: 350px;
     height: 200px;
@@ -301,6 +321,11 @@ const Top = styled.div`
   font-size: 20px;
   /* background-color: #fefefe; */
   background-color: #d1cfcc;
+  @media (max-width: 1068px) {
+    width: 100%;
+    height: 100px;
+    font-size: 12px;
+  }
   @media (max-width: 768px) {
     width: 350px;
     height: 70px;
@@ -324,6 +349,11 @@ const Bottom = styled.div`
   background-color: white;
   color: gray;
   font-family: "Roboto", sans-serif;
+  @media (max-width: 1068px) {
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+  }
   @media (max-width: 768px) {
     width: 350px;
     height: 100px;
