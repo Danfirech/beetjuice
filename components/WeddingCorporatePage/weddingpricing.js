@@ -203,7 +203,7 @@ const Button = styled.div`
   }
   @media (max-width: 768px) {
     background-color: black;
-    margin-bottom: 100px;
+    margin-bottom: 170px;
   }
 `;
 
