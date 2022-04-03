@@ -22,7 +22,7 @@ const Container = styled.div`
   background-color: #e5e4e2;
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 2200px;
+    height: 1750px;
     background-color: black;
   }
 `;
@@ -82,7 +82,7 @@ const PriceCardContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: space-between;
-    height: 1700px;
+    height: 1900px;
     margin-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
@@ -133,7 +133,7 @@ const PriceMiddle = styled.div`
     width: 240px;
   }
   @media (max-width: 768px) {
-    height: 60%;
+    height: 900px;
     width: 90vw;
   }
 `;
@@ -148,7 +148,7 @@ const PriceRight = styled.div`
     width: 240px;
   }
   @media (max-width: 768px) {
-    height: 60%;
+    height: 900px;
     width: 90vw;
     margin-top: 50px;
   }
@@ -271,6 +271,10 @@ const FaqSection = styled.div`
     height: 2500px;
     padding-top: 60px;
   }
+  @media (max-width: 768px) {
+    height: 1700px;
+    margin-top: 200px;
+  }
 `;
 
 const QuestionsPageContainer = styled.div`
@@ -291,8 +295,9 @@ const QuestionsPageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1600px;
+    height: 400px;
     padding-top: 60px;
+    padding-top: 0px;
   }
 `;
 
