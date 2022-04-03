@@ -1,7 +1,7 @@
-import Header from '../components/header';
-import Footer from '../components/WeddingCorporatePage/weddingfooter';
-import MobileFooter from '../components/mobileFooter';
-import PassionfruitContainer from '../components/PassionFruitePage/passionfruitcontainer';
+import Header from "../components/header";
+import MobileFooter from "../components/mobileFooter";
+import Footer from "../components/footer";
+import PassionfruitContainer from "../components/PassionFruitePage/passionfruitcontainer";
 
 export default function Home() {
   return (

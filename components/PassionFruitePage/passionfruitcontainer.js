@@ -10,6 +10,14 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   background-color: #e5e4e2;
+  @media (max-width: 1068px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1100px;
+  }
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -28,6 +36,13 @@ const Containerleft = styled.div`
   justify-content: center;
   align-items: center;
   padding-left: 200px;
+  @media (max-width: 1068px) {
+    align-items: center;
+    height: 100%;
+    padding-left: 0px;
+    width: 90%;
+    padding-top: 20px;
+  }
   @media (max-width: 768px) {
     align-items: center;
     height: 100%;
@@ -42,6 +57,12 @@ const ContainerRight = styled.div`
   background-color: #e5e4e2;
   display: flex;
   flex-direction: column;
+  @media (max-width: 1068px) {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
@@ -59,6 +80,13 @@ const ContainerRightTop = styled.div`
   justify-content: center;
   padding-right: 200px;
   padding-top: 250px;
+  @media (max-width: 1068px) {
+    width: 90%;
+    height: 90%;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
   @media (max-width: 768px) {
     width: 90%;
     height: 90%;
@@ -77,6 +105,12 @@ const ContainerRightBottom = styled.div`
   justify-content: center;
   padding-right: 200px;
   padding-bottom: 250px;
+  @media (max-width: 1068px) {
+    width: 90%;
+    height: 90%;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
   @media (max-width: 768px) {
     width: 90%;
     height: 90%;
