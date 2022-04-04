@@ -13,7 +13,7 @@ const ContactContainer = styled.div`
   }
   @media (max-width: 868px) {
     flex-direction: column;
-    height: 920px;
+    height: 1020px;
     padding-bottom: 330px;
   }
 `;
