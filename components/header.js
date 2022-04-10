@@ -184,7 +184,7 @@ const Header = () => {
               B33tJu1c3
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/wedding"
               passHref
@@ -195,7 +195,7 @@ const Header = () => {
             >
               Weddings
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/corporate"
@@ -205,7 +205,7 @@ const Header = () => {
               onKeyDown={() => setShowNav(!showNav)}
               tabIndex={0}
             >
-              Corporate/Events
+              Events
             </Link>
           </li>
           <li>
