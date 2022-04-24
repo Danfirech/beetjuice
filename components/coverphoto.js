@@ -89,7 +89,7 @@ const Pic2 = () => {
     <>
       <Container>
         <TextContainer className="flicker-in-1">
-          <h1>Beet Juice Entertainment</h1>
+          <h1>B33t Ju1c3 Entertainment</h1>
         </TextContainer>
         <MobileImageContainer className="flicker-in-1">
           <Image
