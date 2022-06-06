@@ -618,7 +618,7 @@ const Pricing = () => {
                   paddingLeft: 10,
                 }}
               >
-                A.
+                Is the sound system included?
               </h4>
             </Top>
             <Bottom>

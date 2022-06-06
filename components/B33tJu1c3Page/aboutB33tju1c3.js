@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
-import CutDown from '../../media/aboutphoto.png';
+import CutDown from '../../media/aboutphoto-1.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../../pages/_document';
 
@@ -157,7 +157,7 @@ const Pricing = () => {
               width={400}
               height={500}
               priority
-              alt="Ezra"
+              alt="Dan"
             />
           </div>
           <BeetJuiceText>
