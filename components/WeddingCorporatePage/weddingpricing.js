@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import WeddingBanner from '../../media/weddingbanner.jpeg';
-import ReactPlayer from 'react-player';
-import Stock from '../../media/BandStock.jpeg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../../pages/_document';
 import DJ from '../../media/DJ.jpeg';
@@ -42,18 +40,18 @@ const TitleContainer = styled.div`
 `;
 
 const Title = styled.div`
-  height: 200px
+  height: 200px;
   width: 400px;
   display: flex;
   background: none;
   color: white;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   position: absolute;
   z-index: 99;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     height: 400px;
   }
@@ -298,7 +296,9 @@ const Pricing = () => {
       <Container>
         <ImageContainer>
           <Title>
-            <h1 className="textcolorwhite">Weddings</h1>
+            <ScrollAnimation animateIn="fadeIn">
+              <h1 className="textcolorwhite">Weddings</h1>
+            </ScrollAnimation>
           </Title>
           <div className="cutweddingphoto">
             <Image
@@ -310,7 +310,9 @@ const Pricing = () => {
             />
           </div>
           <Button className="button:hover" onClick={BasicContactForm}>
-            Contact For Booking/Pricing
+            <ScrollAnimation animateIn="fadeIn">
+              Contact For Booking/Pricing
+            </ScrollAnimation>
           </Button>
           <div className="weddingphotodisplay">
             <Image
@@ -334,9 +336,9 @@ const Pricing = () => {
             </h2>
             <Image src={DJ} height="400" width="500" alt="Dan" />
           </PriceLeft>
-          <div className="cutweddingphoto">
+          {/* <div className="cutweddingphoto">
             <Sections>Packages</Sections>
-          </div>
+          </div> */}
           <PriceMiddle>
             <PriceCardTop>
               <h2>Ceremony/Cocktail + Live Band</h2>

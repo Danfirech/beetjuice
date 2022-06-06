@@ -219,7 +219,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/"
+              href="/contact"
               passHref
               onClick={() => setShowNav(!showNav)}
               role="button"

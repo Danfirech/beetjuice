@@ -1,9 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import Passionfruit from "../../media/passionfruityposter.png";
-import Top from "../../media/top.png";
-import Bottom from "../../media/bottom.png";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import Passionfruit from '../../media/passionfruityposter.png';
+import Top from '../../media/top.png';
+import Bottom from '../../media/bottom.png';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Container = styled.div`
   width: 100vw;
@@ -89,36 +90,40 @@ const PassionfruitContainer = () => {
   return (
     <Container>
       <Containerleft>
-        <Image
-          src={Passionfruit}
-          layout="intrinsic"
-          width={600}
-          height={700}
-          priority
-          alt="Passionfruit"
-        />
+        <ScrollAnimation animateIn="fadeIn">
+          <Image
+            src={Passionfruit}
+            layout="intrinsic"
+            width={600}
+            height={700}
+            priority
+            alt="Passionfruit"
+          />
+        </ScrollAnimation>
       </Containerleft>
       <ContainerRight>
-        <ContainerRightTop>
-          <Image
-            src={Top}
-            layout="intrinsic"
-            width={1100}
-            height={250}
-            priority
-            alt="top"
-          />
-        </ContainerRightTop>
-        <ContainerRightBottom>
-          <Image
-            src={Bottom}
-            layout="intrinsic"
-            width={1100}
-            height={300}
-            priority
-            alt="bottom"
-          />
-        </ContainerRightBottom>
+        <ScrollAnimation animateIn="fadeIn">
+          <ContainerRightTop>
+            <Image
+              src={Top}
+              layout="intrinsic"
+              width={1100}
+              height={250}
+              priority
+              alt="top"
+            />
+          </ContainerRightTop>
+          <ContainerRightBottom>
+            <Image
+              src={Bottom}
+              layout="intrinsic"
+              width={1100}
+              height={300}
+              priority
+              alt="bottom"
+            />
+          </ContainerRightBottom>
+        </ScrollAnimation>
       </ContainerRight>
     </Container>
   );

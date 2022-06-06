@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import EventBanner from '../../media/event-heads.jpg';
-import ReactPlayer from 'react-player';
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../../pages/_document';
 import Crowd from '../../media/crowd.png';
@@ -150,13 +149,19 @@ const Pricing = (props) => {
             />
           </div>
           <TitleContainer>
-            <Titlegrey>Corporate and Other Events</Titlegrey>
+            <Titlegrey>
+              <ScrollAnimation animateIn="fadeIn">
+                Corporate and Other Events
+              </ScrollAnimation>
+            </Titlegrey>
             <Info>
-              B33t Ju1c3 Entertainment offers live music selections that fit any
-              event. Whether you are looking for a high energy experience that
-              has your party Dancing or a quiet cocktail hour, the B33t Ju1c3
-              band will be able to meet your needs. Please contact us for
-              Pricing.
+              <ScrollAnimation animateIn="fadeIn">
+                B33t Ju1c3 Entertainment offers live music selections that fit
+                any event. Whether you are looking for a high energy experience
+                that has your party Dancing or a quiet cocktail hour, the B33t
+                Ju1c3 band will be able to meet your needs. Please contact us
+                for Pricing.
+              </ScrollAnimation>
             </Info>
             <Button className="button:hover" onClick={BasicContactForm}>
               Contact For Booking/Pricing
