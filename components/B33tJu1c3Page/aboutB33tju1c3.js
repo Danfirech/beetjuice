@@ -1,17 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import Dan from "../../media/Dan.jpeg";
-import Ezra from "../../media/Ezra.jpeg";
-import Image from "next/image";
-import CutDown from "../../media/CutDownCover.jpeg";
-import ReactPlayer from "react-player";
-import Stock from "../../media/BandStock.jpeg";
-import ScrollAnimation from "react-animate-on-scroll";
-import "../../pages/_document";
-import Footer from "../footer";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import CutDown from '../../media/CutDownCover.jpeg';
+import ScrollAnimation from 'react-animate-on-scroll';
+import '../../pages/_document';
 
 const BasicContactForm = (e) => {
-  window.location = "https://form.jotform.com/220784862221152";
+  window.location = 'https://form.jotform.com/220784862221152';
 };
 
 const Container = styled.div`
@@ -129,7 +124,7 @@ const Titlegrey = styled.div`
   justify-content: center;
   font-size: 62px;
   padding: 25px;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Bebas Neue', cursive;
   /* border-top: 2px solid black; */
   @media (max-width: 768px) {
     font-size: 31px;
@@ -147,7 +142,7 @@ const Button = styled.div`
   justify-content: center;
   background-color: black;
   color: white;
-  font-family: "Overpass Mono", monospace;
+  font-family: 'Overpass Mono', monospace;
   font-size: 14px;
   transition-duration: 0.4s;
   cursor: pointer;
@@ -163,20 +158,20 @@ const Button = styled.div`
   }
 `;
 
-const TextBox = styled.div`
-  width: 65%;
-  height: 400px;
-  background-color: #e5e4e2;
-  border-radius: 6px;
-  margin-left: 100px;
-  margin-right: 100px;
-  display: flex;
-  @media (max-width: 768px) {
-    width: 100%;
-    margin-right: none;
-    height: 350px;
-  }
-`;
+// const TextBox = styled.div`
+//   width: 65%;
+//   height: 400px;
+//   background-color: #e5e4e2;
+//   border-radius: 6px;
+//   margin-left: 100px;
+//   margin-right: 100px;
+//   display: flex;
+//   @media (max-width: 768px) {
+//     width: 100%;
+//     margin-right: none;
+//     height: 350px;
+//   }
+// `;
 
 const BeetJuiceText = styled.div`
   width: 40%;
@@ -189,7 +184,7 @@ const BeetJuiceText = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 21px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   @media (max-width: 1068px) {
     width: 100%;
     height: 600px;
@@ -241,32 +236,32 @@ const BeetJuiceTextContainer = styled.div`
   }
 `;
 
-const VideoContainer = styled.div`
-  height: 400px;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 768px) {
-    height: 200px;
-    width: 100%;
-  }
-`;
+// const VideoContainer = styled.div`
+//   height: 400px;
+//   width: 100vw;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   @media (max-width: 768px) {
+//     height: 200px;
+//     width: 100%;
+//   }
+// `;
 
-const Offerings = styled.div`
-  height: 700px;
-  width: 100%;
-  background-color: White;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  font-family: "Bebas Neue", cursive;
-  @media (max-width: 768px) {
-    font-size: 50px;
-  }
-`;
+// const Offerings = styled.div`
+//   height: 700px;
+//   width: 100%;
+//   background-color: White;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: 60px;
+//   font-family: 'Bebas Neue', cursive;
+//   @media (max-width: 768px) {
+//     font-size: 50px;
+//   }
+// `;
 
 const Pricing = (props) => {
   return (
